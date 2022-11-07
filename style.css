@@ -10,8 +10,19 @@
 
 */
 
+.parallax {
+  /* The image used */
+  background-image: url("./img/52.jpg");
 
+  /* Set a specific height */
+  min-height: 500px; 
 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* Preloader  */
 .pre-loader {
@@ -101,6 +112,7 @@ html,body
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    perspective: 4px; /* The depth */
 }
 
 .bodycontent{
@@ -294,9 +306,10 @@ html,body
   padding: 10px 30px;
   text-decoration: none;
   text-align: center;
-  width: 150px;
+  width: 200px;
   margin: auto;
   line-height: 0;
+  margin-bottom: 10px;
 }
 
 .btn-bookmobile:hover{
@@ -524,17 +537,10 @@ html,body
   font-size: 6.5vh;
 }
 
-.swiper-slide-title .slide2 {
-  font-size: 6.5vh;
-}
 
 @media screen and (max-width: 699px) {
   .swiper-slide-title span {
     font-size: 5vh;
-  }
-  
-  .swiper-slide-title .slide2 span {
-    font-size: 4vh;
   }
 
 }

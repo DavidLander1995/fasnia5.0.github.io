@@ -114,11 +114,10 @@ var swiper = new Swiper(".mySwiper9", {
     navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-},
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: true,
 }
+    // autoplay: {
+    //   delay: 1000,
+    //   disableOnInteraction: true,
 });
 
 

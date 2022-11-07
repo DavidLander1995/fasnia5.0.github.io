@@ -10,19 +10,6 @@
 
 */
 
-.parallax {
-  /* The image used */
-  background-image: url("./img/52.jpg");
-
-  /* Set a specific height */
-  min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* Preloader  */
 .pre-loader {
@@ -112,7 +99,6 @@ html,body
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
-    perspective: 4px; /* The depth */
 }
 
 .bodycontent{
@@ -180,6 +166,7 @@ html,body
   background-color: #d3b486;
 }
 
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
 
@@ -206,9 +193,9 @@ html,body
 
 /* Owl Carousel Navigation Arrows  */
 .nav-container {
-  position: relative;
-  bottom: 0%;
-  padding-top: 5px;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
 }
 
 
@@ -500,8 +487,10 @@ html,body
 
 .gallerybutton-container {
   position: absolute;
-  bottom: 10px;
-  right: 20px;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 25px;
+  margin-right: 25px;
   width: 7.5rem;
   font-size: 1rem;
   background-color: white;
@@ -565,42 +554,21 @@ html,body
 
 
 /* Section 4 - Houses */
-.box-container { 
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40%;
-  background-color: white;
-  display: inline-block;
-  margin: 40px;
-  height: auto;
-  border: 2px solid #887129;
-  box-shadow: 12px 12px #887129;
-}
-
-.box-containermobile { 
+.owl-four .item {
   border: 1px solid #887129;
+  box-shadow: 10px 10px 20px #887129 
 }
 
 .box-container h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 63px;
-  color: #222222;
-  padding-top: 40px;
+  color: #887129;
+  padding-top: 20px;
 }
 
-.box-containermobile h2 {
-  font-size: 26px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-  padding-top: 10px;
-}
 
 .box-container p {
   font-size: 18px;
@@ -612,19 +580,6 @@ html,body
   margin-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.box-containermobile p {
-  font-size: 16px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  margin-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
 }
 
 .box-quote {
@@ -794,9 +749,6 @@ html,body
   padding-block: 50px;
 }
 
-#section6 ul{
-  padding-bottom: 20px;
-}
 /* Section 6 END */
 
 

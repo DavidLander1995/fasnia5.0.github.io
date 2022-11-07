@@ -1,0 +1,2743 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* CSS DIRECTORY
+	1. =GLOBAL - Resets, Scrollbars Styles, Breadcrumbs, Media, Sliders 
+	2. =PRIMARY - Body, Primary Divs Styles
+	3. =NAVBAR - Navigation Bar Styles
+	4. =FOOTER - Footer Styles
+  5. =PAGE SPECIFIC
+  6. =MODALS 
+
+*/
+
+
+
+
+/* Preloader  */
+.pre-loader {
+  align-items: center;
+  background: rgb(255, 255, 255);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.preloader_logo {
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  opacity: 0.8;
+}
+
+.preloader_logo img {
+  width: 16rem;
+  height: auto;
+}
+
+.loading {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: 8rem;
+  opacity: 0.8;
+}
+
+.loading .line-box {
+  padding: 0px;
+  width: 18rem;
+  height: 0.4rem;
+  border: 2px solid #887129;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.loading .line-box .line {
+  padding: 0px;
+  width: 18rem;
+  height: 0.2rem;
+  border-radius: 10px;
+  border: 2px solid #887129;
+  background: #887129;
+  animation: loading 2s forwards infinite cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading{
+  0%{
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Preloader END  */
+
+
+/* 1. Global  */
+.hidden-xs {
+  display: none;
+}
+
+/* dummy criterion for demo purposes */
+@media screen and (min-width: 300px) {
+  .hidden-xs {
+    display: block;
+  }
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+.bodycontent{
+  overflow-x: hidden;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.container-fluid{
+  padding: 0 !important;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #887129;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #887129;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.darken-overlay div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+}
+
+.scroller{
+  height: 3rem;
+  position: relative;
+  top: 75%;
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+}
+
+.mySeperator{
+  margin-top: 50px;
+  height: 100px;
+  background-color: #d3b486;
+}
+
+.mySeperator2 {
+  height: 100px;
+  background-color: #d3b486;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+}
+
+.background-container {
+  background-image: url(./img/5404176.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.background-container2 {
+  background: url(./img/5404176.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+/* Owl Carousel Navigation Arrows  */
+.nav-container {
+  position: relative;
+  bottom: 0%;
+  padding-top: 5px;
+}
+
+
+/* Page Intro Text  */
+.pageintro h3 {
+  color: #887129;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-transform: none;
+}
+
+.pageintro h2 {
+  color: #222222;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  margin-bottom: 20px;
+}
+
+.pageintro p {
+  color: #262626;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  transition: all 0.5s
+}
+
+
+
+/* Buttons */
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}
+
+.btn-more{
+  background-color: white;
+  border: 2px solid #887129;
+  color: #887129;
+  height: 50px;
+  padding: 0px 30px;
+  border-radius: 999em;
+  text-decoration: none;
+}
+.btn-more:hover{
+  background: #887129;
+  color: white;
+}
+
+
+.btn-go{
+  background-color: #887129;
+  border: 2px solid #887129;
+  color: white;
+  height: 2.8rem;
+  padding: 0px 30px;
+  border-radius: 999em;
+  text-decoration: none;
+}
+
+.btn-go:hover{
+  background: #725c1a;
+  border: 2px solid #725c1a ;
+}
+
+
+.btn-book{
+  background-color: #887129;
+  border: 2px solid #887129;
+  color: white;
+  height: 50px;
+  padding: 10px 30px;
+  border-radius: 999em;
+  text-decoration: none;
+}
+
+.btn-book:hover{
+  background: #725c1a;
+}
+
+.btn-bookmobile{
+  background-color: #887129;
+  border: 2px solid #887129;
+  color: white;
+  height: 45px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-align: center;
+  width: 150px;
+  margin: auto;
+  line-height: 0;
+}
+
+.btn-bookmobile:hover{
+  background: #725c1a;
+}
+
+.btn-modalclose{
+  background-color: #887129;
+  border: 2px solid #887129;
+  color: white;
+  height: 50px;
+  padding: 10px 30px;
+  border-radius: 999em;
+  text-decoration: none;
+}
+.btn-modalclose:hover{
+  background: #725c1a;
+}
+
+.btn-contact{
+  background-color: white;
+  border: 2px solid #887129;
+  color: #887129;
+  height: 50px;
+  padding: 0px 30px;
+  border-radius: 999em;
+  text-decoration: none;
+}
+.btn-contact:hover{
+  background: #887129;
+  color: white;
+}
+
+.customNextBtn {
+  border-radius: 999px;
+  height: 45px;
+  width: 45px;
+  background-color: #887129;
+  color: white;
+  border: #887129;
+}
+
+.customPrevBtn {
+  border-radius: 999px;
+  height: 45px;
+  width: 45px;
+  background-color: #887129;
+  color: white;
+  border: #887129;
+}
+
+/* Sliders */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: white;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2, .mySwiper4, .mySwiper6 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper, .mySwiper3, .mySwiper5 {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+
+/* Breadcrums */
+.breadcrumb{
+  margin-left: 1.6rem;
+}
+
+.breadcrumb-item a{
+  color: #444444;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* 1. Global End */
+
+/* Index Page / Home Page */
+.homebanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(https://ik.imagekit.io/l3yst4k9g/Index/hero_images/heroimage?ik-sdk-version=javascript-1.4.3&updatedAt=1666615580574) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.homebanner-image h1{
+  font-size: 6vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+
+/* Hero Banner  */
+.mySwiperhero {
+  height: 100vh;
+}
+
+.index-start img {
+  padding-top: 80px;
+  width: 15rem;
+}
+
+.indexmiddle-quote {
+  padding-top: 50px;
+  color: #222222;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 42px;
+  font-weight: 000;
+  letter-spacing: normal;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 699px) {
+  .indexmiddle-quote {
+    padding-top: 50px;
+    color: #222222;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 50px;
+  }
+}
+
+.indexend-quote {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 40px;
+  color: #262626;
+  text-align: center;
+}
+
+.gallerybutton-container {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 7.5rem;
+  font-size: 1rem;
+  background-color: white;
+  border: none;
+  color: #887129;
+  font-weight: 500;
+}
+
+
+
+.swiper-slide-title {
+  color: white;
+  position: relative;
+  font-size: 2vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  line-height: 6.0vh;
+}
+
+
+.swiper-slide-content {
+  position: absolute;
+}
+
+.swiper-slide-scroller {
+  position: absolute;
+  bottom: 6%;
+}
+
+.swiper-slide-title span {
+  font-size: 6.5vh;
+}
+
+.swiper-slide-title .slide2 {
+  font-size: 6.5vh;
+}
+
+@media screen and (max-width: 699px) {
+  .swiper-slide-title span {
+    font-size: 5vh;
+  }
+  
+  .swiper-slide-title .slide2 span {
+    font-size: 4vh;
+  }
+
+}
+
+.swiper-reserve-button{
+  position: absolute;
+  bottom: 25%;
+}
+
+
+
+/* Section 2 */
+
+/* Section 2 END */
+
+
+/* Section 3 - Weather */
+#section3{
+  padding-top: 50px;
+}
+/* Section 3 END */
+
+
+/* Section 4 - Houses */
+.box-container { 
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  background-color: white;
+  display: inline-block;
+  margin: 40px;
+  height: auto;
+  border: 2px solid #887129;
+  box-shadow: 12px 12px #887129;
+}
+
+.box-containermobile { 
+  border: 1px solid #887129;
+}
+
+.box-container h2 {
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+  padding-top: 40px;
+}
+
+.box-containermobile h2 {
+  font-size: 26px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+  padding-top: 10px;
+}
+
+.box-container p {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.box-containermobile p {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.box-quote {
+  font-style: italic;
+}
+
+.title {
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #887129;
+  text-align: center;
+}
+
+.under-title {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+
+
+.mySwiper8 {
+  height: 95%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  border-radius: 20px;
+}
+
+.mySwiper8 .swiper-slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.house-title{
+  position: absolute;
+  top: 30%;
+}
+
+.house-sleeps {
+  position: absolute;
+  top: 55%;
+ 
+}
+
+.house-priceinfo {
+  position: absolute;
+  top: 62.5%;
+}
+
+.mySwiper8 .swiper-slide img{
+  border-radius: 20px;
+  filter: brightness(50%);
+}
+
+
+#section4 h4{
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #887129;
+}
+
+#section4 h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+#section4 p{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  margin-bottom: 50px;
+}
+
+
+.swiper-slide .btn-go{
+  position: absolute;
+  top: 82.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* Section 4 END */
+
+
+/* Section 6 */
+#section6{
+  padding-top: 80px;
+}
+
+.icon .homeicon-text2{
+  color: #887129 !important;  
+  cursor: pointer !important;
+  font-family: 'Nunito', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 24px !important;
+  min-height: 48px !important;
+  padding-top: 10px !important;
+}
+
+
+.mySwiper9 .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mySwiper9 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: auto;
+}
+
+.mySwiper9 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#section6 h4{
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #887129;
+}
+
+#section6 h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+#section6 p{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  padding-block: 50px;
+}
+
+#section6 ul{
+  padding-bottom: 20px;
+}
+/* Section 6 END */
+
+
+/* Section Icons */
+#iconsection{
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.home-icons{
+  height: 4em;
+  object-fit: contain;
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+}
+
+.home-icons2{
+  height: 4em;
+  object-fit: contain;
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+}
+
+@media (max-width: 600px) {
+  .home-icons2{
+    height: 2.5rem;
+    object-fit: contain;
+    filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+  }
+}
+
+.homeicon-text{
+  color: #887129;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 48px;
+  padding-top: 10px;
+}
+/* Section Icons END */
+
+
+/* Section 8  */
+#section8 {
+  padding-top: 80px;
+}
+
+#section8 h4{
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #887129;
+}
+
+#section8 h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+#section8 video{
+  height: 100%;
+  width: 100%;
+}
+
+/* Section 8 END  */
+
+
+/* Section 10 */
+#section10 {
+  padding-top: 80px;
+}
+
+.findus-border {
+  border: 1px solid #887129;
+  box-shadow: 20px 20px #887129;
+  margin-bottom: 100px;
+}
+
+#section10 h4{
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #887129;
+}
+
+#section10 h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+#section10 .row p{
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+}
+
+#section10 .contactus p{
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  line-height: 19.2px;
+  color: #262626;
+}
+
+#section10 iframe{
+  width: 100%;
+  height: 100%;
+}
+
+/* Section 10 END */
+
+
+
+/* Section 12  */
+.gallery {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  padding: 45px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto; 
+  grid-gap: 2vh;
+  grid-auto-flow: dense;
+}
+
+.gallery .gallery-images{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+  border-radius: 2px;
+}
+
+.gallery .gallery-images:first-child{
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+
+.gallery .gallery-images:nth-child(2n+3){
+  grid-row-start: span 2;
+}
+
+.gallery .gallery-images:nth-child(4n+5){
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+
+.gallery .gallery-images:nth-child(6n+7){
+  grid-row-start: span 1;
+}
+
+.gallery .gallery-images:nth-child(8n+9){
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+
+.gallery .gallery-images img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.0s ease-in-out;
+}
+
+.gallery .gallery-images:hover img{
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+/* Section 12 END  */
+
+
+/* Section 14 */
+#housereviews{
+  padding-top: 40px;
+  background-image: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666701842756);
+  background-repeat: no-repeat;
+  background-position: 65%;
+}
+
+#housereviews h2{
+  color: #887129;
+  font-family: 'Libre Baskerville' serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 46px;
+  text-align: center;
+}
+
+
+#housereviews .item{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+#housereviews .container p {
+  color: #222222;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+  padding-top: 40px;
+}
+
+#housereviews .container h3{
+  color: #222222;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+  padding-top: 20px;
+}
+
+#housereviews .container h5 {
+  color: #887129;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+  padding-top: 10px;
+}
+
+#housereviews .container img{
+  position: absolute;
+  left: 50%;
+  height: auto;
+  width: 1%;
+  left: 50%;
+}
+
+/* Section 14 END  */
+/* Homepage  End */
+
+
+
+/* 2. Primary  */
+/* Banner Image */
+.banner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/cabrera3.jpg) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.banner-image h1{
+  font-size: 6vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+/* 2. Primary End  */
+
+
+
+/* 3. Navbar  */
+/* Large Screen 3 Links Top of Screen */
+.link-container{
+  translate: -20%;
+  opacity: 100%;
+}
+
+.link-nav{
+  font-size: 21px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+  color: #887129;
+}
+
+.link-nav:hover{
+  color: #887129;
+}
+
+.navbar-toggler-icon{
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+}
+
+.navbar-toggler {
+  border: 3px solid #887129;
+  padding: 0.2rem;
+  margin-right: 0.6rem;
+  width: 50px;
+} 
+
+.navbar_logo{
+  width: 10rem;
+  height: auto;
+}
+
+
+/* Change Logo Size for Mobile  */
+@media screen and (max-width: 680px){
+  .navbar_logo {
+  width: 8rem;
+  height: auto;
+  }
+}
+
+
+/* Change Navbar Color on Scroll */
+.navbar-default{
+  transition: 750ms ease;
+  background: transparent;
+}
+
+.navbar-default.scrolled{
+  background: white;
+}
+
+/* Large Screen 3 Links Top of Screen End */
+
+/* Slide Menu Custom */
+.offcanvas-body{
+  background-color: white;
+}
+
+.nav-link{
+  color: #887129;
+  margin-left: 6rem;
+  font-size: 20px;
+}
+
+.nav-link:hover{
+  color: #887129;
+}
+
+.offcanvas-header{
+  margin-left: 4rem;
+}
+
+.offcanvas-logo{
+  width: 60%;
+}
+
+/* Language Translator Widget  */
+.parent{
+  position: relative;
+}
+
+.translate-container2{
+  position: absolute;
+  right: 65px;
+  bottom: 5%;
+}
+
+.country-selector a {
+  color: #887129!important;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.country-selector {
+  background-color: transparent !important;
+}
+
+.wg-drop.country-selector .wgcurrent:after {
+  display: none !important;
+}
+
+.wg-drop.country-selector .wgcurrent {
+  border: none !important;
+}
+
+.wg-drop.country-selector ul {
+  border: none !important;
+}
+
+.wg-drop.country-selector {
+  background-color: transparent !important;
+}
+
+.wg-drop.country-selector ul {
+  background: transparent !important;
+}
+/* Language Translator Widget  */
+
+/* 3. Navbar End  */
+
+
+
+/* 4. Footer  */
+.hr {
+  padding: 0;
+  margin-top: 0;
+}
+
+.footer-text{
+   color: #222222;
+   font-family: 'Nunito', sans-serif;
+   font-size: 15px;
+   font-weight: 400;
+   letter-spacing: .82px;
+   line-height: 26px;
+   text-decoration: none;
+}
+
+.footer-text:hover{
+  color: #887129;
+}
+
+.footer-textcontact{
+  color: #222222;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: .82px;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.footer-icons{
+  color: #887129;
+}
+
+.footer-socialicons{
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+  height: 4em;
+  padding: 15px;
+}
+
+.footer-header{
+  font-weight: 400;
+}
+
+.contact-link{
+  text-decoration: none;
+  color: #222222;
+}
+
+.contact-link:hover{
+  text-decoration: none;
+  color: #887129
+}
+
+.copyright {
+  color: #222222;
+}
+
+.terms_conditions a {
+  color: #222222;
+  text-decoration: none;
+}
+
+.terms_conditions a:hover {
+  color: #887129;
+}
+
+.footer-logo {
+  width: 22rem;
+  padding-left: 5px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .footer-logo {
+    width: 14rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .footer-logo {
+    width: 14rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .footer-logo {
+    width: 20rem;
+  }
+}
+/* 4. Footer End  */
+
+
+/* 5. Page Specific */
+/* Galeria de Fotos */
+.galeriabanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(https://ik.imagekit.io/l3yst4k9g/Galeria/Section_2/Exteriores__23_de_53__eXbVMbFUy.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666693458077) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.galeriabanner-image h1{
+  font-size: 6vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+.gallerybackground {
+  background-image: url(./img/5404176.jpg);
+  background-repeat: repeat-y;
+  background-position: center;
+}
+/* Galeria de Fotos END */
+
+
+
+/* Las Casas */
+.lascasasbanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(https://ik.imagekit.io/l3yst4k9g/Las_Casas/Banner/overview_aW3Dwaa2cY.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1666695434846) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.lascasasbanner-image h1{
+  font-size: 6vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+/* Section 2 */
+.card-body{
+  text-align: center;
+}
+
+.card-title{
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #887129;
+}
+
+.card-text{
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+}
+
+.card-quote{
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  font-style: italic;
+}
+
+.card img{
+  object-fit: contain;
+}
+
+.card-footer {
+  background: white;
+  border: none;
+}
+
+/* Section 2 END  */
+
+
+/* Section 3  */
+#rent-house{
+  padding-top: 50px;
+}
+.renthouse-container{
+  height: 380px;
+  background-color: #d3b486;
+}
+
+#rent-house h2{
+  padding-top: 40px;
+  font-size: 50px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+#rent-house h4{
+  padding-top: 20px;
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #222222;
+}
+
+#rent-house p{
+  padding-top: 30px;
+}
+/* Section 3 END  */
+
+
+/* Section 4  */
+#room-services{
+  padding-top: 50px;
+  background-image: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#room-services h4{
+  padding-top: 20px;
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #887129;
+  text-align: center;
+}
+
+#room-services p{
+  padding-top: 5px;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #222222;
+  text-align: center;
+}
+
+#room-services h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+#room-services h3{
+  padding-top: 20px;
+  font-size: 22px;
+  color: #887129;
+}
+
+
+/* Section 4 END  */
+/* Las Casas END */
+
+
+/* Las Casas Individal Pages */
+/* Hero Images  */
+/* Cabrera  */
+.cabrerabanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/herocabrera.jpg) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.cabrerabanner-image h1{
+  font-size: 6vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+/* Alpendre */
+.alpendrebanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/heroalpendre.jpg) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.alpendrebanner-image h1{
+  font-size: 6vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+/* Principal  */
+.principalbanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/heroprincipal.jpg) no-repeat;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.principalbanner-image h1{
+  font-size: 6vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+
+#houseid_1 {
+  background-image: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?);
+  background-repeat: no-repeat;
+  background-position: 35%;
+}
+
+#houseid_3 {
+  background-image: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fa-solid{
+  font-size: 4vh;
+  padding: 20px;
+  color: #887129;
+}
+
+/* Text  */
+
+#houseid_1 h2 {
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+  text-align: justify;
+}
+
+#houseid_1 p {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+#houseid_2 h2 {
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+  text-align: justify;
+}
+
+#houseid_2 p {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+#houseid_3 h2 {
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+  text-align: justify;
+}
+
+#houseid_3 p {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+.instatitle {
+  color: #887129;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-transform: none;
+  margin-top: 50px;
+}
+
+.instaquote {
+  color: #222222;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  margin-bottom: 20px;
+}
+ 
+
+/* Gallery for Indi Pages  */
+.gallery2 {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto; 
+  grid-gap: 2vh;
+  grid-auto-flow: dense;
+}
+
+.gallery2 .gallery-images{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+  border-radius: 2px;
+}
+
+.gallery2 .gallery-images:first-child{
+  grid-column-start: span 1;
+  grid-row-start: span 2;
+}
+
+.gallery2 .gallery-images:nth-child(2n+3){
+  grid-row-start: span 1;
+}
+
+.gallery2 .gallery-images:nth-child(4n+5){
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+
+.gallery2 .gallery-images img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.0s ease-in-out;
+}
+
+.gallery2 .gallery-images:hover img{
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery2{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .gallery2{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+.extra-info h2 {
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+  text-align: justify;
+}
+
+.extra-info li { 
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  text-align: justify;
+  
+}
+
+/* Modal 1 Description */
+.icon-desc{
+  padding: 0.2rem;
+  color: #887129;
+}
+
+/* Modal 2 Description */
+.icon-desc2{
+  padding-top: 1rem;
+  color: #887129;
+}
+
+
+.modal-title{
+  color: #887129;
+}
+
+.modalCol 
+h2,
+li{
+  color: #887129;
+  padding-top: 20px;
+}
+
+.modalCol {
+  padding-top: 30px;
+}
+
+.modalCol img {
+  padding-top: 4rem;
+  padding-right: 5rem;
+}
+
+.postReview{
+  font-style: italic;
+  color: #887129;
+  border-width: 2px;
+  border-style: solid;
+}
+
+
+.col-gap {
+  column-gap: 2rem;
+}
+
+.casaslider img{
+  filter: brightness(70%);
+  height: 85vh;
+}
+
+
+.my-container{
+  margin-left: 350px;
+  text-align: justify;
+  padding-bottom: 150px;
+}
+
+
+.mycaption{
+  bottom: 20%;
+}
+
+.instagramContainer{
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.icon-images{
+  width: 4rem;
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+}
+
+
+/* La Casa de Los Corrales */
+.loscorralesbanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/casaloscorrales.png) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.loscorralesbanner-image h1{
+  font-size: 6vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+/* Las Casas Indvi END */
+
+
+/* Ubicacion  */
+.ubicacionbanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/52.jpg) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.ubicacionbanner-image h1{
+  font-size: 6vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+#aroundFasnia h2{
+  padding-top: 20px;
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #887129;
+  text-align: start;
+}
+
+#aroundFasnia p{
+  padding-top: 5px;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #222222;
+}
+
+.googlemaps {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ubicacion End  */
+
+
+
+
+/* Contacto */
+.contactobanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/51.jpg) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.contactobanner-image h1{
+  font-size: 6vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+select,
+textarea {
+  padding: 1.4rem;
+  background: transparent;
+  border: 1px solid #887129;
+}
+
+textarea {
+  height: 10rem;
+}
+
+form button {
+  padding: 1.4rem;
+  cursor: pointer;
+  background: #887129;
+  color: white;
+  border: none;
+}
+
+.background-full {
+  background: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Contacto END  */
+
+
+
+
+
+/* Servicios  */
+.serviciosbanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations4_hL5m5Y9cH.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1666686986633) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.serviciosbanner-image h1{
+  font-size: 5vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+/* Section 1 */
+.mySwiper10 .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper10 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.mySwiper10 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* Section 1 END  */
+
+
+
+/* Section 2  */
+/* Section 2 END  */
+
+
+/* Section 3  */
+/* Section 3 END  */
+
+
+/* Section 4  */
+#serviceInfinity{
+  background-image: url(./img/5404176.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#serviceInfinity h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+
+}
+
+#serviceInfinity p{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  margin-bottom: 50px;
+}
+/* Section 4 END  */
+
+
+/* Section 5  */
+#serviceSpa {
+  padding-top: 60px;
+}
+
+#serviceSpa h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+
+}
+
+#serviceSpa p{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  margin-bottom: 50px;
+}
+/* Section 5 END  */
+
+
+/* Section 7  */
+#serviceBarb {
+  background-image: url(./img/5404176.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#serviceBarb h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+
+}
+
+#serviceBarb p{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  margin-bottom: 50px;
+}
+/* Section 7 END  */
+
+
+/* Section 8 */
+#serviceExtra{
+  padding-top: 60px;
+}
+/* Section 8 END  */
+
+
+/* Section 9  */
+.serviceExtra h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+.serviceExtra p{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  padding-top: 25px;
+}
+/* Section 9 END  */
+
+
+/* Section 10  */
+#serviceextraCards{
+  padding-top: 60px;
+}
+/* Section 10 END  */
+/* Servicios END  */
+
+
+
+/* La Casa Cabrera  */
+
+
+/* El Sueno  */
+#elsuenoStory{
+  padding-top: 40px;
+}
+.elsuenobanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/image2.jpg) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.elsuenobanner-image h1{
+  font-size: 5vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+
+.mySwiper11 img{
+  object-fit: cover;
+}
+
+.mySwiper11 .swiper {
+  margin: 100px auto;
+  width: 320px;
+  height: 240px;
+}
+
+.mySwiper11 .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.mySwiper12 img{
+  object-fit: cover;
+}
+
+.mySwiper12 .swiper {
+  margin: 100px auto;
+  width: 320px;
+  height: 240px;
+}
+
+.mySwiper12 .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#elsuenoquote{
+  padding-top: 90px;
+  background-image: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+#elsuenoStory h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+#elsuenoStory p{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  padding-top: 10px;
+}
+
+#elsuenoquote h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+#elsuenoquote p{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  padding-top: 10px;
+}
+/* El Sueno END  */
+
+
+
+
+
+
+/* Promociones  */
+.promocionesbanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/promociones.webp) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.promocionesbanner-image h1{
+  font-size: 5vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+#promocionesYoga h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+
+}
+
+#promocionesYoga p{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  padding-top: 25px;
+}
+
+#promocioneslasCasas{
+  padding-top: 40px;
+}
+
+#promocioneslasCasas h2{
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+#promocioneslasCasas p{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  padding-top: 25px;
+
+}
+
+
+
+
+/* Restauracion Page */
+/* Timeline */
+#timeline{
+  padding-top: 40px;
+}
+
+.restauracionbanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/restore.PNG) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.restauracionbanner-image h1{
+  font-size: 5vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'ESL Legend';
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot);
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot#iefix) format("embedded-opentype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff2) format("woff2"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff) format("woff"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.ttf) format("truetype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.svg#eicon) format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+ img {
+   max-width: 100%;
+ }
+ 
+ .ag-format-container {
+   width: 1160px;
+   margin: 0 auto;
+ 
+   position: relative;
+ }
+ 
+ .ag-timeline-block {
+   padding: 50px 0;
+ }
+ .ag-timeline_title-box {
+   padding: 0 0 30px;
+ 
+   text-align: center;
+ }
+ .ag-timeline_tagline {
+   font-size: 40px;
+   color: rgb(84, 89, 95);
+ }
+
+ .ag-timeline_item {
+   margin: 0 0 50px;
+ 
+   position: relative;
+ }
+ .ag-timeline_item:nth-child(2n) {
+   text-align: right;
+ }
+ 
+ .ag-timeline {
+   display: inline-block;
+   width: 100%;
+   max-width: 100%;
+   margin: 0 auto;
+ 
+   position: relative;
+ }
+ .ag-timeline_line {
+   width: 2px;
+   background-color: #393935;
+ 
+   position: absolute;
+   top: 2px;
+   left: 50%;
+   bottom: 0;
+ 
+   overflow: hidden;
+ 
+   -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
+   transform: translateX(-50%);
+ }
+ 
+ .ag-timeline_line-progress {
+   width: 100%;
+   height: 20%;
+   background-color: #ad8f30;
+ }
+ 
+ .ag-timeline-card_box {
+   padding: 0 0 20px 50%;
+ }
+ .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
+   padding: 0 50% 20px 0;
+ }
+ .ag-timeline-card_point-box {
+   display: inline-block;
+   margin: 0 14px 0 -28px;
+ }
+ .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
+   margin: 0 -28px 0 14px;
+ }
+ .ag-timeline-card_point {
+   height: 50px;
+   line-height: 50px;
+   width: 50px;
+   border: 3px solid #ad8f30;
+   background-color: #030303;
+   text-align: center;
+   font-family: 'ESL Legend', sans-serif;
+   font-size: 20px;
+   color: #FFF;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
+ }
+
+ .js-ag-active .ag-timeline-card_point {
+   color: #fdfdf9;
+   background-color: #ad8f30;
+ }
+ .ag-timeline-card_meta-box {
+   display: inline-block;
+ }
+ .ag-timeline-card_meta {
+   margin: 10px 0 0;
+ 
+   font-family: 'ESL Legend', sans-serif;
+   font-weight: bold;
+   font-size: 28px;
+   color: #ad8f30;
+ }
+ .ag-timeline-card_item {
+   display: inline-block;
+   width: 45%;
+   margin: -77px 0 0;
+   background-color: #887129;
+ 
+   opacity: 0;
+ 
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+ 
+   -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+   -moz-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+   -o-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+   box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+ 
+   -webkit-transition: -webkit-transform .5s, opacity .5s;
+   -moz-transition: -moz-transform .5s, opacity .5s;
+   -o-transition: -o-transform .5s, opacity .5s;
+   transition: transform .5s, opacity .5s;
+ 
+   position: relative;
+ }
+ .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {
+   -webkit-transform: translateX(-200%);
+   -moz-transform: translateX(-200%);
+   -ms-transform: translateX(-200%);
+   -o-transform: translateX(-200%);
+   transform: translateX(-200%);
+ }
+ .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+   -webkit-transform: translateX(200%);
+   -moz-transform: translateX(200%);
+   -ms-transform: translateX(200%);
+   -o-transform: translateX(200%);
+   transform: translateX(200%);
+ }
+ .js-ag-active.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
+ .js-ag-active.ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+   opacity: 1;
+ 
+   -webkit-transform: translateX(0);
+   -moz-transform: translateX(0);
+   -ms-transform: translateX(0);
+   -o-transform: translateX(0);
+   transform: translateX(0);
+ }
+ .ag-timeline-card_arrow {
+   height: 18px;
+   width: 18px;
+   margin-top: 20px;
+   background-color: #ad8f30;
+ 
+   z-index: -1;
+   position: absolute;
+   top: 0;
+   right: 0;
+ 
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   transform: rotate(45deg);
+ }
+ .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
+   margin-left: calc(-18px / 2);
+   margin-right: calc(-18px / 2);
+ }
+ .ag-timeline_item:nth-child(2n) .ag-timeline-card_arrow {
+   margin-left: -10px;
+ 
+   right: auto;
+   left: 0;
+ }
+ .ag-timeline-card_img {
+    width: 50rem;
+    height: 25rem;
+ }
+
+ .ag-timeline-card_info {
+   padding: 20px 30px;
+ }
+ .ag-timeline-card_title {
+   display: none;
+   margin: 10px 0 0;
+ 
+   font-family: 'ESL Legend', sans-serif;
+   font-weight: bold;
+   font-size: 28px;
+   color: #f7f6f3
+ }
+ .ag-timeline-card_desc {
+   line-height: 1.45;
+   font-size: 14px;
+   color: #FFF;
+   font-size: 18px;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+   letter-spacing: 0.30px;
+   text-align: justify;
+ }
+
+ @media only screen and (max-width: 979px) {
+   .ag-timeline_line {
+     left: 30px;
+   }
+ 
+   .ag-timeline_item:nth-child(2n) {
+     text-align: left;
+   }
+ 
+   .ag-timeline-card_box,
+   .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
+     padding: 0 0 20px;
+   }
+   .ag-timeline-card_meta-box {
+     display: none;
+   }
+   .ag-timeline-card_point-box,
+   .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
+     margin: 0 0 0 8px;
+   }
+   .ag-timeline-card_point {
+     height: 40px;
+     line-height: 40px;
+     width: 40px;
+   }
+   .ag-timeline-card_item {
+     width: auto;
+     margin: -65px 0 0 75px
+   }
+   .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
+   .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+     -webkit-transform: translateX(200%);
+     -moz-transform: translateX(200%);
+     -ms-transform: translateX(200%);
+     -o-transform: translateX(200%);
+     transform: translateX(200%);
+   }
+   .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
+     right: auto;
+     left: 0;
+   }
+   .ag-timeline-card_title {
+     display: block;
+   }
+   .ag-timeline-card_arrow {
+     margin-top: 12px;
+   }
+  }
+ 
+ @media only screen and (max-width: 767px) {
+   .ag-format-container {
+     width: 96%;
+   }
+ 
+   .ag-timeline-card_img {
+     height: auto;
+     width: auto;
+   }
+ }
+ 
+ @media only screen and (max-width: 639px) {
+   .ag-timeline_title {
+     font-size: 60px;
+   }
+ 
+   .ag-timeline-card_info {
+     padding: 10px 15px;
+   }
+   .ag-timeline-card_desc {
+     font-size: 14px;
+   }
+ }
+ 
+ @media only screen and (max-width: 479px) {
+ 
+ }
+ 
+ @media (min-width: 768px) and (max-width: 979px) {
+   .ag-format-container {
+     width: 750px;
+   }
+ 
+ }
+ 
+ @media (min-width: 980px) and (max-width: 1161px) {
+   .ag-format-container {
+     width: 960px;
+   }
+ 
+ }
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+/* 6. Modals  */
+/* 6. Modals End */
+
+
+
+/* Conditions */
+.startpage {
+  margin-top: 10%;
+}
+
+.condicionestitle h1 {
+  font-size: 60px;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+
+.conditionsmain ul li {
+  color: black;
+}

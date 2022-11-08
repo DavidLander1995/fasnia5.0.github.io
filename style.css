@@ -191,6 +191,7 @@ html,body
 }
 
 /* Typography  */
+/* Large Screens  */
 .section-title {
   font-size: 32px;
   font-family: 'Libre Baskerville', serif;
@@ -207,7 +208,7 @@ html,body
   font-weight: 400;
   letter-spacing: 0;
   line-height: 63px;
-  color: #222222;
+  color: #887129;
   text-align: start; 
 }
 
@@ -220,6 +221,64 @@ html,body
   color: #262626;
   margin-bottom: 50px;
   text-align: justify;
+}
+
+.section-desc2 {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: white;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .section-title {
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 63px;
+    color: #222222;
+    text-align: justify; 
+  }
+  
+  .section-title2 {
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 63px;
+    color: #887129;
+    text-align: start; 
+  }
+  
+  .section-desc {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    line-height: 25px;
+    color: #262626;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+  
+  .section-desc2 {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    line-height: 25px;
+    color: white;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+  
+
 }
 /* Typography  */
 
@@ -1341,9 +1400,10 @@ html,body
 }
 
 .gallerybackground {
-  background-image: url(./img/5404176.jpg);
+  /* background-image: url(./img/5404176.jpg);
   background-repeat: repeat-y;
-  background-position: center;
+  background-position: center; */
+  background-color: #1c1c1c;
 }
 /* Galeria de Fotos END */
 
@@ -1944,39 +2004,22 @@ form button {
 }
 /* Section 1 END  */
 
+#serviceSlider {
+  padding-block: 80px;
+}
 
-
-/* Section 2  */
-/* Section 2 END  */
-
-
-/* Section 3  */
-/* Section 3 END  */
-
-
-/* Section 4  */
 #serviceInfinity{
-  background-image: url(./img/5404176.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  padding-block: 80px;
+  background-color: #1c1c1c;
 }
-/* Section 4 END  */
 
-
-/* Section 5  */
 #serviceSpa {
-  padding-top: 60px;
+  padding-block: 80px;
 }
-/* Section 5 END  */
 
-
-/* Section 7  */
 #serviceBarb {
-  background-image: url(./img/5404176.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #1c1c1c;
 }
-/* Section 7 END  */
 
 
 /* Section 8 */

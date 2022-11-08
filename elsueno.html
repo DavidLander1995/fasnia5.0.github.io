@@ -115,12 +115,16 @@
 <!-- Preloader END  -->
 
 
+<!-- Sticky Reserve Button for Mobile Devices ONLY  -->
+<button class="btn-bookmobile button-reservemobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
+<!-- Sticky Reserve Button for Mobile Devices ONLY  -->
+
 <!-- Navigation Section -->
 <!-- 3 Links Displayed When Screen Size > Medium -->
 <nav class="navbar navbar-default fixed-top">
 	<div class="container-fluid">
 		<!-- Logo Main Navbar -->
-	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 1.5rem;"></a>
+	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 0.8rem;"></a>
 
 	  <!-- 3 Links -->
 	  <div class="d-none d-lg-block d-xl-block link-container">
@@ -129,10 +133,15 @@
 	  	<a class="link-nav hover-underline-animation me-2" href="./contacto.html">Contacto</a>
 	  </div>
 
+		
 	  <!-- Toggler Button for Offcanvas Menu -->
-	  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menú de Navegación">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
+		<div class="parent">
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menú de Navegación">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+			<div id="translate-container" class="translate-container2"></div>
+		</div>
+	  
 	  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 		<div class="offcanvas-header">
 			<!-- Logo Offcanvas -->
@@ -172,7 +181,7 @@
 			</li>
 			<li>
 				<!-- Offcanvas Reserve Button -->
-				<button type="button" class="btn-book" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
+				<button type="button" class="btn-book button-reservenavbar" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
 			</li>
 		  </ul>
 		</div>
@@ -180,6 +189,7 @@
 	</div>
   </nav>
 <!-- Navigation Section END -->
+
 
 <div class="bodycontent">
 
@@ -236,8 +246,8 @@
           <div class="container">
               <div class="row">
                   <div class="elsueno2a-animate col-lg-6 mt-lg-4">
-                      <h2 class="text-start">"Solíamos visitar las casas del Camino Real"</h2>
-                      <p class="text-justify">Nos encantaba imaginar como era la vida en esa época y, después de pasear por sus alrededores, como lo 
+                      <h2 class="section-title2">"Solíamos visitar las casas del Camino Real"</h2>
+                      <p class="section-desc">Nos encantaba imaginar como era la vida en esa época y, después de pasear por sus alrededores, como lo 
                           había hecho tantas veces cuando era un chiquillo, sentía inexplicablemente la fuerza de mi familia,  
                           que durante varias generaciones había sido propietaria de una parte de esa gran casa.
                           Las tardes de verano en el Camino Real con el medianero, sus hijos y mi hermano quedaron atrás; ahora 
@@ -369,8 +379,8 @@
           <div class="container">
               <div class="row">
                   <div class="elsueno4a-animate col-lg-6">
-                      <h2>"Enamorada de la vida..."</h2>
-                      <p class="text-justify">Me gusta disfrutar de lo que me rodea y poder compartirlo con los demás. La localización 
+                      <h2 class="section-title2">"Enamorada de la vida..."</h2>
+                      <p class="section-desc">Me gusta disfrutar de lo que me rodea y poder compartirlo con los demás. La localización 
                           de la hacienda, el medio que las rodea, la historia, el cultivo ecológico que desarrollamos… hacen que 
                           sea una fuente de salud y energía positiva. ¡¡Te esperamos!!
                           <br>

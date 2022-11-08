@@ -58,10 +58,8 @@
   <!-- Animation  -->
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-	<!-- Booking Widgets  -->
-	<script src="//widget.siteminder.com/ibe.min.js"></script>
 	<!-- Webglot Translation  -->
-	<script type="text/javascript"src="https://cdn.weglot.com/weglot.min.js"></script>
+	<script src="https://cdn.weglot.com/weglot.min.js"></script>
 	<script>
 			Weglot.initialize({
 					api_key: 'wg_3ba3a5117900802e6c8ab11f6c7e3b1a2',
@@ -90,7 +88,7 @@
 
 
 
-<body data-region="EMEA" data-channelcode="LasCasasDelCaminoRealDirect">
+<body>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4LZJ84"
@@ -123,7 +121,7 @@
 
 
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
-<button class="btn-bookmobile button-reserve5 fixed-bottom d-lg-none d-xl-none">Reserva</button>
+<button class="btn-bookmobile button-reservemobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
 
 <!-- Navigation Section -->
@@ -188,7 +186,7 @@
 			</li>
 			<li>
 				<!-- Offcanvas Reserve Button -->
-				<button type="button" class="btn-book button-reserve4" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
+				<button type="button" class="btn-book button-reservenavbar" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
 			</li>
 		  </ul>
 		</div>
@@ -203,39 +201,39 @@
 <div class="swiper mySwiperhero">
 	<div class="swiper-wrapper" >
 		<div class="swiper-slide">
-			<img class="swiper-gl-image" src="https://ik.imagekit.io/l3yst4k9g/Index/hero_images/Las-casas-del-camino-2019-web-comprimido6_Jcpa8Sz8u.jpg?" alt="">
+			<img class="swiper-gl-image" src="https://ik.imagekit.io/l3yst4k9g/Index/hero_images/Las-casas-del-camino-2019-web-comprimido6_Jcpa8Sz8u.jpg?" alt="La fachada de la casa principal con rasgos típicos canarios.">
 			<div class="swiper-slide-content">
 				<div class="swiper-slide-title">
 					Tenerife - Fasnia, España <br><span>Las Casas del<br class="d-lg-none"> Camino Real</span>
 				</div>
 			</div>
 			<div class="swiper-reserve-button">
-				<button class="btn-book button-reserve6 d-none d-lg-inline">Reserva</button>
+				<button class="btn-book button-heroreserve1 d-none d-lg-inline">Reserva</button>
 			</div>
 		</div>
 
 		<div class="swiper-slide">
-			<img class="swiper-gl-image" src="https://ik.imagekit.io/l3yst4k9g/Index/hero_images/Exteriores__20_de_53__bzm4VGrNZ.jpg?" alt="">
+			<img class="swiper-gl-image" src="https://ik.imagekit.io/l3yst4k9g/Index/hero_images/Exteriores__20_de_53__bzm4VGrNZ.jpg?" alt="La vista desde la piscina infinita climatizada.">
 			<div class="swiper-slide-content">
 				<div class="swiper-slide-title">
 					Hacienda Canaria del<br><span>Siglo XVII</span>
 				</div>
 			</div>
 			<div class="swiper-reserve-button">
-				<button class="btn-book button-reserve7 d-none d-lg-inline">Reserva</button>
+				<button class="btn-book button-heroreserve2 d-none d-lg-inline">Reserva</button>
 			</div>
 
 		</div>
 
 		<div class="swiper-slide">
-			<img class="swiper-gl-image" src="https://ik.imagekit.io/l3yst4k9g/Index/hero_images/hero_s1FIleTVf.jpg?" alt="">
+			<img class="swiper-gl-image" src="https://ik.imagekit.io/l3yst4k9g/Index/hero_images/hero_s1FIleTVf.jpg?" alt="La vista desde la carretera al entrar en Las Casas del Camino Real.">
 			<div class="swiper-slide-content">
 				<div class="swiper-slide-title">
 					Casas Rurales Exclusivas <br><span>En El Sur<br class="d-none d-lg-block d-xl-none"> de Tenerife</span>
 				</div>
 			</div>
 			<div class="swiper-reserve-button">
-				<button class="btn-book button-reserve8 d-none d-lg-inline">Reserva</button>
+				<button class="btn-book button-heroreserve3 d-none d-lg-inline">Reserva</button>
 			</div>
 		</div>
 
@@ -246,7 +244,10 @@
 <!-- Banner Image END -->
 
 
-<!-- Page Introduction -->
+<div class="bodycontent">
+
+
+	<!-- Page Introduction -->
 <div class="container text-center index-start">
 	<img src="./img/logo.png" alt="">
 </div>
@@ -268,23 +269,23 @@
 				<p class="homeicon-text text-center">Wifi<br>GRATUITO</p>
 			</div>
 			<div>
-				<img class="home-icons" src="https://ik.imagekit.io/l3yst4k9g/Index/section_icons/discount_Z31paUPnS.png?tr=w-208,h-64,cm-pad_resize" alt="Icono de descuentos exclusivos para clientes">
+				<img class="home-icons" src="https://ik.imagekit.io/l3yst4k9g/Index/section_icons/discount_Z31paUPnS.png?tr=w-208,h-64,cm-pad_resize" alt="Icono de Descuentos Exclusivos para clientes">
 				<p class="homeicon-text text-center">Descuentos<br>EXCLUSIVOS</p>
 			</div>
 			<div>
-				<img class="home-icons" src="https://ik.imagekit.io/l3yst4k9g/Index/section_icons/rustic_7Zplm5z5a.png?tr=w-208,h-64,cm-pad_resize" alt="Icono de casa rural">
+				<img class="home-icons" src="https://ik.imagekit.io/l3yst4k9g/Index/section_icons/rustic_7Zplm5z5a.png?tr=w-208,h-64,cm-pad_resize" alt="Icono de casa Rural">
 				<p class="homeicon-text text-center">Siglo<br>XVII</p>
 			</div>
 			<div>
-				<img class="home-icons" src="https://ik.imagekit.io/l3yst4k9g/Index/section_icons/parking_n_RXBk9PT.png?tr=w-208,h-64,cm-pad_resize" alt="Icono de aparcamiento gratuito">
+				<img class="home-icons" src="https://ik.imagekit.io/l3yst4k9g/Index/section_icons/parking_n_RXBk9PT.png?tr=w-208,h-64,cm-pad_resize" alt="Icono de aparcamiento Gratuito">
 				<p class="homeicon-text text-center">Parking<br>GRATUITO</p>
 			</div>
 			<div>
-				<img class="home-icons" src="https://ik.imagekit.io/l3yst4k9g/Index/section_icons/swimming_bzkMr2l5P.png?tr=w-208,h-64,cm-pad_resize" alt="Icono de la piscina infinita ">
+				<img class="home-icons" src="https://ik.imagekit.io/l3yst4k9g/Index/section_icons/swimming_bzkMr2l5P.png?tr=w-208,h-64,cm-pad_resize" alt="Icono de la piscina Infinita ">
 				<p class="homeicon-text text-center">Disfruta de Nuestra<br>PISCINA INFINITA</p>
 			</div>
 			<div>
-				<img class="home-icons" src="https://ik.imagekit.io/l3yst4k9g/Index/section_icons/jacuzziicon_JfkBVKxgM.png?tr=w-208,h-64,cm-pad_resize" alt="Icono del jacuzzi">
+				<img class="home-icons" src="https://ik.imagekit.io/l3yst4k9g/Index/section_icons/jacuzziicon_JfkBVKxgM.png?tr=w-208,h-64,cm-pad_resize" alt="Icono del Jacuzzi">
 				<p class="homeicon-text text-center">Relájate en<br>EL JACUZZI</p>
 			</div>
 		</div>
@@ -295,11 +296,12 @@
 <!-- Gallery Section  -->
 <div class="container-fluid mt-lg-5">
 	<div class="owl-three owl-carousel owl-theme text-center mt-2">
+
 		<div class="item">
 			<div class="row text-center justify-content-center">
 				<div class="col-lg-10" style="position: relative;">
 					<a href="./galeriadefotos.html">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Swimming_Pool_IZMlDgs9Z.jpg?" alt="" style="width: 100vw;">
+						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Swimming_Pool_IZMlDgs9Z.jpg?" alt="La vista de la piscina infinita y la zona de relax exterior." style="width: 100vw;">
 						<div class="gallerybutton-container">Ver Galería</div>
 					</a>
 				</div>
@@ -310,7 +312,18 @@
 			<div class="row text-center justify-content-center">
 				<div class="col-lg-10" style="position: relative;">
 					<a href="./galeriadefotos.html">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Swimming_Pool_2_nSEM9Timr.jpg?" alt="" style="width: 100vw;">
+						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Swimming_Pool_2_nSEM9Timr.jpg?" alt="La vista de la piscina infinita y la zona de relax exterior." style="width: 100vw;">
+						<div class="gallerybutton-container">Ver Galería</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="row text-center justify-content-center">
+				<div class="col-lg-10" style="position: relative;">
+					<a href="./galeriadefotos.html">
+						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Swimming_Pool_3_IAdZVVgkT9.jpg?" alt="La vista de la piscina infinita." style="width: 100vw;">
 						<div class="gallerybutton-container">Ver Galería</div>
 					</a>
 				</div>
@@ -321,7 +334,7 @@
 			<div class="row text-center justify-content-center">
 				<div class="col-lg-10" style="position: relative;">
 					<a href="./galeriadefotos.html">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Gallery/Exteriores__4_de_53__A-SzFo6g5.jpg?" alt="" style="width: 100vw;">
+						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Gallery/Exteriores__4_de_53__A-SzFo6g5.jpg?" alt="La fachada y el patio del edificio con rasgos típicos canarios." style="width: 100vw;">
 						<div class="gallerybutton-container">Ver Galería</div>
 					</a>
 				</div>
@@ -332,7 +345,7 @@
 			<div class="row text-center justify-content-center">
 				<div class="col-lg-10" style="position: relative;">
 					<a href="./galeriadefotos.html">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Gallery/Exteriores__12_de_53__5ekIzj_2z.jpg?" alt="" style="width: 100vw;">
+						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Gallery/Exteriores__12_de_53__5ekIzj_2z.jpg?" alt="La fachada y el patio del edificio con rasgos típicos canarios." style="width: 100vw;">
 						<div class="gallerybutton-container">Ver Galería</div>
 					</a>
 				</div>
@@ -343,7 +356,7 @@
 			<div class="row text-center justify-content-center">
 				<div class="col-lg-10" style="position: relative;">
 					<a href="./galeriadefotos.html">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Gallery/Exteriores__22_de_53__HjC3kDGfR.jpg?" alt="" style="width: 100vw;">
+						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Gallery/Exteriores__22_de_53__HjC3kDGfR.jpg?" alt="La hermosa fachada y el patio de la casa principal." style="width: 100vw;">
 						<div class="gallerybutton-container">Ver Galería</div>
 					</a>
 				</div>
@@ -354,7 +367,7 @@
 			<div class="row text-center justify-content-center">
 				<div class="col-lg-10" style="position: relative;">
 					<a href="./galeriadefotos.html">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Gallery/Exteriores__53_de_53__EVnbf_OTg.jpg?" alt="" style="width: 100vw;">
+						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Gallery/Exteriores__53_de_53__EVnbf_OTg.jpg?" alt="Las casas captadas desde un espejo retrovisor." style="width: 100vw;">
 						<div class="gallerybutton-container">Ver Galería</div>
 					</a>
 				</div>
@@ -365,7 +378,7 @@
 			<div class="row text-center justify-content-center">
 				<div class="col-lg-10" style="position: relative;">
 					<a href="./galeriadefotos.html">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Gallery/Exteriores__29_de_53__C7ypQoE-S.jpg?" alt="" style="width: 100vw;">
+						<img src="https://ik.imagekit.io/l3yst4k9g/Index/Gallery/Exteriores__29_de_53__C7ypQoE-S.jpg?" alt="Las hermosas zonas de patio alrededor de Las Casas del Camino Real." style="width: 100vw;">
 						<div class="gallerybutton-container">Ver Galería</div>
 						</a>
 				</div>
@@ -377,7 +390,7 @@
 <!-- Gallery Section END  -->
 
 
-<!-- Section 3 - Weather  -->
+<!-- Section - Weather  -->
 <div id="section3">
 	<div class="container-fluid">
 		<a class="weatherwidget-io" href="https://forecast7.com/es/28d24n16d44/fasnia/" data-label_1="Las Casas Del Camino Real" data-font="Open Sans" data-icons="Climacons Animated" data-theme="original" data-basecolor="#d3b486" data-textcolor="#887129" data-highcolor="#887129" data-lowcolor="#887129" data-suncolor="#887129" data-mooncolor="#887129" data-cloudcolor="#887129" data-cloudfill="#887129" data-raincolor="#133dd3" >Las Casas Del Camino Real</a>
@@ -386,7 +399,7 @@
 		</script>
 	</div>
 </div>
-<!-- Section 3 END  -->
+<!-- Section END  -->
 
 
 <!-- The Houses Section  -->
@@ -401,26 +414,22 @@
 	<div class="item">
 		<div class="row">
 			<div class="col-lg-7 h-100">
-				<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/vista-general-Casa-Principal-Salon-cocina-7-de-81_2TFC8GNAC.jpg?" alt="">
+				<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/vista-general-Casa-Principal-Salon-cocina-7-de-81_2TFC8GNAC.jpg?" alt="El interior de la Casa Principal (Las Casas del Camino Real).">
 			</div>
 			<div class="col-lg-5 h-100">
 				<div class="box-container">
 					<h2 class="animated fadeInUp text-center">La Casa Principal</h2>
-						<p class="text-center pt-4">VISTA MAR | 8 PERSONAS | DESDE 400,00€</p>
-						<p class="text-justify">Perenne en el tiempo, esta casa, construida en 1648, fue la residencia de los propietarios de la 
-						finca durante muchas generaciones y conserva todo el sabor del pasado. Su entrada, sus habitaciones inmensas, 
-						sus muros de piedra vista, sus techos y suelos de tea... la hacen merecedora de su nombre: La Casa Principal. 
+						<p class="box-desc text-center pt-4">VISTA MAR | 8 PERSONAS | DESDE 400,00€</p>
+						<p class="text-justify d-none d-xl-block">Perenne en el tiempo, esta casa, construida en 1648, fue la residencia de los propietarios de la 
+						finca durante muchas generaciones y conserva todo el sabor del pasado.<br><br>Su entrada, sus habitaciones inmensas, 
+						sus muros de piedra vista, sus techos y suelos de tea... la hacen merecedora de su nombre: La Casa Principal.<br><br> 
 						La completa un antiguo secadero de tabaco, reconvertido en un moderno loft donde encontramos la cocina y salón-estar, y, 
 						en otra altura, una cómoda habitación donde el tiempo pasará sin advertirlo, jugando al billar.
 						</p>
 						<p class="box-quote text-center">Los detalles las hacen únicas.</p>
 						<div class="container text-center mb-5">
-							<button class="btn-more">Leer Más</button>
-							<button class="btn-book d-none d-lg-inline">Reserva</button>
-						</div>
-						<div class="nav-container text-center">
-							<button class="customNextBtn">Prev</button>
-							<button class="customPrevBtn">Next</button>
+							<button class="btn-more button-moreprincipal">Leer Más</button>
+							<button class="btn-book button-reserveprincipal d-none d-lg-inline">Reserva</button>
 						</div>
 				</div>
 			</div>
@@ -432,24 +441,20 @@
 	<div class="item">
 		<div class="row">
 			<div class="col-lg-7 h-100">
-				<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Los_Corrales/i-pSTjKWS-XL_OoIvUy1ZX.jpg?" alt="">
+				<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Los_Corrales/i-pSTjKWS-XL_OoIvUy1ZX.jpg?" alt="La zona del patio de La Casa de Los Corrales.">
 			</div>
 			<div class="col-lg-5 h-100">
 				<div class="box-container">
 					<h2 class="text-center">La Casa de Los Corrales</h2>
-					<p class="text-center pt-4">PATIO PRIVADO | 4 PERSONAS | DESDE 160,00€ </p>
-					<p class="text-justify">Conservando su distribución original, la casa gira en torno a un pequeño patio orientado al sur, 
-						perfecto para disfrutar del atardecer. Su cocina conserva el sabor de lo antiguo y el salón-comedor es una amplia estancia de piedra, 
-						cal y madera, con una ventana que te permitirá  admirar el paisaje . Las habitaciones, totalmente independientes entre sí, 
+					<p class="box-desc text-center pt-4">PATIO PRIVADO | 4 PERSONAS | DESDE 160,00€ </p>
+					<p class="text-justify d-none d-xl-block">Conservando su distribución original, la casa gira en torno a un pequeño patio orientado al sur, 
+						perfecto para disfrutar del atardecer. <br><br>Su cocina conserva el sabor de lo antiguo y el salón-comedor es una amplia estancia de piedra, 
+						cal y madera, con una ventana que te permitirá admirar el paisaje.<br><br>Las habitaciones, totalmente independientes entre sí, 
 						con el grosor de sus muros, la altura de sus techos de madera y la piedra vista, harán posible que escuches… el silencio.</p>
 					<p class="box-quote text-center">Rincones llenos de energía.</p>
-					<div class="container text-center mb-4">
-						<button class="btn-more">Leer Más</button>
-						<button class="btn-book d-none d-lg-inline">Reserva</button>
-					</div>
-					<div class="nav-container text-center">
-						<button class="customNextBtn">Prev</button>
-						<button class="customPrevBtn">Next</button>
+					<div class="container text-center mb-5">
+						<button class="btn-more button-morecorrales">Leer Más</button>
+						<button class="btn-book button-reservecorrales d-none d-lg-inline">Reserva</button>
 					</div>
 				</div>
 			</div>
@@ -461,24 +466,20 @@
 	<div class="item">
 		<div class="row">
 			<div class="col-lg-7 h-100">
-				<img src="https://ik.imagekit.io/l3yst4k9g/Cabrera/Section_3/Las_casas_del_camino_real__68_de_96__go31W5ouB4.jpg?" alt="">
+				<img src="https://ik.imagekit.io/l3yst4k9g/Cabrera/Section_3/Las_casas_del_camino_real__68_de_96__go31W5ouB4.jpg?" alt="La zona del patio de La Casa de La Cabera">
 			</div>
 			<div class="col-lg-5 h-100">
 				<div class="box-container">
 					<h2 class="text-center">La Casa de La Cabera</h2>
-					<p class="text-center pt-4">PATIO PRIVADO | 4 PERSONAS | DESDE 160,00€ </p>
-					<p class="text-justify">La entrada de la casa es a través de un pequeño y acogedor patio privado. A un lado encontramos la cocina- salón comedor, 
-						donde conviven elementos del S. XVII con todas las comodidades de nuestra época; al otro lado, los dormitorios, con techos originales de madera de tea, 
-						muros de piedra, suelos de barro… todo pensado para poder transportarte a un mundo lleno de energía positiva. Los espacioso baños de diseño, 
+					<p class="box-desc text-center pt-4">PATIO PRIVADO | 4 PERSONAS | DESDE 160,00€ </p>
+					<p class="text-justify d-none d-xl-block">La entrada de la casa es a través de un pequeño y acogedor patio privado. A un lado encontramos la cocina- salón comedor, 
+						donde conviven elementos del Siglo XVII con todas las comodidades de nuestra época.<br><br>Al otro lado, los dormitorios, con techos originales de madera de tea, 
+						muros de piedra, suelos de barro… todo pensado para poder transportarte a un mundo lleno de energía positiva.<br><br>Los espacioso baños de diseño, 
 						con las paredes de piedra, son un auténtico espectáculo.</p>
 					<p class="box-quote text-center">Casas con historia.</p>
 					<div class="container text-center mb-5">
-						<button class="btn-more">Leer Más</button>
-						<button class="btn-book d-none d-lg-inline">Reserva</button>
-					</div>
-					<div class="nav-container text-center">
-						<button class="customNextBtn">Prev</button>
-						<button class="customPrevBtn">Next</button>
+						<button class="btn-more button-morecabrera">Leer Más</button>
+						<button class="btn-book button-reservecabrera d-none d-lg-inline">Reserva</button>
 					</div>
 				</div>
 			</div>
@@ -490,24 +491,20 @@
 	<div class="item">
 		<div class="row">
 			<div class="col-lg-7 h-100">
-				<img src="https://ik.imagekit.io/l3yst4k9g/Alpendre/Exteriores__4_de_53__G2FfGWVWGO.jpg?" alt="">
+				<img src="https://ik.imagekit.io/l3yst4k9g/Alpendre/Exteriores__4_de_53__G2FfGWVWGO.jpg?" alt="La zona del patio de La Casa del Alpendre.">
 			</div>
 			<div class="col-lg-5 h-100">
 				<div class="box-container">
 					<h2 class="text-center">La Casa del Alpendre</h2>
-					<p class="text-center pt-4">PATIO PRIVADO | 4 PERSONAS | DESDE 160,00€ </p>
-					<p class="text-justify">Conservando su distribución original, la casa gira en torno a un pequeño patio orientado al sur, perfecto para disfrutar del atardecer. 
+					<p class="box-desc text-center pt-4">PATIO PRIVADO | 4 PERSONAS | DESDE 160,00€ </p>
+					<p class="text-justify d-none d-xl-block">Conservando su distribución original, la casa gira en torno a un pequeño patio orientado al sur, perfecto para disfrutar del atardecer.<br><br> 
 						Su cocina conserva el sabor de lo antiguo y el salón-comedor es una amplia estancia de piedra, cal y madera, con una ventana que te permitirá  admirar 
-						el paisaje . Las habitaciones, totalmente independientes entre sí,  con el grosor de sus muros, la altura de sus techos de madera y la piedra vista, 
+						el paisaje.<br><br>Las habitaciones, totalmente independientes entre sí,  con el grosor de sus muros, la altura de sus techos de madera y la piedra vista, 
 						harán posible que escuches… el silencio.</p>
 					<p class="box-quote text-center">Una parada en el tiempo.</p>
 					<div class="container text-center mb-5">
-						<button class="btn-more">Leer Más</button>
-						<button class="btn-book d-none d-lg-inline">Reserva</button>
-					</div>
-					<div class="nav-container text-center">
-						<button class="customNextBtn">Prev</button>
-						<button class="customPrevBtn">Next</button>
+						<button class="btn-more button-morealpendre">Leer Más</button>
+						<button class="btn-book button-reservealpendre d-none d-lg-inline">Reserva</button>
 					</div>
 				</div>
 			</div>
@@ -537,52 +534,69 @@
 	</div>
 </section>
 
-<div class="container">
+<div class="container-fluid">
 	<div class="row mt-4 text-center">
 		<div class="col-6 col-sm-6 col-md-4 col-lg-2 icon">
-			<img class="home-icons2" src="./img/swimming.png" alt="">
+			<img class="home-icons2" src="./img/swimming.png" alt="Logotipo de La Piscina Infinita.">
 				<p class="homeicon-text2">PISCINA INFINITA</p>
 		</div>
 		<div class="col-6 col-sm-6 col-md-4 col-lg-2 icon">
-			<img class="home-icons2" src="./img/jacuzziicon.png" alt="">
+			<img class="home-icons2" src="./img/jacuzziicon.png" alt="Logotipo del jacuzzi.">
 				<p class="homeicon-text2">JACUZZI</p>
 		</div>
 		<div class="col-6 col-sm-6 col-md-4 col-lg-2 icon">
-			<img class="home-icons2" src="./img/sauna.png" alt="">
+			<img class="home-icons2" src="./img/sauna.png" alt="Logotipo de La Sauna.">
 				<p class="homeicon-text2">SAUNA</p>
 		</div>
 		<div class="col-6 col-sm-6 col-md-4 col-lg-2 icon">
-			<img class="home-icons2" src="./img/turkishbath.png" alt="">
+			<img class="home-icons2" src="./img/turkishbath.png" alt="Logotipo del Baño Turco.">
 				<p class="homeicon-text2">BAÑO TURKO</p>
 		</div>
 		<div class="col-6 col-sm-6 col-md-4 col-lg-2 icon">
-			<img class="home-icons2" src="./img/shower.png" alt="">
+			<img class="home-icons2" src="./img/shower.png" alt="Logotipo de La Ducha Escocesa.">
 				<p class="homeicon-text2">DUCHA ESCOCESA</p>
 		</div>
 		<div class="col-6 col-sm-6 col-md-4 col-lg-2 icon">
-			<img class="home-icons2" src="./img/barbeque.png" alt="">
+			<img class="home-icons2" src="./img/barbeque.png" alt="Logotipo de La Barbacoa.">
 				<p class="homeicon-text2">BARBACOA</p>
 		</div>
 	</div>
 </div>
 
-<div class="container my-5">
+
+<div class="container-fluid my-5">
 	<div class="owl-four owl-carousel owl-theme">
 
 		<!-- Infinity Pool -->
 		<div class="item">
-			<div class="row">
+			<div class="row" style="background-color: #1c1c1c;">
 				<div class="col-lg-6">
-					<img src="https://ik.imagekit.io/l3yst4k9g/Galeria/Section_2/homepage1_jEOFOr4TiX.webp?" alt="">
+					<img src="https://ik.imagekit.io/l3yst4k9g/Galeria/Section_2/homepage1_jEOFOr4TiX.webp?" alt="La vista de la piscina infinita climatizada.">
 				</div>
 				<div class="col-lg-5">
-					<div class="box-container">
+					<div class="box-container2">
 						<h2 class="text-center">Piscina Infinita Climatizada</h2>
-						<p class="text-center">Con Vistas Al Mar...</p>
+						<p class="box-quote2 pt-lg-4">Con Vistas Al Mar...</p>
 						<p class="text-center">Disfruta del agua de esta piscina, que cambia junto con el color del cielo y parece desembocar en el mar.</p>
 					</div>
-					<div class="container text-center mb-5">
-						<button class="btn-more">Leer Más</button>
+					<div class="facilitiesicon-container my-5">
+						<div class="row">
+							<div class=" col-4 col-lg-4">
+								<img src="./img/infinity-icon.png" alt="Logotipo del horario.">
+								<p>Piscina Infinita </p>
+							</div>
+							<div class="col-4 col-lg-4">
+								<img src="./img/view-icon.png" alt="Logotipo del Prismáticos">
+								<p>Vistas al paisaje sur de la isla</p>
+							</div>
+							<div class="col-4 col-lg-4">
+								<img src="./img/heated.png" alt="Logotipo de la piscina.">
+								<p>Piscina Climatizada</p>
+							</div>
+						</div>
+					</div>
+					<div class="container text-center my-5">
+						<button class="btn-more2 button-morefacilities1">Leer Más</button>
 					</div>
 				</div>
 			</div>
@@ -592,48 +606,85 @@
 
 		<!-- Spa  -->
 		<div class="item">
-			<div class="row">
+			<div class="row" style="background-color: #1c1c1c;">
 				<div class="col-lg-6">
-					<img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations6_DgMJoTiPLx.jpeg?" alt="">
+					<img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations6_DgMJoTiPLx.jpeg?" alt="La zona de Spa con el jacuzzi.">
 				</div>
 				<div class="col-lg-6 text-center">
-					<div class="box-container">
+					<div class="box-container2">
 						<h2>Spa y Zona de Bienestar</h2>
-						<p>Vistas al paisaje sur de la isla...</p>
-						<p>Ideal para olvidarte del estrés.<br>Acceso gratuito durante tu estancia.<br>Jacuzzi, baño turco, sauna y ducha escocesa</p>
+						<p class="box-quote2 pt-lg-4">Vistas al paisaje sur de la isla...</p>
+						<p>Ideal para olvidarte del estrés, acceso gratuito durante tu estancia.<br>| Jacuzzi | Baño turco | Sauna | Ducha escocesa |</p>
 					</div>
-					<div class="container text-center mb-5">
-						<button class="btn-more">Leer Más</button>
+					<div class="facilitiesicon-container my-5">
+						<div class="row">
+							<div class=" col-4 col-lg-4">
+								<img src="./img/timetable-logo.png" alt="Logotipo del horario.">
+								<p>Amplio horario</p>
+							</div>
+							<div class="col-4 col-lg-4">
+								<img src="./img/view-icon.png" alt="Logotipo del Prismáticos">
+								<p>Vistas al paisaje sur de la isla</p>
+							</div>
+							<div class="col-4 col-lg-4">
+								<img src="./img/swimming.png" alt="Logotipo de la piscina.">
+								<p>Comunicado con la piscina</p>
+							</div>
+						</div>
+					</div>
+					<div class="container text-center my-5">
+						<button class="btn-more2 button-morefacilities2">Leer Más</button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Spa  -->
 
-		<!-- Barbeque -->
+		
+
+		<!-- Spa  -->
 		<div class="item">
-			<div class="row">
+			<div class="row" style="background-color: #1c1c1c;">
 				<div class="col-lg-6">
-					<img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations8_36UF5-q9hc.jpeg?" alt="">
+					<img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations8_36UF5-q9hc.jpeg?" alt="La zona de Spa con el jacuzzi.">
 				</div>
-				<div class="col-lg-5 text-center">
-					<div class="box-container">
+				<div class="col-lg-6 text-center">
+					<div class="box-container2">
 						<h2>Barbacoa</h2>
+						<p class="box-quote2 pt-lg-4">Los pequeños momentos que compartimos son los que más disfrutamos...</p>
 						<p>Comparte con amigos o con la familia comidas junto a la piscina en la zona de barbacoa.</p>
 					</div>
-					<div class="container text-center mb-5">
-						<button class="btn-more">Leer Más</button>
+					<div class="facilitiesicon-container my-5">
+						<div class="row">
+							<div class=" col-4 col-lg-4">
+								<img src="./img/barbeque.png" alt="Logotipo del horario.">
+								<p>Barbacoa de alta calidad </p>
+							</div>
+							<div class="col-4 col-lg-4">
+								<img src="./img/view-icon.png" alt="Logotipo del Prismáticos">
+								<p>Vistas al paisaje sur de la isla</p>
+							</div>
+							<div class="col-4 col-lg-4">
+								<img src="./img/swimming.png" alt="Logotipo de la piscina.">
+								<p>Comunicado con la piscina</p>
+							</div>
+						</div>
+					</div>
+					<div class="container text-center my-5">
+						<button class="btn-more2 button-morefacilities3">Leer Más</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Barbeque -->
+		<!-- Spa  -->
+
+		
 	</div>
 </div>
 
 
-
-<div class="container">
+<!-- Facilities Carousel  -->
+<div class="container-fluid">
 	<div class="row pt-5 pb-5">
 		<div class="col-lg-12">
 			<div class="swiper mySwiper9">
@@ -685,24 +736,20 @@
 			</div>
 		</div>
 	</div>
-
+	<div class="container text-center">
+		<button class="btn-more button-gogallery">Ver Galería</button>
+	</div>
 </div>
-
+<!-- Facilities Carousel END  -->
 <!-- The Facilities END -->
 
 
+<!-- Section Seperator -->
+<div class="container-fluid mySeperator2 mt-5"></div>
+<!-- Section Seperator END -->
 
 
-
-<!-- Section 7 -->
-<div id="section7">
-	<div class="container-fluid mySeperator2 mt-5"></div>
-</div>
-<!-- Section 7 END -->
-
-
-
-<!-- Section 8 - Video -->
+<!-- Section - Video -->
 <section id="section8">
 	<div class="container-fluid">
 		<div class="row text-center">
@@ -718,12 +765,12 @@
 		</div>
 	</div>
 </section>
-<!-- Section 8 END  -->
+<!-- Section Video END  -->
 
 
 
 
-<!-- Section 10 -->
+<!-- Section - Find Us -->
 <section id="section10">
 	<div class="container-fluid">
 		<div class="container findus-border">
@@ -768,22 +815,20 @@
 		</div>
 	</div>
 </section>
-<!-- Section 10 END  -->
+<!-- Section Find Us END  -->
 
 
 
-<!-- Section 11 -->
-<div id="section11">
-	<div class="container-fluid mySeperator"></div>
-</div>
-<!-- Section 11 END -->
+<!-- Section Seperator -->
+<div class="container-fluid mySeperator"></div>
+<!-- Section Seperator END -->
 
 
-<!-- Section 12  -->
+<!-- Section Gallery -->
 <div class="container-fluid">
 	<div class="homepage12-animate gallery">
 		<div class="gallery-images">
-			<a href="https://ik.imagekit.io/l3yst4k9g/Index/section_12/elsueno15_yDnwgVA8t.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072065" data-lightbox="mygalleryhomepage11" data-title="Una imagen nocturna de la zona de spa y la piscina infinita.">
+			<a href="https://ik.imagekit.io/l3yst4k9g/Index/section_12/elsueno15_yDnwgVA8t.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072065" data-lightbox="mygalleryhomepage11" data-title="La fachada exterior de la casa principal de Las Casas del Camino Real, que muestra la arquitectura típica del siglo XVII.">
 			<img src="https://ik.imagekit.io/l3yst4k9g/Index/section_12/elsueno15_yDnwgVA8t.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072065" 
 			srcset="https://ik.imagekit.io/l3yst4k9g/Index/section_12/elsueno15_yDnwgVA8t.jpeg? 300w,
 			https://ik.imagekit.io/l3yst4k9g/Index/section_12/elsueno15_yDnwgVA8t.jpeg?tr=w-600 600w,
@@ -795,19 +840,19 @@
 		</div>
 
 		<div class="gallery-images">
-			<a href="https://ik.imagekit.io/l3yst4k9g/Index/section_12/image2_ZTEPDpeoLj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072066" data-lightbox="mygalleryhomepage11" data-title="La Piscina Infinita Climatizada.">
+			<a href="https://ik.imagekit.io/l3yst4k9g/Index/section_12/image2_ZTEPDpeoLj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072066" data-lightbox="mygalleryhomepage11" data-title="La fachada y los alrededores de Las Casas del Camino Real.">
 			<img src="https://ik.imagekit.io/l3yst4k9g/Index/section_12/image2_ZTEPDpeoLj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072066"
 			srcset="https://ik.imagekit.io/l3yst4k9g/Index/section_12/image2_ZTEPDpeoLj.jpg? 300w,
 			https://ik.imagekit.io/l3yst4k9g/Index/section_12/image2_ZTEPDpeoLj.jpg?tr=w-600 600w,
 			https://ik.imagekit.io/l3yst4k9g/Index/section_12/image2_ZTEPDpeoLj.jpg?tr=w-900 900w"
 			sizes="(max-width: 300px) 100vw, (max-width: 600px) 50vw, (max-width: 900px) 33vw, 900px"
-			alt="La entrada a Las Casas Del Camino Real (Fasnia), mostrando los alrededores y el entorno rural."
+			alt="La fachada y los alrededores de Las Casas del Camino Real."
       loading="lazy">
 			</a>
 		</div>
 
 		<div class="gallery-images">
-			<a href="https://ik.imagekit.io/l3yst4k9g/Index/section_12/sueno1_x2xCnhFNfZ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072177" data-lightbox="mygalleryhomepage11" data-title="Una vista de La Entrada.">
+			<a href="https://ik.imagekit.io/l3yst4k9g/Index/section_12/sueno1_x2xCnhFNfZ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072177" data-lightbox="mygalleryhomepage11" data-title="La puerta rústica de Las Casas del Camino Real, reformada excepcionalmente y del Siglo XVII.">
 			<img src="https://ik.imagekit.io/l3yst4k9g/Index/section_12/sueno1_x2xCnhFNfZ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072177" 
 			srcset="https://ik.imagekit.io/l3yst4k9g/Index/section_12/sueno1_x2xCnhFNfZ.webp? 300w,
 			https://ik.imagekit.io/l3yst4k9g/Index/section_12/sueno1_x2xCnhFNfZ.webp?tr=w-600 600w,
@@ -819,7 +864,7 @@
 		</div>
 
 		<div class="gallery-images">
-			<a href="https://ik.imagekit.io/l3yst4k9g/Index/section_12/infinity2_4AuoDCmAI.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072132" data-lightbox="mygalleryhomepage11" data-title="El típico sistema canario para desviar la lluvia.">
+			<a href="https://ik.imagekit.io/l3yst4k9g/Index/section_12/infinity2_4AuoDCmAI.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072132" data-lightbox="mygalleryhomepage11" data-title="La piscina climatizada Infinity del lujoso hotel rural de Las Casas del Camino Real.">
 			<img src="https://ik.imagekit.io/l3yst4k9g/Index/section_12/infinity2_4AuoDCmAI.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1666617072132" 
 			srcset="https://ik.imagekit.io/l3yst4k9g/Index/section_12/infinity2_4AuoDCmAI.webp? 300w,
 			https://ik.imagekit.io/l3yst4k9g/Index/section_12/infinity2_4AuoDCmAI.webp?tr=w-600 600w,
@@ -829,23 +874,18 @@
       loading="lazy">
 			</a>
 		</div>
-
 	</div>
 </div>
-<!-- Section 11 END  -->
+<!-- Section Gallery END  -->
 
 
 
-<!-- Section 13 -->
-<div id="section12">
-	<div class="container-fluid mySeperator"></div>
-</div>
-<!-- Section 13 END -->
+<!-- Section Seperator -->
+<div class="container-fluid mySeperator"></div>
+<!-- Section Seperator END  -->
 
 
-
-
-<!-- Section 14  -->
+<!-- Section House Reviews -->
 <section id="housereviews">
 	<div class="container">
 		<h2>Nuestros Clientes Opinan</h2>
@@ -893,8 +933,9 @@
 	
 	</div>
 </section>
-<!-- Section 14 END  -->
+<!-- Section House Reviews END  -->
 
+</div>
 
 
 <!-- Footer -->
@@ -1033,9 +1074,7 @@
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-<script src="./swipers.js"></script>
 <script src="./navbar.js"></script>
-<script src="./buttons-index.js"></script>
 <script src="./animations.js"></script>
 <script src="./imagekit.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -1057,6 +1096,7 @@
 	 $(document).ready(function(){
     $(".owl-one").owlCarousel({
       margin:10,
+			dots: false,
       responsive:{
         0:{
           items:2,
@@ -1199,16 +1239,118 @@
 </script>
 <!-- Swiper for Hero Images  -->
 
-<!-- Buttons  -->
+
+<!-- The Facilities Swiper  -->
+<script>
+		var swiper = new Swiper(".mySwiper9", {
+				effect: "coverflow",
+				loop: true,
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: "auto",
+				coverflowEffect: {
+				rotate: 50,
+				stretch: 0,
+				depth: 100,
+				modifier: 1,
+				slideShadows: true,
+		},
+				navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+		}
+				// autoplay: {
+				//   delay: 1000,
+				//   disableOnInteraction: true,
+		});
+</script>
+<!-- The Facilities Swiper  -->
+
 
 <!-- Buttons  -->
+<script>
+// Hero Reserve Button
+document.querySelector('.button-heroreserve1').addEventListener('click', () => {
+	document.location.href = "reservationgeneral.html"
+})
+
+document.querySelector('.button-heroreserve2').addEventListener('click', () => {
+	document.location.href = "reservationgeneral.html"
+})
+
+document.querySelector('.button-heroreserve3').addEventListener('click', () => {
+	document.location.href = "reservationgeneral.html"
+})
+
+// Navbar Reserve Button 
+document.querySelector('.button-reservenavbar').addEventListener('click', () => {
+	document.location.href = "reservationgeneral.html"
+})
+
+// Mobile Reserve Button Fixed
+document.querySelector('.button-reservemobile').addEventListener('click', () => {
+	document.location.href = "reservationgeneral.html"
+})
+
+// The Houses Section 
+// La Casa Principal 
+document.querySelector('.button-reserveprincipal').addEventListener('click', () => {
+	document.location.href = "casaprincipalbooking.html"
+})
+
+document.querySelector('.button-moreprincipal').addEventListener('click', () => {
+	document.location.href = "casaprincipal.html"
+})
+
+// La Casa del Los Corrales 
+document.querySelector('.button-reservecorrales').addEventListener('click', () => {
+	document.location.href = "casaloscorralesbooking.html"
+})
+
+document.querySelector('.button-morecorrales').addEventListener('click', () => {
+	document.location.href = "casaloscorrales.html"
+})
+// La Casa de La Cabrera 
+document.querySelector('.button-reservecabrera').addEventListener('click', () => {
+	document.location.href = "casacabrerabooking.html"
+})
+
+document.querySelector('.button-morecabrera').addEventListener('click', () => {
+	document.location.href = "casalacabrera.html"
+})
+// La Casa del Alpendre 
+document.querySelector('.button-reservealpendre').addEventListener('click', () => {
+	document.location.href = "casadelalpendrebooking.html"
+})
+
+document.querySelector('.button-morealpendre').addEventListener('click', () => {
+	document.location.href = "casaelalpendre.html"
+})
 
 
+// The Facilities 
+document.querySelector('.button-morefacilities1').addEventListener('click', () => {
+	document.location.href = "servicios.html"
+})
 
+document.querySelector('.button-morefacilities2').addEventListener('click', () => {
+	document.location.href = "servicios.html"
+})
 
+document.querySelector('.button-morefacilities3').addEventListener('click', () => {
+	document.location.href = "servicios.html"
+})
 
+document.querySelector('.button-gogallery').addEventListener('click', () => {
+	document.location.href = "galeriadefotos.html"
+})
 
-
+// Reviews 
+document.querySelector('.button-googlereviews').addEventListener('click', () => {
+	document.location.href = "https://www.google.com/travel/hotels/las%20casas%20del%20camino%20real%20reviews/entity/CgoIo_K_zY_V3NldEAE/reviews?q=las%20casas%20del%20camino%20real%20reviews&g2lb=2502548%2C2503771%2C2503781%2C2504033%2C4258168%2C4270442%2C4284970%2C4291517%2C4306835%2C4308227%2C4597339%2C4718358%2C4723331%2C4731329%2C4754388%2C4757164%2C4814050%2C4816977%2C4821091%2C4852066%2C4861687%2C4864713%2C4865467%2C4868489%2C4878644%2C4881565&hl=en-ES&gl=es&ssta=1&rp=EKPyv82P1dzZXRCj8r_Nj9Xc2V04AkAASAHAAQI&ictx=1&sa=X&ved=0CAAQ5JsGahcKEwjg4--hqfH6AhUAAAAAHQAAAAAQBA&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAESABpICioSJjIkMHhjNDAyZjRlNDJlNTJkMDk6MHg1ZGIzNzJhOGY5YWZmOTIzGgASGhIUCgcI5g8QCxgPEgcI5g8QCxgQGAEyAhAAKgQKABoA"
+})
+</script>
+<!-- Buttons END -->
 
 
 </body>

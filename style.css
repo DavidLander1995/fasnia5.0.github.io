@@ -10,7 +10,6 @@
 
 */
 
-
 /* Preloader  */
 .pre-loader {
   align-items: center;
@@ -191,13 +190,66 @@ html,body
   background-size: auto;
 }
 
-/* Owl Carousel Navigation Arrows  */
+/* Typography  */
+.section-title {
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+  text-align: justify; 
+}
+
+.section-title2 {
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+  text-align: start; 
+}
+
+.section-desc {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+/* Typography  */
+
+/* Owl Carousel Navigation Arrows & Dots  */
 .nav-container {
   position: fixed;
   bottom: 2%;
   right: 2%;
 }
 
+.owl-dots {
+  counter-reset: dots;
+}
+
+.owl-dot::before {
+  counter-increment: dots;
+  content: counter(dots);
+  margin: 0p 5px;
+  padding: 5px;
+  line-height: 100%;
+  color:#c0c0c0;
+}
+
+.owl-dot span {
+  display: none !important;
+}
+
+.active::before, .owl-dot:hover::before {
+  color: #887129;
+}
 
 /* Page Intro Text  */
 .pageintro h3 {
@@ -254,6 +306,20 @@ html,body
   color: white;
 }
 
+.btn-more2{
+  background-color: #887129;
+  border: 2px solid #887129;
+  color: white;
+  height: 50px;
+  padding: 0px 30px;
+  border-radius: 999em;
+  text-decoration: none;
+}
+
+.btn-more2:hover{
+  background: white;
+  color: #887129;
+}
 
 .btn-go{
   background-color: #887129;
@@ -485,20 +551,6 @@ html,body
   text-align: center;
 }
 
-.gallerybutton-container {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-bottom: 25px;
-  margin-right: 25px;
-  width: 7.5rem;
-  font-size: 1rem;
-  background-color: white;
-  border: none;
-  color: #887129;
-  font-weight: 500;
-}
-
 
 
 .swiper-slide-title {
@@ -511,7 +563,6 @@ html,body
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   line-height: 6.0vh;
 }
-
 
 .swiper-slide-content {
   position: absolute;
@@ -539,24 +590,34 @@ html,body
   bottom: 25%;
 }
 
+/* Section Gallery  */
+.gallerybutton-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  width: 7.5rem;
+  font-size: 1rem;
+  background-color: white;
+  border: none;
+  color: #887129;
+  font-weight: 500;
+}
+/* Section Gallery END  */
 
-
-/* Section 2 */
-
-/* Section 2 END */
-
-
-/* Section 3 - Weather */
+/* Section - Weather */
 #section3{
   padding-top: 50px;
 }
-/* Section 3 END */
+/* Section  Weather END */
 
 
-/* Section 4 - Houses */
+/* Section - Houses Description */
 .owl-four .item {
   border: 1px solid #887129;
-  box-shadow: 10px 10px 20px #887129 
+  box-shadow: 20px 20px #887129;
+  margin-bottom: 10px;
 }
 
 .box-container h2 {
@@ -566,9 +627,7 @@ html,body
   letter-spacing: 0;
   line-height: 63px;
   color: #887129;
-  padding-top: 20px;
 }
-
 
 .box-container p {
   font-size: 18px;
@@ -582,8 +641,41 @@ html,body
   padding-right: 20px;
 }
 
+.box-container2 h2 {
+  font-size: 28px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #887129;
+}
+
+.box-container2 p {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: white;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.box-desc {
+  font-weight: 600 !important;
+}
+
 .box-quote {
   font-style: italic;
+  color: #887129 !important;
+  text-align: center;
+}
+
+.box-quote2 {
+  font-style: italic;
+  color: white !important;
+  text-align: center;
 }
 
 .title {
@@ -606,85 +698,20 @@ html,body
   color: #222222;
 }
 
-
-
-.mySwiper8 {
-  height: 95%;
-  box-sizing: border-box;
-  padding: 10px 0;
-  border-radius: 20px;
-}
-
-.mySwiper8 .swiper-slide {
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-}
-
-.house-title{
-  position: absolute;
-  top: 30%;
-}
-
-.house-sleeps {
-  position: absolute;
-  top: 55%;
- 
-}
-
-.house-priceinfo {
-  position: absolute;
-  top: 62.5%;
-}
-
-.mySwiper8 .swiper-slide img{
-  border-radius: 20px;
-  filter: brightness(50%);
-}
-
-
-#section4 h4{
-  font-size: 22px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 28px;
+.facilitiesicon-container p{
   color: #887129;
+  text-align: center;
 }
 
-#section4 h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
+.facilitiesicon-container img{
+  height: 4em;
+  object-fit: contain;
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
 }
-
-#section4 p{
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  margin-bottom: 50px;
-}
+/* Section END - Houses Description */
 
 
-.swiper-slide .btn-go{
-  position: absolute;
-  top: 82.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  cursor: pointer;
-}
-
-/* Section 4 END */
-
-
-/* Section 6 */
+/* Section - The Facilities */
 #section6{
   padding-top: 80px;
 }
@@ -710,15 +737,14 @@ html,body
 
 .mySwiper9 .swiper-slide {
   background-position: center;
-  background-size: contain;
-  width: auto;
+  background-size: cover;
+  width: 350px;
   height: auto;
 }
 
 .mySwiper9 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 #section6 h4{
@@ -749,7 +775,7 @@ html,body
   padding-block: 50px;
 }
 
-/* Section 6 END */
+/* Section The Facilities END*/
 
 
 /* Section Icons */
@@ -1424,26 +1450,6 @@ html,body
   text-align: center;
 }
 
-#room-services p{
-  padding-top: 5px;
-  font-size: 18px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 28px;
-  color: #222222;
-  text-align: center;
-}
-
-#room-services h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-}
-
 #room-services h3{
   padding-top: 20px;
   font-size: 22px;
@@ -1545,70 +1551,6 @@ html,body
   color: #887129;
 }
 
-/* Text  */
-
-#houseid_1 h2 {
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-  text-align: justify;
-}
-
-#houseid_1 p {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  margin-bottom: 50px;
-  text-align: justify;
-}
-
-#houseid_2 h2 {
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-  text-align: justify;
-}
-
-#houseid_2 p {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  margin-bottom: 50px;
-  text-align: justify;
-}
-
-#houseid_3 h2 {
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-  text-align: justify;
-}
-
-#houseid_3 p {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  margin-bottom: 50px;
-  text-align: justify;
-}
 
 .instatitle {
   color: #887129;
@@ -1692,15 +1634,6 @@ html,body
   }
 }
 
-.extra-info h2 {
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-  text-align: justify;
-}
 
 .extra-info li { 
   font-size: 18px;
@@ -2006,52 +1939,12 @@ form button {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-#serviceInfinity h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-
-}
-
-#serviceInfinity p{
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  margin-bottom: 50px;
-}
 /* Section 4 END  */
 
 
 /* Section 5  */
 #serviceSpa {
   padding-top: 60px;
-}
-
-#serviceSpa h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-
-}
-
-#serviceSpa p{
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  margin-bottom: 50px;
 }
 /* Section 5 END  */
 
@@ -2061,26 +1954,6 @@ form button {
   background-image: url(./img/5404176.jpg);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-#serviceBarb h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-
-}
-
-#serviceBarb p{
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  margin-bottom: 50px;
 }
 /* Section 7 END  */
 
@@ -2093,24 +1966,7 @@ form button {
 
 
 /* Section 9  */
-.serviceExtra h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-}
 
-.serviceExtra p{
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  padding-top: 25px;
-}
 /* Section 9 END  */
 
 
@@ -2152,7 +2008,6 @@ form button {
   align-items: center;
 }
 
-
 .mySwiper11 img{
   object-fit: cover;
 }
@@ -2171,7 +2026,6 @@ form button {
   font-weight: bold;
   color: #fff;
 }
-
 
 .mySwiper12 img{
   object-fit: cover;
@@ -2197,46 +2051,6 @@ form button {
   background-image: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?);
   background-repeat: no-repeat;
   background-position: center;
-}
-
-
-
-#elsuenoStory h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-}
-
-#elsuenoStory p{
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  padding-top: 10px;
-}
-
-#elsuenoquote h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-}
-
-#elsuenoquote p{
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  padding-top: 10px;
 }
 /* El Sueno END  */
 
@@ -2267,52 +2081,6 @@ form button {
   text-align: center;
   align-items: center;
 }
-
-#promocionesYoga h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-
-}
-
-#promocionesYoga p{
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  padding-top: 25px;
-}
-
-#promocioneslasCasas{
-  padding-top: 40px;
-}
-
-#promocioneslasCasas h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-}
-
-#promocioneslasCasas p{
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  padding-top: 25px;
-
-}
-
-
 
 
 /* Restauracion Page */

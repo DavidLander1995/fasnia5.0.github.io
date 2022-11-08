@@ -110,12 +110,16 @@
 <!-- Preloader END  -->
 
 
+<!-- Sticky Reserve Button for Mobile Devices ONLY  -->
+<button class="btn-bookmobile button-reservemobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
+<!-- Sticky Reserve Button for Mobile Devices ONLY  -->
+
 <!-- Navigation Section -->
 <!-- 3 Links Displayed When Screen Size > Medium -->
 <nav class="navbar navbar-default fixed-top">
 	<div class="container-fluid">
 		<!-- Logo Main Navbar -->
-	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 1.5rem;"></a>
+	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 0.8rem;"></a>
 
 	  <!-- 3 Links -->
 	  <div class="d-none d-lg-block d-xl-block link-container">
@@ -124,10 +128,15 @@
 	  	<a class="link-nav hover-underline-animation me-2" href="./contacto.html">Contacto</a>
 	  </div>
 
+		
 	  <!-- Toggler Button for Offcanvas Menu -->
-	  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menú de Navegación">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
+		<div class="parent">
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menú de Navegación">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+			<div id="translate-container" class="translate-container2"></div>
+		</div>
+	  
 	  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 		<div class="offcanvas-header">
 			<!-- Logo Offcanvas -->
@@ -167,7 +176,7 @@
 			</li>
 			<li>
 				<!-- Offcanvas Reserve Button -->
-				<button type="button" class="btn-book" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
+				<button type="button" class="btn-book button-reservenavbar" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
 			</li>
 		  </ul>
 		</div>
@@ -175,6 +184,8 @@
 	</div>
   </nav>
 <!-- Navigation Section END -->
+
+
 
 
 <div class="bodycontent">

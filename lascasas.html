@@ -765,8 +765,77 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   <script src="./navbar.js"></script>
   <script src="./lascasasanimations.js"></script>
-  <script src="./buttons-lascasas.js"></script>
   <!-- Scripts END -->
+
+  <script>
+  // Buttons 
+
+  // La Casa de Los Corrales
+  document.querySelector('.button-loscorrales').addEventListener('click', () => {
+    document.location.href = "./casaloscorrales.html"
+  })
+
+  document.querySelector('.button-reserveloscorrales').addEventListener('click', () => {
+    if (Weglot.getCurrentLang() == "es") {
+		document.location.href = "casaloscorralesbookingES.html"
+	}
+	else {
+		document.location.href = "casaloscorralesbookingEN.html"
+	}
+  })
+
+
+  // La Casa de La Cabrera 
+  document.querySelector('.button-lacabrera').addEventListener('click', () => {
+    document.location.href = "./casalacabrera.html"
+  })
+
+  document.querySelector('.button-reservelacabera').addEventListener('click', () => {
+    if (Weglot.getCurrentLang() == "es") {
+		document.location.href = "casacabrerabookingES.html"
+	}
+	  else {
+		document.location.href = "casacabrerabookingEN.html"
+	}
+  })
+
+
+  // La Casa del Alpendre
+  document.querySelector('.button-alpendre').addEventListener('click', () => {
+    document.location.href = "./casaelalpendre.html"
+  })
+
+  document.querySelector('.button-reservelalpendre').addEventListener('click', () => {
+    if (Weglot.getCurrentLang() == "es") {
+		document.location.href = "casadelalpendrebookingES.html"
+	}
+	  else {
+		document.location.href = "casadelalpendrebookingEN.html"
+	}
+  })
+
+
+  // La Casa Principal 
+  document.querySelector('.button-casaprincipal').addEventListener('click', () => {
+    document.location.href = "./casaprincipal.html"
+  })
+
+  document.querySelector('.button-reserveprincipal').addEventListener('click', () => {
+    if (Weglot.getCurrentLang() == "es") {
+		document.location.href = "casaprincipalbookingES.html"
+	}
+	  else {
+		document.location.href = "casaprincipalbookingEN.html"
+	}
+  })
+
+  // More Intimacy Button 
+  document.querySelector('.button-contact').addEventListener('click', () => {
+    document.location.href = "./contacto.html"
+  })
+  </script>
+  
+  <!-- Buttons END  -->
 
 
 </div>

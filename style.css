@@ -587,15 +587,16 @@ html,body
 .btn-bookmobile{
   background-color: #887129;
   border: 2px solid #887129;
+  border-radius: 100px;
   color: white;
   height: 45px;
   padding: 10px 30px;
   text-decoration: none;
   text-align: center;
-  width: 200px;
+  width: calc(100vw - 40%);
   margin: auto;
   line-height: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .btn-bookmobile:hover{

@@ -11,6 +11,17 @@
 */
 
 
+/* Slick CSS  */
+.slick-list.draggable {
+  cursor: pointer;
+  cursor: hand;
+  cursor: grab;
+}
+.slick-list.dragging {
+  cursor: grabbing;
+}
+
+
 /* Backgrounds  */
 .flowerbackground {
   background: url(./img/5404176.jpg);
@@ -161,9 +172,12 @@
   border-radius: 100%;
   background-color: rgb(180, 179, 179) !important;
   text-indent: -9999px;
+  margin-top: 1rem !important;
 }
 .slick-dots li.slick-active button {
   background-color: #887129 !important;
+  transform: scale(1.25);
+
 }
 
 
@@ -848,17 +862,7 @@ html,body
 
 
 /* Section - Houses Description */
-.gold-box {
-  border: 1px solid #887129;
-  box-shadow: 20px 20px #887129;
-  margin-bottom: 10px;
-}
 
-.owl-four .item {
-  border: 1px solid #887129;
-  box-shadow: 20px 20px #887129;
-  margin-bottom: 10px;
-}
 
 .box-container h2 {
   font-size: 28px;
@@ -938,30 +942,36 @@ html,body
   color: #222222;
 }
 
-.facilitiesicon-container p{
-  color: #887129;
-  text-align: center;
+.facilitiesicon-container{
+  background-color: #887129;
 }
 
 .facilitiesicon-container img{
-  height: 4em;
+  display: block;
+  padding-top: 10px;
+  margin: auto;
+  height: 3em;
   object-fit: contain;
-  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+  filter: invert(100%) sepia(14%) saturate(7492%) hue-rotate(210deg) brightness(113%) contrast(114%);
 }
+
+.icon-text {
+  color: white;
+  font-weight: 100;
+  letter-spacing: normal;
+}
+
 
 @media screen and (max-width: 699px) {
   .facilitiesicon-container img{
-    height: 2.5rem;
+    display: block;
+    padding-top: 10px;
+    margin: auto;
+    height: 2.5em;
     object-fit: contain;
-    filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+    filter: invert(100%) sepia(14%) saturate(7492%) hue-rotate(210deg) brightness(113%) contrast(114%);
   }
 
-  .facilitiesicon-container p{
-    color: #887129 !important;
-    text-align: center;
-    font-size: 0.9rem;
-  }
- 
   .box-container2 h2 {
     font-size: 1.4rem;
     font-family: 'Libre Baskerville', serif;

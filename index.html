@@ -57,9 +57,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Light Gallery  -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery-bundle.min.css" integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- Animation  -->
-	<script src="https://unpkg.com/scrollreveal"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
 	<!-- Add the slick-theme.css if you want default styling -->
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<!-- Add the slick-theme.css if you want default styling -->
@@ -255,7 +253,7 @@
 
 	<!-- Page Introduction -->
 	<div class="container text-center index-start">
-		<img src="./img/logo.png" alt="">
+		<img class="intro-logo" src="./img/logo.png" alt="">
 	</div>
 	<div class="container text-center index-middle">
 		<p class="indexmiddle-quote">"Uno de los mejores ejemplos de haciendas rurales en<br> El sur de Tenerife"</p>
@@ -467,8 +465,8 @@
 							<p class="box-quote text-center">Los detalles las hacen únicas.</p>
 						</div>
 						<div class="container text-center">
-							<button class="btn-more button-morecorrales">Leer Más</button>
-							<button class="btn-book button-reservecorrales d-none d-lg-inline">Reserva</button>
+							<button class="btn-more button-moreprincipal">Leer Más</button>
+							<button class="btn-book button-reserveprincipal d-none d-lg-inline">Reserva</button>
 						</div>
 					</div>
 				</div>
@@ -642,24 +640,24 @@
 
 	<!-- 3 Card Banner Selection  -->
 	<!-- XL, Lg & Md Screen Sizes -->
-	<div class="container-fluid banner-selection d-none d-md-block">
+	<div id="banner-selection" class="container-fluid banner-selection d-none d-md-block">
 		<div class="row g-0">
 
-			<div class="col container-block block-height" style="background-image: url(./img/before3.PNG); position: relative;">
+			<div class="col container-block block-height banneranimate1" style="background-image: url(./img/before3.PNG); position: relative;">
 				<div class="block-content text-center">
 					<h2>La Restauración</h2>
-					<button class="btn-more2 mt-3">Leer Más</button>
+					<button class="btn-more2 button-gorestore mt-3">Leer Más</button>
 				</div>
 			</div>
 
-			<div class="col container-block block-height" style="background-image: url(https://ik.imagekit.io/l3yst4k9g/Galeria/Section_2/needed_E0Qj6AhGh.webp?); position: relative;">
+			<div class="col container-block block-height banneranimate2" style="background-image: url(https://ik.imagekit.io/l3yst4k9g/Galeria/Section_2/needed_E0Qj6AhGh.webp?); position: relative;">
 				<div class="block-content text-center">
 					<h2>El Sueño</h2>
-					<button class="btn-more2 mt-3">Leer Más</button>
+					<button class="btn-more2 button-gosueno mt-3">Leer Más</button>
 				</div>
 			</div>
 
-			<div class="col container-block block-height" style="background-image: url(./img/teide.jpg); position: relative;">
+			<div class="col container-block block-height banneranimate3" style="background-image: url(./img/teide.jpg); position: relative;">
 				<div class="block-content text-center">
 					<h2>Experiencias</h2>
 					<button class="btn-more2 mt-3">Leer Más</button>
@@ -679,7 +677,7 @@
 				<div class="col container-block block-height" style="background-image: url(./img/before3.PNG); position: relative; height: 25rem;">
 					<div class="block-content text-center">
 						<h2>La Restauración</h2>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button class="btn-more2 button-gorestoremobile mt-3">Leer Más</button>
 					</div>
 				</div>
 			</div>
@@ -688,7 +686,7 @@
 				<div class="col container-block block-height" style="background-image: url(https://ik.imagekit.io/l3yst4k9g/Galeria/Section_2/needed_E0Qj6AhGh.webp?); position: relative; height: 25rem;">
 					<div class="block-content text-center">
 						<h2>El Sueño</h2>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button class="btn-more2 button-gosuenomobile mt-3">Leer Más</button>
 					</div>
 				</div>
 			</div>
@@ -766,82 +764,104 @@
 	<!-- Icon Section -->
 
 
-	<div class="container-fluid my-5">
-		<div class="owl-four owl-carousel owl-theme">
+	<div class="container my-5">
+		<div class="slider5">
 
 			<!-- Infinity Pool -->
-			<div class="item">
-				<div class="row">
+			<div>
+				<div class="item">
+					<div class="row">
+	
+						<div class="col-lg-6">
+							<img src="https://ik.imagekit.io/l3yst4k9g/Galeria/Section_2/homepage1_jEOFOr4TiX.webp?" alt="La vista de la piscina infinita climatizada.">
+							<div class="facilitiesicon-container text-center">
+								<div class="row">
 
-					<div class="col-lg-6">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Galeria/Section_2/homepage1_jEOFOr4TiX.webp?" alt="La vista de la piscina infinita climatizada.">
-					</div>
+									<div class="col">
+										<img src="./img/infinity-icon.png" alt="Logotipo del horario.">
+										<div class="icon-text">
+											<p>Piscina Infinita </p>
+										</div>
+									</div>
 
-					<div class="col-lg-5 my-lg-5">
-						<div class="box-container">
-							<h2 class="text-center">Piscina Infinita Climatizada</h2>
-							<p class="text-center my-5">Disfruta del agua de esta piscina, que cambia junto con el color del cielo y parece desembocar en el mar.</p>
-						</div>
-						<div class="facilitiesicon-container my-lg-5">
-							<div class="row">
-								<div class=" col-4 col-lg-4">
-									<img src="./img/infinity-icon.png" alt="Logotipo del horario.">
-									<p>Piscina Infinita </p>
-								</div>
-								<div class="col-4 col-lg-4">
-									<img src="./img/view-icon.png" alt="Logotipo del Prismáticos">
-									<p>Vistas al paisaje sur de la isla</p>
-								</div>
-								<div class="col-4 col-lg-4">
-									<img src="./img/heated.png" alt="Logotipo de la piscina.">
-									<p>Piscina Climatizada</p>
+									<div class="col">
+										<img src="./img/view-icon.png" alt="Logotipo del Prismáticos">
+										<div class="icon-text">
+											<p>Vistas al paisaje sur</p>
+										</div>
+									</div>
+
+									<div class="col">
+										<img src="./img/heated.png" alt="Logotipo de la piscina.">
+										<div class="icon-text">
+											<p>Piscina Climatizada</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="container text-center my-5">
-							<button class="btn-more button-morefacilities1">Leer Más</button>
+	
+						<div class="col-lg-6">
+							<div class="box-container">
+								<h2 class="text-center">Piscina Infinita</h2>
+								<p class="text-center">Disfruta del agua de esta piscina, que cambia junto con el color del cielo y parece desembocar en el mar.</p>
+							</div>
+							
+							<div class="container text-center">
+								<button class="btn-more button-morefacilities1">Leer Más</button>
+							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 			<!-- Infinity Pool -->
 
 
 			<!-- Spa  -->
-			<div class="item">
-				<div class="row">
+			<div>
+				<div class="item">
+					<div class="row">
+	
+						<div class="col-lg-6">
+							<img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations6_DgMJoTiPLx.jpeg?" alt="La zona de Spa con el jacuzzi.">
+							<div class="facilitiesicon-container text-center">
+								<div class="row">
 
-					<div class="col-lg-6">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations6_DgMJoTiPLx.jpeg?" alt="La zona de Spa con el jacuzzi.">
-					</div>
+									<div class="col">
+										<img src="./img/timetable-logo.png" alt="Logotipo del horario.">
+										<div class="icon-text">
+											<p>Amplio horario</p>
+										</div>
+									</div>
 
-					<div class="col-lg-6 text-center my-lg-5">
-						<div class="box-container">
-							<h2>Spa y Zona de Bienestar</h2>
-							<p>Ideal para olvidarte del estrés, acceso gratuito durante tu estancia.</p>
-						</div>
-						<div class="facilitiesicon-container my-lg-5">
-							<div class="row">
-								<div class=" col-4 col-lg-4">
-									<img src="./img/timetable-logo.png" alt="Logotipo del horario.">
-									<p>Amplio horario</p>
-								</div>
-								<div class="col-4 col-lg-4">
-									<img src="./img/view-icon.png" alt="Logotipo del Prismáticos">
-									<p>Vistas al paisaje sur de la isla</p>
-								</div>
-								<div class="col-4 col-lg-4">
-									<img src="./img/swimming.png" alt="Logotipo de la piscina.">
-									<p>Comunicado con la piscina</p>
+									<div class="col">
+										<img src="./img/view-icon.png" alt="Logotipo del Prismáticos">
+										<div class="icon-text">
+											<p>Vistas al paisaje sur</p>
+										</div>
+									</div>
+
+									<div class="col">
+										<img src="./img/swimming.png" alt="Logotipo de la piscina.">
+										<div class="icon-text">
+											<p>Comunicado con la piscina</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="container text-center my-5">
-							<button class="btn-more button-morefacilities2">Leer Más</button>
+	
+						<div class="col-lg-6 text-center">
+							<div class="box-container">
+								<h2>El Spa</h2>
+								<p>Ideal para olvidarte del estrés, <br>acceso gratuito durante tu estancia.</p>
+							</div>
+					
+							<div class="container text-center">
+								<button class="btn-more button-morefacilities2">Leer Más</button>
+							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 			<!-- Spa  -->
@@ -849,36 +869,48 @@
 
 
 			<!-- Spa  -->
-			<div class="item">
-				<div class="row">
+			<div>
+				<div class="item">
+					<div class="row">
+	
+						<div class="col-lg-6">
+							<img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations8_36UF5-q9hc.jpeg?" alt="La zona de Spa con el jacuzzi.">
+							<div class="facilitiesicon-container text-center">
+								<div class="row">
 
-					<div class="col-lg-6">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations8_36UF5-q9hc.jpeg?" alt="La zona de Spa con el jacuzzi.">
-					</div>
+									<div class="col">
+										<img src="./img/barbeque.png" alt="Logotipo del horario.">
+										<div class="icon-text">
+											<p>Barbacoa de alta calidad </p>
+										</div>
+									</div>
 
-					<div class="col-lg-6 text-center my-lg-5">
-						<div class="box-container">
-							<h2>Barbacoa</h2>
-							<p>Comparte con amigos o con la familia comidas junto a la piscina en la zona de barbacoa.</p>
-						</div>
-						<div class="facilitiesicon-container my-lg-5">
-							<div class="row">
-								<div class=" col-4 col-lg-4">
-									<img src="./img/barbeque.png" alt="Logotipo del horario.">
-									<p>Barbacoa de alta calidad </p>
-								</div>
-								<div class="col-4 col-lg-4">
-									<img src="./img/view-icon.png" alt="Logotipo del Prismáticos">
-									<p>Vistas al paisaje sur de la isla</p>
-								</div>
-								<div class="col-4 col-lg-4">
-									<img src="./img/swimming.png" alt="Logotipo de la piscina.">
-									<p>Comunicado con la piscina</p>
+									<div class="col">
+										<img src="./img/view-icon.png" alt="Logotipo del Prismáticos">
+										<div class="icon-text">
+											<p>Vistas al paisaje sur</p>
+										</div>
+									</div>
+
+									<div class="col">
+										<img src="./img/swimming.png" alt="Logotipo de la piscina.">
+										<div class="icon-text">
+											<p>Comunicado con la piscina</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="container text-center my-5">
-							<button class="btn-more button-morefacilities3">Leer Más</button>
+	
+						<div class="col-lg-6 text-center">
+							<div class="box-container">
+								<h2>Barbacoa</h2>
+								<p>Comparte con amigos o con la familia comidas junto a la piscina en la zona de barbacoa.</p>
+							</div>
+
+							<div class="container text-center">
+								<button class="btn-more button-morefacilities3">Leer Más</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -890,7 +922,7 @@
 
 
 	<!-- Facilities Carousel  -->
-	<div class="container" style="margin-top: 100px;">
+	<div class="container-fluid" style="margin-top: 200px;">
 		<div class="row my-5">
 			<div class="col-lg-12">
 				<div class="swiper mySwiper9">
@@ -964,7 +996,7 @@
 	<!-- Title Introduction -->
 
 	<div class="container-fluid d-none d-lg-none d-xl-block my-5">
-		<div class="slider2">
+		<div class="slider2 experienceanimate1">
 
 			<!-- First Slide  -->
 			<div>
@@ -1081,7 +1113,7 @@
 			<!-- Slide 1 -->
 			<div>
 				<div class="exp-blockmobile block-height" style="background-image: url(./img/tenerifefood.jpeg); position: relative; height: 18rem;">
-					<h2>Gastronomía</h2>
+					<h2 class="section-title">Gastronomía</h2>
 				</div>
 				<div class="container text-center">
 					<p class="section-desc mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint pariatur delectus possimus iusto totam culpa cumque dicta ratione,
@@ -1094,7 +1126,7 @@
 			<!-- Slide 2  -->
 			<div>
 				<div class="exp-blockmobile block-height" style="background-image: url(./img/hikingtenerife.jpeg); position: relative; height: 18rem;">
-					<h2>Senderismo</h2>
+					<h2 class="section-title">Senderismo</h2>
 				</div>
 				<div class="container text-center">
 					<p class="section-desc mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint pariatur delectus possimus iusto totam culpa cumque dicta ratione,
@@ -1107,7 +1139,7 @@
 			<!-- Slide 3 -->
 			<div>
 				<div class="exp-blockmobile block-height" style="background-image: url(./img/visitastenerife.jpeg); position: relative; height: 18rem;">
-					<h2>Visitas</h2>
+					<h2 class="section-title">Visitas</h2>
 				</div>
 				<div class="container text-center">
 					<p class="section-desc mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint pariatur delectus possimus iusto totam culpa cumque dicta ratione,
@@ -1120,34 +1152,8 @@
 	</div>
 	<!-- 3 Experienes Mobile Version END -->
 
-
-	<!-- Section - Video -->
-	<section id="section8">
-		<div class="container-fluid">
-			<div class="row text-center">
-				<h4>Descubra</h4>
-				<h2 class="pt-4">Una Vista desde Arriba...</h2>
-			</div>
-		</div>
-
-		<div class="container-fluid flowerbackground">
-			<div class="row py-5 justify-content-center">
-				<div class="col-12 col-lg-6">
-					<video src="./img/herovideo.mp4" controls muted poster="https://ik.imagekit.io/l3yst4k9g/Index/Video_Poster/videposter_RvI9XcvO9.webp?"></video>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Section Video END  -->
-
-
-	<!-- Section Seperator -->
-	<div class="container-fluid mySeperator2"></div>
-	<!-- Section Seperator END -->
-
-
-		<!-- Section - Find Us -->
-		<section id="section10">
+	<!-- Section - Find Us -->
+	<section id="section10">
 		<div class="container-fluid">
 		<div class="container findus-border">
 			<div class="row" >
@@ -1194,6 +1200,29 @@
 		<!-- Section Find Us END  -->
 
 
+	<!-- Section - Video -->
+	<section id="section8">
+		<div class="container-fluid">
+			<div class="row text-center">
+				<h4>Descubra</h4>
+				<h2 class="pt-4">Una Vista desde Arriba...</h2>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row py-5 justify-content-center">
+				<div class="col-12 col-lg-5">
+					<video src="./img/herovideo.mp4" controls muted poster="https://ik.imagekit.io/l3yst4k9g/Index/Video_Poster/videposter_RvI9XcvO9.webp?"></video>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section Video END  -->
+
+
+	<!-- Section Seperator -->
+	<div class="container-fluid mySeperator2"></div>
+	<!-- Section Seperator END -->
 
 
 
@@ -1498,6 +1527,9 @@
 
 
 <!-- Scripts -->
+<!-- Animation  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 <script src="./navbar.js"></script>
 <script src="./animations.js"></script>
@@ -1623,8 +1655,20 @@ $('.slider3').slick({
 		infinite: true,
 		touchThreshold: 100,
 	});
-	</script>
-	<!-- Slick Carousel for Houses END  -->
+</script>
+<!-- Slick Carousel for Houses END  -->
+
+<!-- Slick Carousel for Facilities  -->
+<script>
+	$('.slider5').slick({
+		dots: true,
+		infinite: true,
+		touchThreshold: 100,
+	});
+</script>
+<!-- Slick Carousel for Facilities END  -->
+
+	
 
 <!-- Swiper for Hero Images  -->
 <script>
@@ -1761,6 +1805,32 @@ document.querySelector('.button-morealpendre').addEventListener('click', () => {
 document.location.href = "casaelalpendre.html"
 })
 
+// 3 Banner 
+document.querySelector('.button-gorestore').addEventListener('click', () => {
+document.location.href = "larestauracion.html"
+})
+
+document.querySelector('.button-gosueno').addEventListener('click', () => {
+document.location.href = "elsueno.html"
+})
+
+// document.querySelector('.button-goexperience').addEventListener('click', () => {
+// document.location.href = "casadelalpendrebookingEN.html"
+// })
+
+document.querySelector('.button-gorestoremobile').addEventListener('click', () => {
+document.location.href = "larestauracion.html"
+})
+
+document.querySelector('.button-gosuenomobile').addEventListener('click', () => {
+document.location.href = "elsueno.html"
+})
+
+// document.querySelector('.button-goexperience').addEventListener('click', () => {
+// document.location.href = "casadelalpendrebookingEN.html"
+// })
+
+
 
 // The Facilities
 document.querySelector('.button-morefacilities1').addEventListener('click', () => {
@@ -1793,6 +1863,9 @@ Weglot.on("languageChanged", function(newLang, prevLang) {
 })
 </script>
 <!-- Weglot Language Change Script  -->
+
+
+
 
 
 </body>

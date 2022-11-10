@@ -589,11 +589,11 @@ html,body
   border: 2px solid #887129;
   border-radius: 100px;
   color: white;
-  height: 45px;
+  height: 40px;
   padding: 10px 30px;
   text-decoration: none;
   text-align: center;
-  width: calc(100vw - 40%);
+  width: calc(100vw - 10%);
   margin: auto;
   line-height: 0;
   margin-bottom: 15px;

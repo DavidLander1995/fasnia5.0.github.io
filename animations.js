@@ -13,27 +13,7 @@ $(window).on("load", function(){
             // setup animations and ScrollTriggers for screens over 795px wide (desktop) here...
             // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
 
-            // Title Hero
-            gsap.to(".animatetitle1", {
-              duration: 0,  
-              y: -100,
-              scale: 0,
-              opacity: 0,
-            });
-
-            gsap.to(".animatetitle1", {
-              duration: 1,  
-              y: 0, 
-              scale: 1,
-              opacity: 1,
-              ease: "circ",
-              scrollTrigger : { 
-                trigger: ".mySwiperhero", 
-                markers: false,
-                start: "top 45%",
-                end: "center 30%",
-              }, 
-            });
+         
           
             // Reserve Button Hero
             gsap.to(".animateherobutton1", {
@@ -77,28 +57,6 @@ $(window).on("load", function(){
               }, 
             });
              // Icons
-
-
-             // Houses 
-            gsap.to(".animatehouse1", {
-              duration: 0,  
-              y: -100,
-              opacity: 0,
-            });
-
-            gsap.to(".animatehouse1", {
-              duration: 2,  
-              y: 0, 
-              opacity: 1,
-              ease: "power2",
-              scrollTrigger : { 
-                trigger: ".slider4", 
-                markers: false,
-                start: "top 45%",
-                end: "center 30%",
-              }, 
-            });
-            // Houses 
 
             // Banner
             gsap.to([".banneranimate1", ".banneranimate3"], {
@@ -161,26 +119,7 @@ $(window).on("load", function(){
 
             // Icons 
 
-            // Facilities
-            gsap.to(".animatefacility1", {
-              duration: 0,  
-              y: -100,
-              opacity: 0,
-            });
-
-            gsap.to(".animatefacility1", {
-              duration: 2,  
-              y: 0, 
-              opacity: 1,
-              ease: "power2",
-              scrollTrigger : { 
-                trigger: ".slider5", 
-                markers: false,
-                start: "top 45%",
-                end: "center 30%",
-              }, 
-            });
-            // Facilities
+            
 
             // Facilities 
             gsap.to(".mySwiper9", {
@@ -273,26 +212,26 @@ $(window).on("load", function(){
         });
 
 
-        // All 
+        // All
 
-        // Logo 
-        gsap.to(".intro-logo", {
+        // Title Hero
+        gsap.to(".animatetitle1", {
           duration: 0,  
           y: -100,
           scale: 0,
           opacity: 0,
         });
 
-        gsap.to(".intro-logo", {
-          duration: 2,  
+        gsap.to(".animatetitle1", {
+          duration: 1,  
           y: 0, 
           scale: 1,
           opacity: 1,
-          ease: "power2",
+          ease: "circ",
           scrollTrigger : { 
-            trigger: ".index-start", 
+            trigger: ".mySwiperhero", 
             markers: false,
-            start: "top 90%",
+            start: "top 45%",
             end: "center 30%",
           }, 
         });
@@ -318,6 +257,72 @@ $(window).on("load", function(){
             end: "center 30%",
           }, 
         });
+
+        // Logo 
+        gsap.to(".intro-logo", {
+          duration: 0,  
+          y: -100,
+          scale: 0,
+          opacity: 0,
+        });
+
+        gsap.to(".intro-logo", {
+          duration: 2,  
+          y: 0, 
+          scale: 1,
+          opacity: 1,
+          ease: "power2",
+          scrollTrigger : { 
+            trigger: ".index-start", 
+            markers: false,
+            start: "top 90%",
+            end: "center 30%",
+          }, 
+        });
+
+        
+
+        // Houses 
+        gsap.to(".animatehouse1", {
+          duration: 0,  
+          y: -100,
+          opacity: 0,
+        });
+
+        gsap.to(".animatehouse1", {
+          duration: 2,  
+          y: 0, 
+          opacity: 1,
+          ease: "power2",
+          scrollTrigger : { 
+            trigger: ".slider4", 
+            markers: false,
+            start: "top 45%",
+            end: "center 30%",
+          }, 
+        });
+        // Houses
+
+        // Facilities
+        gsap.to(".animatefacility1", {
+          duration: 0,  
+          y: -100,
+          opacity: 0,
+        });
+
+        gsap.to(".animatefacility1", {
+          duration: 2,  
+          y: 0, 
+          opacity: 1,
+          ease: "power2",
+          scrollTrigger : { 
+            trigger: ".slider5", 
+            markers: false,
+            start: "top 45%",
+            end: "center 30%",
+          }, 
+        });
+        // Facilities
 
 
    

@@ -165,29 +165,28 @@ $(window).on("load", function(){
                 end: "center 30%",
               }, 
             });
+             // Experiences 
+
+            //  Find Us
+            gsap.to(".findusanimate1", {
+              duration: 0,  
+              y: -100, 
+              opacity: 0,
+            });
+
+            gsap.to(".findusanimate1", {
+              duration: 2,  
+              y: 0, 
+              opacity: 1,
+              ease: "bounce",
+              scrollTrigger : { 
+                trigger: "#section10", 
+                markers: false,
+                start: "top 50%",
+                end: "center 30%",
+              }, 
+            });
             
-            // // Slider 
-            // gsap.to(".experienceanimate1", {
-            //   duration: 0,  
-            //   x: 500, 
-            //   opacity: 0,
-            // });
-
-            // gsap.to(".experienceanimate1", {
-            //   duration: 4,
-            //   delay: 0.5,  
-            //   x: 0, 
-            //   opacity: 1,
-            //   ease: "expo",
-            //   scrollTrigger : { 
-            //     trigger: ".experience-intro", 
-            //     markers: false,
-            //     start: "top 30%",
-            //     end: "center 30%",
-            //   }, 
-            // });
-            // Experiences
-
             // Video 
             gsap.to(".animatevideo1", {
               duration: 0, 
@@ -208,8 +207,29 @@ $(window).on("load", function(){
               }, 
             });
 
-          }
-        });
+            // Clients Reviews
+            gsap.to(".reviewanimatetitle", {
+              duration: 0,  
+              y: -100, 
+              opacity: 0,
+            });
+
+            gsap.to(".reviewanimatetitle", {
+              duration: 1,  
+              y: 0,
+              opacity: 1,
+              ease: "power1",
+              scrollTrigger : { 
+                trigger: "#housereviews", 
+                markers: false,
+                start: "top 60%",
+                end: "center 30%",
+              }, 
+            });
+
+
+            }
+          });
 
 
         // All
@@ -281,7 +301,6 @@ $(window).on("load", function(){
         });
 
         
-
         // Houses 
         gsap.to(".animatehouse1", {
           duration: 0,  
@@ -311,14 +330,15 @@ $(window).on("load", function(){
         });
 
         gsap.to(".animatefacility1", {
-          duration: 2,  
+          duration: 2,
+          delay: 0.5,
           y: 0, 
           opacity: 1,
           ease: "power2",
           scrollTrigger : { 
             trigger: ".slider5", 
             markers: false,
-            start: "top 45%",
+            start: "top 50%",
             end: "center 30%",
           }, 
         });

@@ -10,6 +10,49 @@
 
 */
 
+/* Owl CSS  */
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.owl-nav button.owl-prev {
+  left: 0;
+}
+.owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 0.75rem !important;
+  height: 0.75rem !important;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(180, 179, 179) !important;
+  margin: 0 0.4rem;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #887129 !important;
+  transform: scale(1.25);
+}
+
+.owl-dots span {
+    font-size: 70px;    
+    position: relative;
+    top: -5px;
+    display: none !important;
+}
+.owl-nav button:focus {
+    outline: none;
+}
+/* Owl CSS  */
 
 
 /* Slick CSS  */
@@ -1034,34 +1077,6 @@ html,body
   width: 100%;
 }
 
-#section6 h4{
-  font-size: 22px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 28px;
-  color: #887129;
-}
-
-#section6 h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-}
-
-#section6 p{
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  color: #262626;
-  padding-block: 50px;
-}
-
 /* Section The Facilities END*/
 
 
@@ -1110,24 +1125,6 @@ html,body
   padding-top: 80px;
 }
 
-#section8 h4{
-  font-size: 22px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 28px;
-  color: #887129;
-}
-
-#section8 h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-}
-
 #section8 video{
   height: 100%;
   width: 100%;
@@ -1147,45 +1144,20 @@ html,body
   margin-bottom: 100px;
 }
 
-#section10 h4{
-  font-size: 22px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 28px;
-  color: #887129;
+#section10 iframe{
+  width: 100%;
+  height: 100%;
 }
 
-#section10 h2{
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
-}
-
-#section10 .row p{
+.contactus a {
   font-size: 18px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   letter-spacing: 0.36px;
   line-height: 25px;
   color: #262626;
-}
-
-#section10 .contactus p{
-  font-size: 16px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.32px;
-  line-height: 19.2px;
-  color: #262626;
-}
-
-#section10 iframe{
-  width: 100%;
-  height: 100%;
+  margin-bottom: 50px;
+  text-align: start;
 }
 
 /* Section 10 END */

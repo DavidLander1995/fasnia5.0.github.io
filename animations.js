@@ -1,6 +1,6 @@
 
 // wait until DOM is ready
-document.addEventListener("DOMContentLoaded", function(event) {
+$(window).on("load", function(){
   gsap.registerPlugin(ScrollTrigger)
 
 

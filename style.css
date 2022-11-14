@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
 /* CSS DIRECTORY
-	1. =GLOBAL - Resets, Scrollbars Styles, Breadcrumbs, Media, Sliders 
+	1. =GLOBAL - Resets, Scrollbars Styles, Breadcrumbs, Media, Sliders/Carousels
 	2. =PRIMARY - Body, Primary Divs Styles
 	3. =NAVBAR - Navigation Bar Styles
 	4. =FOOTER - Footer Styles
@@ -9,61 +7,6 @@
   6. =MODALS 
 
 */
-
-/* Owl CSS  */
-.owl-nav button {
-  position: absolute;
-  top: 50%;
-  background-color: #000;
-  color: #fff;
-  margin: 0;
-  transition: all 0.3s ease-in-out;
-}
-.owl-nav button.owl-prev {
-  left: 0;
-}
-.owl-nav button.owl-next {
-  right: 0;
-}
-
-.owl-dots {
-  text-align: center;
-  padding-top: 15px;
-}
-.owl-dots button.owl-dot {
-  width: 0.75rem !important;
-  height: 0.75rem !important;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: rgb(180, 179, 179) !important;
-  margin: 0 0.4rem;
-}
-.owl-dots button.owl-dot.active {
-  background-color: #887129 !important;
-  transform: scale(1.25);
-}
-
-.owl-dots span {
-    font-size: 70px;    
-    position: relative;
-    top: -5px;
-    display: none !important;
-}
-.owl-nav button:focus {
-    outline: none;
-}
-/* Owl CSS  */
-
-
-/* Slick CSS  */
-.slick-list.draggable {
-  cursor: pointer;
-  cursor: hand;
-  cursor: grab;
-}
-.slick-list.dragging {
-  cursor: grabbing;
-}
 
 
 /* Backgrounds  */
@@ -73,194 +16,6 @@
   background-position: center;
 }
 /* Backgrounds  */
-
-
-.banner-selection {
-  margin-top: 180px;
-}
-
-.container-block {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.container-block::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 43, 69, 0.2);
-}
-
-
-.block-height {
-  height: 600px;
-}
-
-.block-content {
-  position: absolute;
-  bottom: 5%;
-  left: 0;
-  right: 0;
-}
-
-
-.block-content h2 {
-  color: white;
-}
-
-.exp-block {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.exp-block::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: transparent linear-gradient(180deg, rgba(3,3,3,0) 0%, rgba(86,86,86,0.7) 100%) 0% 0%;
-}
-
-.exp-block::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(182, 150, 57, 0.7);
-  opacity: 0;
-}
-
-.exp-block:hover::before,
-.exp-block:hover::after{
-  height: 100%;
-  opacity: 1;
-  transition: linear 0.2s;
-}
-
-
-.expblock-title {
-  position: absolute;
-  padding-left: 40px;
-  padding-bottom: 10px;
-  bottom: 0;
-  color: white;
-}
-
-.exp-block h3 {
-  color: white;
-  opacity: 0;
-}
-
-.exp-block p {
-  color: white;
-  opacity: 0;
-}
-
-.exp-block button {
-  opacity: 0;
-}
-
-.exp-block:hover h3 {
-  padding: 40px;
-  position: relative;
-  color: white;
-  opacity: 1;
-  z-index: 9999;
-  transition: 1s;
-}
-
-.exp-block:hover p {
-  padding: 20px;
-  position: relative;
-  color: white;
-  opacity: 1;
-  z-index: 9999;
-  transition: 1s;
-}
-
-.exp-block:hover button {
-  margin: 40px;
-  position: absolute;
-  z-index: 9999;
-  opacity: 1;
-  transition: 1s;
-}
-
-.exp-block h2 {
-  position: absolute;
-  bottom: 0;
-  padding: 20px;
-  color: white;
-}
-
-.exp-block:hover h2{
-  opacity: 0;
-  transition: 0.5s;
-}
-
-
-.slick-dots button {
-  display: block;
-  width: 0.75rem !important;
-  height: 0.75rem !important;
-  border: none;
-  border-radius: 100%;
-  background-color: rgb(180, 179, 179) !important;
-  text-indent: -9999px;
-  margin-top: 1rem !important;
-}
-.slick-dots li.slick-active button {
-  background-color: #887129 !important;
-  transform: scale(1.25);
-
-}
-
-
-
-
-.exp-blockmobile {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.exp-blockmobile::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: transparent linear-gradient(180deg, rgba(3,3,3,0) 0%, rgba(86,86,86,0.7) 100%) 0% 0%;
-}
-
-.exp-blockmobile h2 {
-  position: absolute;
-  bottom: 0;
-  padding: 30px;
-  color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Preloader  */
 .pre-loader {
@@ -327,7 +82,6 @@
     width: 100%;
   }
 }
-
 /* Preloader END  */
 
 
@@ -336,7 +90,6 @@
   display: none;
 }
 
-/* dummy criterion for demo purposes */
 @media screen and (min-width: 300px) {
   .hidden-xs {
     display: block;
@@ -394,11 +147,6 @@ html,body
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
-  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
-}
-
 .scroller{
   height: 3rem;
   position: relative;
@@ -441,6 +189,82 @@ html,body
   background-position: center;
   background-size: auto;
 }
+
+/* Carousel Options  */
+/* Owl CSS  */
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.owl-nav button.owl-prev {
+  left: 0;
+}
+.owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 0.75rem !important;
+  height: 0.75rem !important;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgb(180, 179, 179) !important;
+  margin: 0 0.4rem;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #887129 !important;
+  transform: scale(1.25);
+}
+
+.owl-dots span {
+    font-size: 70px;    
+    position: relative;
+    top: -5px;
+    display: none !important;
+}
+.owl-nav button:focus {
+    outline: none;
+}
+/* Owl CSS  */
+
+/* Slick CSS  */
+.slick-list.draggable {
+  cursor: pointer;
+  cursor: hand;
+  cursor: grab;
+}
+.slick-list.dragging {
+  cursor: grabbing;
+}
+
+.slick-dots button {
+  display: block;
+  width: 0.75rem !important;
+  height: 0.75rem !important;
+  border: none;
+  border-radius: 100%;
+  background-color: rgb(180, 179, 179) !important;
+  text-indent: -9999px;
+  margin-top: 1rem !important;
+}
+.slick-dots li.slick-active button {
+  background-color: #887129 !important;
+  transform: scale(1.25);
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+}
+/* Carousel Options END  */
 
 /* Typography  */
 /* Large Screens  */
@@ -486,6 +310,58 @@ html,body
   text-align: justify;
 }
 
+.title {
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  color: #887129;
+  text-align: center;
+}
+
+.under-title {
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  color: #222222;
+}
+
+/* Page Intro Text  */
+.pageintro h3 {
+  color: #887129;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-transform: none;
+}
+
+.pageintro h2 {
+  color: #222222;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 63px;
+  margin-bottom: 20px;
+}
+
+.pageintro p {
+  color: #262626;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  transition: all 0.5s
+}
+
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .section-title {
@@ -529,51 +405,14 @@ html,body
     margin-bottom: 50px;
     text-align: justify;
   }
-  
-
 }
-/* Typography  */
+/* Typography END */
 
-/* Owl Carousel Navigation Arrows & Dots  */
 .nav-container {
   position: fixed;
   bottom: 2%;
   right: 2%;
 }
-
-/* Page Intro Text  */
-.pageintro h3 {
-  color: #887129;
-  font-family: 'Nunito', sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 28px;
-  text-transform: none;
-}
-
-.pageintro h2 {
-  color: #222222;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  margin-bottom: 20px;
-}
-
-.pageintro p {
-  color: #262626;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 25px;
-  margin-bottom: 30px;
-  transition: all 0.5s
-}
-
-
 
 /* Buttons */
 @media (prefers-reduced-motion: reduce) {
@@ -591,6 +430,7 @@ html,body
   border-radius: 999em;
   text-decoration: none;
 }
+
 .btn-more:hover{
   background: #887129;
   color: white;
@@ -626,7 +466,6 @@ html,body
   background: #725c1a;
   border: 2px solid #725c1a ;
 }
-
 
 .btn-book{
   background-color: #887129;
@@ -774,76 +613,13 @@ html,body
   font-weight: 300;
   letter-spacing: 1px;
 }
-
 /* 1. Global End */
 
 /* Index Page / Home Page */
-.homebanner-containerlg{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background: url(https://ik.imagekit.io/l3yst4k9g/Index/hero_images/heroimage?ik-sdk-version=javascript-1.4.3&updatedAt=1666615580574) no-repeat center;
-  background-size: cover;
-  height: 80vh;
-  overflow: hidden;
-} 
-
-.homebanner-image h1{
-  font-size: 6vh;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 800;
-  letter-spacing: 2.7px;
-  color: white;
-  position: absolute;
-  bottom: 50%;
-  text-align: center;
-  align-items: center;
-}
-
-
 /* Hero Banner  */
 .mySwiperhero {
   height: 100vh;
 }
-
-.index-start img {
-  padding-top: 80px;
-  width: 15rem;
-}
-
-.indexmiddle-quote {
-  padding-top: 50px;
-  color: #222222;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 42px;
-  font-weight: 000;
-  letter-spacing: normal;
-  line-height: 80px;
-}
-
-@media screen and (max-width: 699px) {
-  .indexmiddle-quote {
-    padding-top: 50px;
-    color: #222222;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 24px;
-    font-weight: normal;
-    letter-spacing: normal;
-    line-height: 50px;
-  }
-}
-
-.indexend-quote {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 40px;
-  color: #262626;
-  text-align: center;
-}
-
-
 
 .swiper-slide-title {
   color: white;
@@ -881,8 +657,91 @@ html,body
   position: absolute;
   bottom: 25%;
 }
+/* Hero Banner  */
 
-/* Section Gallery  */
+
+/* Page Introduction */
+.index-start img {
+  padding-top: 80px;
+  width: 15rem;
+}
+
+.indexmiddle-quote {
+  padding-top: 50px;
+  color: #222222;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 42px;
+  font-weight: 000;
+  letter-spacing: normal;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 699px) {
+  .indexmiddle-quote {
+    padding-top: 50px;
+    color: #222222;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 50px;
+  }
+}
+
+.indexend-quote {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 40px;
+  color: #262626;
+  text-align: center;
+}
+/* Page Introduction END  */
+
+
+/* Icon Section Display  */
+/* Section Icons */
+#iconsection{
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.home-icons{
+  height: 4em;
+  object-fit: contain;
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+}
+
+.home-icons2{
+  height: 4em;
+  object-fit: contain;
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+}
+
+@media (max-width: 600px) {
+  .home-icons2{
+    height: 2.5rem;
+    object-fit: contain;
+    filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+  }
+}
+
+.homeicon-text{
+  color: #887129;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  min-height: 48px;
+  padding-top: 10px;
+}
+/* Section Icons END */
+
+
+/* Gallery Section 1  */
 .gallerybutton-container {
   position: absolute;
   bottom: 0;
@@ -896,17 +755,67 @@ html,body
   color: #887129;
   font-weight: 500;
 }
-/* Section Gallery END  */
+/* Gallery Section 1 END  */
+
 
 /* Section - Weather */
-#section3{
+#section_weather{
   padding-top: 50px;
 }
 /* Section  Weather END */
 
 
-/* Section - Houses Description */
+/* The Houses Section  */
+.facilitiesicon-container{
+  background-color: #887129;
+}
 
+.facilitiesicon-container img{
+  display: block;
+  padding-top: 10px;
+  margin: auto;
+  height: 3em;
+  object-fit: contain;
+  filter: invert(100%) sepia(14%) saturate(7492%) hue-rotate(210deg) brightness(113%) contrast(114%);
+}
+
+.icon-text {
+  color: white;
+  font-weight: 100;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 699px) {
+  .facilitiesicon-container img{
+    display: block;
+    padding-top: 10px;
+    margin: auto;
+    height: 2.5em;
+    object-fit: contain;
+    filter: invert(100%) sepia(14%) saturate(7492%) hue-rotate(210deg) brightness(113%) contrast(114%);
+  }
+
+  .box-container2 h2 {
+    font-size: 1.4rem;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 63px;
+    color: #887129;
+  }
+
+  .box-container2 p {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    line-height: 25px;
+    color: white;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 .box-container h2 {
   font-size: 28px;
@@ -965,84 +874,51 @@ html,body
   color: white !important;
   text-align: center;
 }
+/* The Houses Section END  */
 
-.title {
-  font-size: 22px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 28px;
-  color: #887129;
-  text-align: center;
+
+/* 3 Card Banner Selection  */
+.banner-selection {
+  margin-top: 180px;
 }
 
-.under-title {
-  text-align: center;
-  font-size: 32px;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 63px;
-  color: #222222;
+.container-block {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.facilitiesicon-container{
-  background-color: #887129;
+.container-block::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 43, 69, 0.2);
 }
 
-.facilitiesicon-container img{
-  display: block;
-  padding-top: 10px;
-  margin: auto;
-  height: 3em;
-  object-fit: contain;
-  filter: invert(100%) sepia(14%) saturate(7492%) hue-rotate(210deg) brightness(113%) contrast(114%);
+
+.block-height {
+  height: 600px;
 }
 
-.icon-text {
+.block-content {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+}
+
+.block-content h2 {
   color: white;
-  font-weight: 100;
-  letter-spacing: normal;
 }
 
-
-@media screen and (max-width: 699px) {
-  .facilitiesicon-container img{
-    display: block;
-    padding-top: 10px;
-    margin: auto;
-    height: 2.5em;
-    object-fit: contain;
-    filter: invert(100%) sepia(14%) saturate(7492%) hue-rotate(210deg) brightness(113%) contrast(114%);
-  }
-
-  .box-container2 h2 {
-    font-size: 1.4rem;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: 63px;
-    color: #887129;
-  }
-
-  .box-container2 p {
-    font-size: 1rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.36px;
-    line-height: 25px;
-    color: white;
-    margin-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-}
-/* Section END - Houses Description */
+/* 3 Card Banner Selection END */
 
 
 /* Section - The Facilities */
-#section6{
+#section_facilities{
   padding-top: 80px;
 }
 
@@ -1057,7 +933,6 @@ html,body
   min-height: 48px !important;
   padding-top: 10px !important;
 }
-
 
 .mySwiper9 .swiper {
   width: 100%;
@@ -1076,65 +951,131 @@ html,body
   display: block;
   width: 100%;
 }
+/* Section The Facilities END */
 
-/* Section The Facilities END*/
-
-
-/* Section Icons */
-#iconsection{
-  padding-top: 60px;
-  padding-bottom: 20px;
+/* Experiences Carousel  */
+.exp-block {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.home-icons{
-  height: 4em;
-  object-fit: contain;
-  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+.exp-block::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent linear-gradient(180deg, rgba(3,3,3,0) 0%, rgba(86,86,86,0.7) 100%) 0% 0%;
 }
 
-.home-icons2{
-  height: 4em;
-  object-fit: contain;
-  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+.exp-block::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(182, 150, 57, 0.7);
+  opacity: 0;
 }
 
-@media (max-width: 600px) {
-  .home-icons2{
-    height: 2.5rem;
-    object-fit: contain;
-    filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
-  }
-}
-
-.homeicon-text{
-  color: #887129;
-  cursor: pointer;
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 24px;
-  min-height: 48px;
-  padding-top: 10px;
-}
-/* Section Icons END */
-
-
-/* Section 8  */
-#section8 {
-  padding-top: 80px;
-}
-
-#section8 video{
+.exp-block:hover::before,
+.exp-block:hover::after{
   height: 100%;
-  width: 100%;
+  opacity: 1;
+  transition: linear 0.2s;
 }
 
-/* Section 8 END  */
+
+.expblock-title {
+  position: absolute;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  bottom: 0;
+  color: white;
+}
+
+.exp-block h3 {
+  color: white;
+  opacity: 0;
+}
+
+.exp-block p {
+  color: white;
+  opacity: 0;
+}
+
+.exp-block button {
+  opacity: 0;
+}
+
+.exp-block:hover h3 {
+  padding: 40px;
+  position: relative;
+  color: white;
+  opacity: 1;
+  z-index: 9999;
+  transition: 1s;
+}
+
+.exp-block:hover p {
+  padding: 20px;
+  position: relative;
+  color: white;
+  opacity: 1;
+  z-index: 9999;
+  transition: 1s;
+}
+
+.exp-block:hover button {
+  margin: 40px;
+  position: absolute;
+  z-index: 9999;
+  opacity: 1;
+  transition: 1s;
+}
+
+.exp-block h2 {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  color: white;
+}
+
+.exp-block:hover h2{
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.exp-blockmobile {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.exp-blockmobile::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent linear-gradient(180deg, rgba(3,3,3,0) 0%, rgba(86,86,86,0.7) 100%) 0% 0%;
+}
+
+.exp-blockmobile h2 {
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  color: white;
+}
+/* Experiences Carousel END  */
 
 
-/* Section 10 */
-#section10 {
+/* Find Us  */
+#section_findus {
   padding-top: 80px;
 }
 
@@ -1144,7 +1085,7 @@ html,body
   margin-bottom: 100px;
 }
 
-#section10 iframe{
+#section_findus iframe{
   width: 100%;
   height: 100%;
 }
@@ -1159,12 +1100,9 @@ html,body
   margin-bottom: 50px;
   text-align: start;
 }
+/* Find Us END  */
 
-/* Section 10 END */
-
-
-
-/* Section 12  */
+/* Section Gallery 2  */
 .gallery {
   position: relative;
   height: 100%;
@@ -1233,16 +1171,45 @@ html,body
     grid-template-columns: auto auto;
   }
 }
-/* Section 12 END  */
+/* Section Gallery 2 END  */
 
-
-/* Section 14 */
-#housereviews{
-  padding-top: 40px;
-  background-image: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666701842756);
-  background-repeat: no-repeat;
-  background-position: 65%;
+/* Section Video  */
+#section_video {
+  padding-top: 80px;
 }
+
+#section_video video{
+  height: 100%;
+  width: 100%;
+}
+/* Section Video END  */
+
+/* Section House Reviews */
+.background{
+  padding-top: 80px;
+}
+
+#housereviews {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(./img/birdofparadise.jpeg);
+  background-position-y: 1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 430px) {
+  #housereviews {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url(./img/birdofparadise.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
 
 #housereviews h2{
   color: #887129;
@@ -1253,12 +1220,10 @@ html,body
   text-align: center;
 }
 
-
 #housereviews .item{
   margin-left: 15%;
   margin-right: 15%;
 }
-
 
 #housereviews .container p {
   color: #222222;
@@ -1299,9 +1264,13 @@ html,body
   width: 1%;
   left: 50%;
 }
-
-/* Section 14 END  */
+/* Section House Reviews END  */
 /* Homepage  End */
+
+
+
+
+
 
 
 
@@ -1453,7 +1422,7 @@ html,body
 .wg-drop.country-selector ul {
   background: transparent !important;
 }
-/* Language Translator Widget  */
+/* Language Translator Widget END  */
 
 /* 3. Navbar End  */
 

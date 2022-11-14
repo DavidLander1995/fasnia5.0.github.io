@@ -12,9 +12,7 @@ $(window).on("load", function(){
           "(min-width: 795px)": function() {
             // setup animations and ScrollTriggers for screens over 795px wide (desktop) here...
             // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
-
-         
-          
+        
             // Reserve Button Hero
             gsap.to(".animateherobutton1", {
               duration: 0,  

@@ -15,6 +15,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.birds-background {
+  background-image: url(./img/birdofparadise.jpeg);
+
+}
 /* Backgrounds  */
 
 /* Preloader  */
@@ -380,6 +385,17 @@ html,body
   transition: all 0.5s
 }
 
+.contact-link2{
+  text-decoration: none;
+  color: #222222;
+  font-size: 18px !important;
+}
+
+.contact-link2:hover{
+  text-decoration: none;
+  color: #887129
+}
+
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .section-title {
@@ -468,7 +484,7 @@ html,body
     line-height: 28px;
     color: #887129;
     text-align: center;
-    padding: 40px 20px 20px 0px;
+    padding: 60px 20px 20px 0px;
   }
   
   .under-title {
@@ -491,6 +507,12 @@ html,body
     color: #262626;
     text-align: center;
     padding: 0px 20px 20px 0px;
+  }
+
+  .contact-link2{
+    text-decoration: none;
+    color: #222222;
+    font-size: 16px !important;
   }
 }
 /* Typography END */
@@ -629,6 +651,21 @@ html,body
   background-color: #887129;
   color: white;
   border: #887129;
+}
+
+
+.SeeMore { 
+  color: #887129;
+  border: none;
+  background: none;
+  text-decoration: underline;
+}
+
+#elsuenoStory [type=button]:not(:disabled) {
+  background: none;
+  border: none;
+  color: #887129;
+  text-decoration: underline;
 }
 
 /* Sliders */
@@ -1274,6 +1311,8 @@ html,body
 /* Section Video  */
 #section_video {
   padding-top: 20px;
+  background-image: url(./img/birdofparadise.jpeg);
+  background-position: 10%;
 }
 
 #section_video video{
@@ -1708,12 +1747,14 @@ html,body
 }
 .renthouse-container{
   height: 380px;
-  background-color: #d3b486;
+  background-image: url(./img/birdofparadise.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #rent-house h2{
   padding-top: 40px;
-  font-size: 50px;
+  font-size: 42px;
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
   letter-spacing: 0;
@@ -1731,18 +1772,38 @@ html,body
   color: #222222;
 }
 
-#rent-house p{
-  padding-top: 30px;
+
+
+@media only screen and (max-width: 430px) {
+  #rent-house h2{
+    padding-top: 40px;
+    font-size: 32px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 63px;
+    color: #222222;
+  }
+  
+  #rent-house h4{
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+    color: #222222;
+    padding: 20px;
+  }
+
 }
+
 /* Section 3 END  */
 
 
 /* Section 4  */
 #room-services{
   padding-top: 50px;
-  background-image: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #room-services h4{
@@ -2161,9 +2222,19 @@ form button {
 }
 
 .background-full {
-  background: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?);
-  background-position: center;
+  background: url(./img/birdofparadise.jpeg);
+  background-position-y: 1%;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 430px) {
+  .background-full{
+    background-image: url(./img/birdofparadise.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
 }
 
 /* Contacto END  */
@@ -2251,27 +2322,15 @@ form button {
 /* Section 8 END  */
 
 
-/* Section 9  */
-
-/* Section 9 END  */
-
-
 /* Section 10  */
 #serviceextraCards{
   padding-top: 60px;
 }
-/* Section 10 END  */
-/* Servicios END  */
-
-
 
 /* La Casa Cabrera  */
 
 
 /* El Sueno  */
-#elsuenoStory{
-  padding-top: 40px;
-}
 .elsuenobanner-containerlg{
   width: 100%;
   margin-left: auto;
@@ -2333,10 +2392,19 @@ form button {
 }
 
 #elsuenoquote{
-  padding-top: 90px;
-  background-image: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?);
+  background-image: url(./img/birdofparadise.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+  background-position-y: 7%;
+}
+
+@media only screen and (max-width: 430px) {
+  #elsuenoquote{
+    background-image: url(./img/birdofparadise.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
 }
 /* El Sueno END  */
 

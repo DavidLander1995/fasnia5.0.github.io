@@ -98,25 +98,24 @@ $(window).on("load", function(){
 
         
             // Facilities 
-            gsap.to(".mySwiper9", {
-              duration: 0,  
-              x: -100,
-              opacity: 0,
-            });
+            // gsap.to(".mySwiper9", {
+            //   duration: 0,  
+            //   x: -100,
+            //   opacity: 0,
+            // });
 
-            gsap.to(".mySwiper9", {
-              duration: 2,  
-              opacity: 1,
-              x: 0,
-              ease: "slow",
-              scrollTrigger : { 
-                trigger: ".mySwiper9", 
-                markers: false,
-                start: "top 60%",
-                end: "center 30%",
-              }, 
-            });
-
+            // gsap.to(".mySwiper9", {
+            //   duration: 2,  
+            //   opacity: 1,
+            //   x: 0,
+            //   ease: "ease",
+            //   scrollTrigger : { 
+            //     trigger: ".mySwiper9", 
+            //     markers: false,
+            //     start: "top 60%",
+            //     end: "center 30%",
+            //   }, 
+            // });
             // Facilities Slider
 
 
@@ -144,24 +143,130 @@ $(window).on("load", function(){
 
             //  Find Us
             gsap.to(".findusanimate1", {
-              duration: 0,  
-              y: -100, 
+              duration: 0, 
               opacity: 0,
             });
 
             gsap.to(".findusanimate1", {
-              duration: 2,  
-              y: 0, 
+              duration: 1,  
               opacity: 1,
-              ease: "bounce",
+              ease: "ease",
               scrollTrigger : { 
-                trigger: "#section10", 
+                trigger: "#section_findus", 
                 markers: false,
-                start: "top 50%",
+                start: "top 30%",
                 end: "center 30%",
               }, 
             });
             
+            // Find Us Map
+            gsap.to(".findusmapanimate", {
+              duration: 0, 
+              opacity: 0,
+              scale: 0,
+              x: 200,
+            });
+
+            gsap.to(".findusmapanimate", {
+              duration: 1,  
+              opacity: 1,
+              delay: 0.5,
+              x: 0,
+              scale: 1,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: "#section_findus", 
+                markers: false,
+                start: "top 30%",
+                end: "center 30%",
+              }, 
+            });
+
+            // Gallery
+
+            // Image Far Left 
+            gsap.to(".gallery1animate", {
+              duration: 0, 
+              opacity: 0,
+              x: -200,
+            });
+
+            gsap.to(".gallery1animate", {
+              duration: 1,  
+              opacity: 1,
+              x: 0,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: ".gallery", 
+                markers: false,
+                start: "top 30%",
+                end: "center 30%",
+              }, 
+            });
+
+             // Image Middle Top
+             gsap.to(".gallery2animate", {
+              duration: 0, 
+              opacity: 0,
+              y: -200,
+            });
+
+            gsap.to(".gallery2animate", {
+              duration: 1,  
+              opacity: 1,
+              delay: 0.5,
+              y: 0,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: ".gallery", 
+                markers: false,
+                start: "top 30%",
+                end: "center 30%",
+              }, 
+            });
+
+            // Image Far Right
+            gsap.to(".gallery3animate", {
+              duration: 0, 
+              opacity: 0,
+              x: 200,
+            });
+
+            gsap.to(".gallery3animate", {
+              duration: 1,  
+              opacity: 1,
+              delay: 0.75,
+              x: 0,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: ".gallery", 
+                markers: false,
+                start: "top 30%",
+                end: "center 30%",
+              }, 
+            });
+
+            // Middle Bottom
+            gsap.to(".gallery4animate", {
+              duration: 0, 
+              opacity: 0,
+              y: 200,
+            });
+
+            gsap.to(".gallery4animate", {
+              duration: 1,  
+              opacity: 1,
+              delay: 1,
+              y: 0,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: ".gallery", 
+                markers: false,
+                start: "top 30%",
+                end: "center 30%",
+              }, 
+            });
+
             // Video 
             gsap.to(".animatevideo1", {
               duration: 0, 

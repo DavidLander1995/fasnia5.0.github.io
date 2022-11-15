@@ -13,27 +13,6 @@ $(window).on("load", function(){
             // setup animations and ScrollTriggers for screens over 795px wide (desktop) here...
             // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
         
-            // Reserve Button Hero
-            gsap.to(".animateherobutton1", {
-              duration: 0,  
-              y: -100,
-              opacity: 0,
-            });
-
-            gsap.to(".animateherobutton1", {
-              duration: 2,
-              delay: 1,  
-              y: 0, 
-              opacity: 1,
-              ease: "bounce",
-              scrollTrigger : { 
-                trigger: ".mySwiperhero", 
-                markers: false,
-                start: "top 45%",
-                end: "center 30%",
-              }, 
-            });
-            // Reserve Button 
 
             // Icons
             gsap.to(".animateicons1", {
@@ -117,8 +96,7 @@ $(window).on("load", function(){
 
             // Icons 
 
-            
-
+        
             // Facilities 
             gsap.to(".mySwiper9", {
               duration: 0,  
@@ -140,7 +118,6 @@ $(window).on("load", function(){
             });
 
             // Facilities Slider
-
 
 
             // Experiences 
@@ -231,50 +208,6 @@ $(window).on("load", function(){
 
 
         // All
-
-        // Title Hero
-        gsap.to(".animatetitle1", {
-          duration: 0,  
-          y: -100,
-          scale: 0,
-          opacity: 0,
-        });
-
-        gsap.to(".animatetitle1", {
-          duration: 1,  
-          y: 0, 
-          scale: 1,
-          opacity: 1,
-          ease: "circ",
-          scrollTrigger : { 
-            trigger: ".mySwiperhero", 
-            markers: false,
-            start: "top 45%",
-            end: "center 30%",
-          }, 
-        });
-
-        // Mobile Reserve Button
-        gsap.to(".animatemobilebook", {
-          duration: 0,  
-          y: 100,
-          scale: 0,
-          opacity: 0,
-        });
-
-        gsap.to(".animatemobilebook", {
-          duration: 2,  
-          y: 0, 
-          scale: 1,
-          opacity: 1,
-          ease: "power2",
-          scrollTrigger : { 
-            trigger: ".mySwiperhero", 
-            markers: false,
-            start: "top 90%",
-            end: "center 30%",
-          }, 
-        });
 
         // Logo 
         gsap.to(".intro-logo", {

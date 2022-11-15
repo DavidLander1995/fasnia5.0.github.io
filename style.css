@@ -267,6 +267,10 @@ html,body
 /* Carousel Options END  */
 
 /* Typography  */
+/* Global Sizes */
+
+
+
 /* Large Screens  */
 .section-title {
   font-size: 32px;
@@ -310,6 +314,7 @@ html,body
   text-align: justify;
 }
 
+/* Section Intro  */
 .title {
   font-size: 22px;
   font-family: 'Nunito', sans-serif;
@@ -318,6 +323,7 @@ html,body
   line-height: 28px;
   color: #887129;
   text-align: center;
+  padding: 3.5rem 0rem 0rem 0rem;
 }
 
 .under-title {
@@ -328,6 +334,18 @@ html,body
   letter-spacing: 0;
   line-height: 63px;
   color: #222222;
+  padding: 3rem 0rem 0rem 0rem;
+}
+
+.under-title-desc{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  color: #262626;
+  text-align: center;
+  padding: 3rem 0rem 0rem 0rem;
 }
 
 /* Page Intro Text  */
@@ -405,9 +423,77 @@ html,body
     margin-bottom: 50px;
     text-align: justify;
   }
+
+  /* Page Intro Text  */
+  .pageintro h3 {
+    color: #887129;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-transform: none;
+    padding-top: 10px;
+  }
+
+  .pageintro h2 {
+    color: #222222;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 63px;
+    padding-top: 10px;
+  }
+
+  .pageintro p {
+    color: #262626;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    line-height: 25px;
+    padding: 10px;
+    padding-left: 21px;
+    padding-right: 21px;
+
+  }
+
+  /* Section Intros  */
+  .title {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+    color: #887129;
+    text-align: center;
+    padding: 40px 20px 20px 0px;
+  }
+  
+  .under-title {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 63px;
+    color: #222222;
+    padding: 0px 20px 20px 0px;
+  }
+  
+  .under-title-desc{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    line-height: 25px;
+    color: #262626;
+    text-align: center;
+    padding: 0px 20px 20px 0px;
+  }
 }
 /* Typography END */
-
 .nav-container {
   position: fixed;
   bottom: 2%;
@@ -662,49 +748,63 @@ html,body
 
 /* Page Introduction */
 .index-start img {
-  padding-top: 80px;
+  padding-top: 6rem;
   width: 15rem;
 }
 
 .indexmiddle-quote {
-  padding-top: 50px;
   color: #222222;
   font-family: 'Libre Baskerville', serif;
-  font-size: 42px;
-  font-weight: 000;
+  font-size: 36px;
+  font-weight: normal;
   letter-spacing: normal;
   line-height: 80px;
+  padding-top: 3.5rem;
+}
+
+.indexend-quote {
+  color: #262626;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px !important;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  line-height: 25px;
+  padding-top: 3.5rem;
 }
 
 @media screen and (max-width: 699px) {
+  .index-start img {
+    padding-top: 3.5rem;
+    width: 12rem;
+  }
+
   .indexmiddle-quote {
-    padding-top: 50px;
     color: #222222;
     font-family: 'Libre Baskerville', serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: normal;
     letter-spacing: normal;
     line-height: 50px;
   }
+
+  .indexend-quote {
+    font-size: 16px !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    line-height: 40px;
+    color: #262626;
+    text-align: center;
+  }
 }
 
-.indexend-quote {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.36px;
-  line-height: 40px;
-  color: #262626;
-  text-align: center;
-}
 /* Page Introduction END  */
 
 
 /* Icon Section Display  */
 /* Section Icons */
 #iconsection{
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding-block: 60px;
 }
 
 .home-icons{
@@ -783,39 +883,9 @@ html,body
   color: white;
   font-weight: 100;
   letter-spacing: normal;
+  padding: 5px;
 }
 
-@media screen and (max-width: 699px) {
-  .facilitiesicon-container img{
-    display: block;
-    padding-top: 10px;
-    margin: auto;
-    height: 2.5em;
-    object-fit: contain;
-    filter: invert(100%) sepia(14%) saturate(7492%) hue-rotate(210deg) brightness(113%) contrast(114%);
-  }
-
-  .box-container2 h2 {
-    font-size: 1.4rem;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: 63px;
-    color: #887129;
-  }
-
-  .box-container2 p {
-    font-size: 1rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.36px;
-    line-height: 25px;
-    color: white;
-    margin-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 
 .box-container h2 {
   font-size: 28px;
@@ -874,6 +944,38 @@ html,body
   color: white !important;
   text-align: center;
 }
+
+@media screen and (max-width: 699px) {
+  .facilitiesicon-container img{
+    display: block;
+    padding-top: 10px;
+    margin: auto;
+    height: 2.5em;
+    object-fit: contain;
+    filter: invert(100%) sepia(14%) saturate(7492%) hue-rotate(210deg) brightness(113%) contrast(114%);
+  }
+
+  .box-container h2 {
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 63px;
+    color: #887129;
+  }
+
+  .box-container p {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    line-height: 25px;
+    color: black;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 /* The Houses Section END  */
 
 
@@ -918,10 +1020,6 @@ html,body
 
 
 /* Section - The Facilities */
-#section_facilities{
-  padding-top: 80px;
-}
-
 .icon .homeicon-text2{
   color: #887129 !important;  
   cursor: pointer !important;
@@ -1175,7 +1273,7 @@ html,body
 
 /* Section Video  */
 #section_video {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 #section_video video{
@@ -1185,10 +1283,6 @@ html,body
 /* Section Video END  */
 
 /* Section House Reviews */
-.background{
-  padding-top: 80px;
-}
-
 #housereviews {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1209,16 +1303,6 @@ html,body
   }
 }
 
-
-
-#housereviews h2{
-  color: #887129;
-  font-family: 'Libre Baskerville' serif;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 46px;
-  text-align: center;
-}
 
 #housereviews .item{
   margin-left: 15%;

@@ -653,29 +653,11 @@ html,body
   width: calc(100vw - 10%);
   margin: auto;
   line-height: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-.btn-bookmobileindex{
-  background-color: #887129;
-  border: 2px solid #887129;
-  border-radius: 100px;
-  color: white;
-  height: 45px;
-  padding: 10px 30px;
-  text-decoration: none;
-  text-align: center;
-  width: calc(100vw - 30%);
-  margin-left: 25%;
-  line-height: 0;
-  margin-bottom: 20px;
-}
 
 .btn-bookmobile:hover{
-  background: #725c1a;
-}
-
-.btn-bookmobileindex:hover{
   background: #725c1a;
 }
 

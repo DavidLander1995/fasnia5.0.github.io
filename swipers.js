@@ -1,11 +1,16 @@
- // Homepage Swiper
 var swiper = new Swiper(".mySwiper", {
 spaceBetween: 10,
 slidesPerView: 4,
+loop: true,
 freeMode: true,
 watchSlidesProgress: true,
 });
 var swiper2 = new Swiper(".mySwiper2", {
+effect: "fade",
+fadeEffect: {
+  crossFade: true
+},
+loop: true,
 spaceBetween: 10,
 navigation: {
     nextEl: ".swiper-button-next",
@@ -17,14 +22,20 @@ thumbs: {
 });
 
 
-// Homepage 
+
 var swiper = new Swiper(".mySwiper3", {
+loop: true,
 spaceBetween: 10,
 slidesPerView: 4,
 freeMode: true,
 watchSlidesProgress: true,
 });
 var swiper2 = new Swiper(".mySwiper4", {
+  effect: "fade",
+fadeEffect: {
+  crossFade: true
+},
+loop: true,
 spaceBetween: 10,
 navigation: {
     nextEl: ".swiper-button-next",
@@ -36,7 +47,7 @@ thumbs: {
 });
 
 
-// Homepage 
+
 var swiper = new Swiper(".mySwiper5", {
 spaceBetween: 10,
 slidesPerView: 4,
@@ -44,6 +55,10 @@ freeMode: true,
 watchSlidesProgress: true,
 });
 var swiper2 = new Swiper(".mySwiper6", {
+  effect: "fade",
+fadeEffect: {
+  crossFade: true
+},
 spaceBetween: 10,
 navigation: {
     nextEl: ".swiper-button-next",
@@ -55,7 +70,7 @@ thumbs: {
 });
 
 
-// Section 2 - Homepage
+
 var swiper = new Swiper(".mySwiper7", {
     effect: "cube", 
     loop: true,
@@ -80,7 +95,7 @@ var swiper = new Swiper(".mySwiper7", {
   });
 
   
-  // Section 4 - Homepage
+
   var swiper = new Swiper(".mySwiper8", {
     effect: "flip",
     grabCursor: true,
@@ -142,6 +157,10 @@ var swiper = new Swiper(".mySwiper1000", {
   watchSlidesProgress: true,
 });
 var swiper2 = new Swiper(".mySwiper10001", {
+effect: "fade",
+fadeEffect: {
+crossFade: true
+},
   loop: true,
   spaceBetween: 10,
   navigation: {

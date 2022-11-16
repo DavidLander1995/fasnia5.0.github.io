@@ -226,18 +226,16 @@
     <div class="container-fluid mt-5">
         <div class="container">
             <div class="row">
-                <div class="promociones2a-animate col-lg-6">
+                <div class="promociones2a-animate col-lg-6 order-2 text-center text-lg-start">
                     <h2 class="section-title">Yoga En Grupos</h2>
-                    <p class="section-desc">Es hora de cuidarse en un ambiente inigualable.
-                        <br>
-                        <br>
-                        Por su entorno privilegiado, la tranquilidad que se respira y la paz del lugar, 
-                        encontrarás en Las Casas del Camino Real el el sitio ideal para las prácticas de 
-                        yoga de tu grupo.
-                    </p>
+                    <p class="section-desc">Es hora de cuidarse en un ambiente inigualable...</p>
+										<p class="section-desc">Por su entorno privilegiado, la tranquilidad que se respira y la paz del lugar, 
+											encontrarás en Las Casas del Camino Real el el sitio ideal para las prácticas de 
+											yoga de tu grupo.
+										</p>
                     <button type="button" class="btn-contact button-contacto1 mt-4">Contacto</button>
                 </div>
-                <div class="promociones2b-animate col-lg-6">
+                <div class="promociones2b-animate col-lg-6 order-1">
                     <img src="https://ik.imagekit.io/l3yst4k9g/Promociones/Section_2/yoga_Vw-o0CF5Q.webp?" 
                     alt="Una señora realizando una sesión de yoga.">
                 </div>
@@ -258,7 +256,7 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="promociones4a-animate col-lg-6">
+                <div class="promociones4a-animate col-lg-6 order-2 order-lg-1 text-center text-lg-start">
                     <h2 class="section-title">Alquila Las 4 Casas Rurales</h2>
                     <p class="section-desc">Si te interesa alquilar toda la finca completa con el acceso al Spa, 
                         la barbacoa y la sala de reuniones, contacta con nosotros y te ayudaremos a 
@@ -266,7 +264,7 @@
                     </p>
                     <button type="button" class="btn-contact button-contacto2 mt-4">Contacto</button>
                 </div>
-                <div class="promociones4b-animate col-lg-6">
+                <div class="promociones4b-animate col-lg-6 order-1">
                     <img src="https://ik.imagekit.io/l3yst4k9g/Promociones/Section_4/Exteriores__53_de_53__rNAtizZlS.jpg?" 
                     alt="Las Casas del Camino Real (Siglo XVII) mostradas a través de un espejo retrovisor.">
                 </div>
@@ -458,22 +456,43 @@
 <!-- Footer END -->
 
 
-
-
-
-
-
-
-
-
-
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-<script src="./navbar.js"></script>
-<script src="./promocionesanimations.js"></script>
-<script src="./buttons-promociones.js"></script>
+<!-- Scripts END -->
+
+<!-- Buttons  -->
+<script>
+	document.querySelector('.button-contacto1').addEventListener('click', () => {
+	document.location.href = "./contacto.html"
+})
+
+document.querySelector('.button-contacto2').addEventListener('click', () => {
+	document.location.href = "./contacto.html"
+})
+</script>
+<!-- Buttons END  -->
+
+<!-- Animations  -->
+<script>
+	// Section 2
+	ScrollReveal().reveal('.promociones2a-animate', {viewFactor: 0.5, duration: 1000, origin: 'left', distance: '100px', reset: false, mobile: false});
+	ScrollReveal().reveal('.promociones2b-animate', {viewFactor: 0.5, delay: 500, duration: 1000, origin: 'right', distance: '100px', reset: false, mobile: false});
+
+	// Section 4
+	ScrollReveal().reveal('.promociones4a-animate', {viewFactor: 0.5, duration: 1000, origin: 'left', distance: '100px', reset: false, mobile: false});
+	ScrollReveal().reveal('.promociones4b-animate', {viewFactor: 0.5, delay: 500, duration: 1000, origin: 'right', distance: '100px', reset: false, mobile: false});
+</script>
+<!-- Animations END  -->
+
+<!-- Navbar  -->
+<script>
+	$(window).scroll(function(){
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
+});
+</script>
+<!-- Navbar END  -->
 
 
 </div>

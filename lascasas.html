@@ -238,10 +238,10 @@
             <p class="under-title-desc">Las 4 casas tienen amplias zonas interiores, patios y comparten zonas comunes como la piscina, una acogedora 
                 zona de relajación con increíbles vistas y la barbacoa.
             </p>
+          
       </div>
     </section>
     <!-- Section 1 END -->
-
 
 
     <!-- Section 2 -->
@@ -762,12 +762,24 @@
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-  <script src="./navbar.js"></script>
-  <script src="./lascasasanimations.js"></script>
   <!-- Scripts END -->
 
+
+  
+  
+  <!-- Buttons  -->
   <script>
-  // Buttons 
+
+  // Reserve Mobile
+  document.querySelector('.button-reservemobile').addEventListener('click', () => {
+    if (Weglot.getCurrentLang() == "es") {
+		document.location.href = "reservationgeneralES.html"
+	}
+	else {
+		document.location.href = "reservationgeneralEN.html"
+	}
+  })
+
 
   // La Casa de Los Corrales
   document.querySelector('.button-loscorrales').addEventListener('click', () => {
@@ -833,8 +845,25 @@
     document.location.href = "./contacto.html"
   })
   </script>
-  
   <!-- Buttons END  -->
+
+  <!-- Animations  -->
+  <script>
+    ScrollReveal().reveal('.card1-animation', {viewFactor: 0.6, duration: 500, scale: 0.2, mobile: false});
+    ScrollReveal().reveal('.card2-animation', {viewFactor: 0.6, delay: 500, duration: 500, scale: 0.2, mobile: false});
+    ScrollReveal().reveal('.card3-animation', {viewFactor: 0.6, delay: 750, duration: 500, scale: 0.2, mobile: false});
+    ScrollReveal().reveal('.card4-animation', {viewFactor: 0.6, delay: 1000, duration: 500, scale: 0.2, mobile: false});
+  </script>
+  <!-- Animations END  -->
+
+
+  <!-- Navbar Change Colour  -->
+  <script>
+    $(window).scroll(function(){
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
+    });
+  </script>
+  <!-- Navbar Change Colour END -->
 
 
 </div>

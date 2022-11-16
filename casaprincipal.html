@@ -27,7 +27,7 @@
 	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Webglot Translation  -->
-	<script type="text/javascript"src="https://cdn.weglot.com/weglot.min.js"></script>
+	<script src="https://cdn.weglot.com/weglot.min.js"></script>
 	<script>
 			Weglot.initialize({
 					api_key: 'wg_3ba3a5117900802e6c8ab11f6c7e3b1a2',
@@ -54,9 +54,9 @@
 	</script>
 	<!-- Webglot Translation  -->
 
+
 </head>
 <body>
-
 
 <!-- Preloader  -->
 <div class="pre-loader">
@@ -81,15 +81,12 @@
 </script>
 <!-- Preloader END  -->
 
-
-
-
 <!-- Navigation Section -->
 <!-- 3 Links Displayed When Screen Size > Medium -->
 <nav class="navbar navbar-default fixed-top">
 	<div class="container-fluid">
 		<!-- Logo Main Navbar -->
-	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 1.5rem;"></a>
+	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 0.8rem;"></a>
 
 	  <!-- 3 Links -->
 	  <div class="d-none d-lg-block d-xl-block link-container">
@@ -99,9 +96,13 @@
 	  </div>
 
 	  <!-- Toggler Button for Offcanvas Menu -->
-	  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menú de Navegación">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
+		<div class="parent">
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menú de Navegación">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+			<div id="translate-container" class="translate-container2"></div>
+		</div>
+
 	  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 		<div class="offcanvas-header">
 			<!-- Logo Offcanvas -->
@@ -112,42 +113,41 @@
 		<!-- Offcanvas Links -->
 		<div class="offcanvas-body">
 		  <ul class="navbar-nav justify-content-start">
-			<li class="nav-item">
-			  <a class="nav-link hover-underline-animation" aria-current="page" href="./index.html">Inicio</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link hover-underline-animation" href="./lascasas.html">Las Casas</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./elsueno.html">El Sueño</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link hover-underline-animation" href="./larestauracion.html">La Restauración</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./galeriadefotos.html">Galería de Fotos</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./servicios.html">Servicios</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./promociones.html">Promociones</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./ubicacion.html">Ubicación</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./contacto.html">Contacto</a>
-			</li>
-			<li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" aria-current="page" href="./index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./lascasas.html">Las Casas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./elsueno.html">El Sueño</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./larestauracion.html">La Restauración</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./galeriadefotos.html">Galería de Fotos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./servicios.html">Servicios</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./promociones.html">Promociones</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./ubicacion.html">Ubicación</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./contacto.html">Contacto</a>
+				</li>
+				<li>
 				<!-- Offcanvas Reserve Button -->
-				<button type="button" class="btn-book" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
-			</li>
+					<button type="button" class="btn-book button-reservenavbar" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
+				</li>
 		  </ul>
 		</div>
-	  </div>
 	</div>
-  </nav>
+</nav>
 <!-- Navigation Section END -->
 
 
@@ -194,9 +194,9 @@
 <!-- SECTION 2 Title -->
 <section id="introprincipal">
 	<div class="pageintro">
-		<h3 class="text-center">Descansa En La Casa</h3>
-		<h2 class="text-center">Principal</h2>
-		<p class="text-center">Disfruta de las encantadoras características tradicionales desde el momento en que pones un pie dentro.</p>
+		<h3 class="title">Descansa En La Casa</h3>
+		<h2 class="under-title">Principal</h2>
+		<p class="under-title-desc">Disfruta de las encantadoras características tradicionales desde el momento en que pones un pie dentro.</p>
 	</div>
 </section>
 <!-- SECTION 2 Title END -->
@@ -205,7 +205,7 @@
 
 <!-- Icon Slider Section Owl  -->
 <section id="iconsection">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="owl-carousel">
 			<div>
 				<img class="home-icons" src="./img/people.png" alt="Wifi Icon">
@@ -264,104 +264,105 @@
 
 <!-- SECTION 3 - Content Title (Imaginese) -->
 <section id="houseid_1">
-	<div class="container pb-4">
+	<div class="container">
 		<div class="row justify-content-md-center">
 			<div class="col-lg-6 houses1a-animate">
-          <div style="--swiper-navigation-color: #887129; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-              <div class="swiper-wrapper">
 
-                <div class="swiper-slide active">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/vista-general-Casa-Principal-Salon-cocina-7-de-81_2TFC8GNAC.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/vista-general-Casa-Principal-Salon-cocina-7-de-81_2TFC8GNAC.jpg?">
-									</a>
-                </div>
+				<div class="swiper-container">
+					<div style="--swiper-navigation-color: #887129; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+						<div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/salon-detalle-Casa-principal-salon-comedor-3-de-23_VVkPfkC5L.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-detalle-Casa-principal-salon-comedor-3-de-23_VVkPfkC5L.jpg?">
-									</a>
-                </div>
+							<div class="swiper-slide active">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/vista-general-Casa-Principal-Salon-cocina-7-de-81_2TFC8GNAC.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/vista-general-Casa-Principal-Salon-cocina-7-de-81_2TFC8GNAC.jpg?">
+								</a>
+							</div>
 
-                <div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/salon-Casa-principal-salon-comedor-10-de-23_fdXiFxNbh.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-Casa-principal-salon-comedor-10-de-23_fdXiFxNbh.jpg?">
-									</a>
-                </div>
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/salon-detalle-Casa-principal-salon-comedor-3-de-23_VVkPfkC5L.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-detalle-Casa-principal-salon-comedor-3-de-23_VVkPfkC5L.jpg?">
+								</a>
+							</div>
 
-                <div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/vistageneral-Casa-Principal-Salon-cocina-8-de-81_bK0EPWuPq.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/vistageneral-Casa-Principal-Salon-cocina-8-de-81_bK0EPWuPq.jpg?">
-									</a>
-                </div>
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/salon-Casa-principal-salon-comedor-10-de-23_fdXiFxNbh.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-Casa-principal-salon-comedor-10-de-23_fdXiFxNbh.jpg?">
+								</a>
+							</div>
 
-								
-                <div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/salon-cocina-Casa-Principal-Salon-cocina-2-de-81_F8xx8XUPD.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-cocina-Casa-Principal-Salon-cocina-2-de-81_F8xx8XUPD.jpg?">
-									</a>
-                </div>
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/vistageneral-Casa-Principal-Salon-cocina-8-de-81_bK0EPWuPq.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/vistageneral-Casa-Principal-Salon-cocina-8-de-81_bK0EPWuPq.jpg?">
+								</a>
+							</div>
 
-								
-                <div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/vistas-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-15-de-43_jM0rvZnhFs.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/vistas-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-15-de-43_jM0rvZnhFs.jpg?">
-									</a>
-                </div>
+							
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/salon-cocina-Casa-Principal-Salon-cocina-2-de-81_F8xx8XUPD.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-cocina-Casa-Principal-Salon-cocina-2-de-81_F8xx8XUPD.jpg?">
+								</a>
+							</div>
 
-								
-                <div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio2-Casa-Principal-Habitacion-doble-abajo-3-de-20_zxkI7YGiwT.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio2-Casa-Principal-Habitacion-doble-abajo-3-de-20_zxkI7YGiwT.jpg?">
-									</a>
-                </div>
+							
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/vistas-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-15-de-43_jM0rvZnhFs.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/vistas-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-15-de-43_jM0rvZnhFs.jpg?">
+								</a>
+							</div>
 
-								
-                <div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-cocina-Casa-Principal-Salon-cocina-41-de-81_dyBbBqGWL.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-cocina-Casa-Principal-Salon-cocina-41-de-81_dyBbBqGWL.jpg?">
-									</a>
-                </div>
+							
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio2-Casa-Principal-Habitacion-doble-abajo-3-de-20_zxkI7YGiwT.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio2-Casa-Principal-Habitacion-doble-abajo-3-de-20_zxkI7YGiwT.jpg?">
+								</a>
+							</div>
 
-								
-                <div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-detalle-Casa-Principal-Habitacion-doble-abajo-17-de-20_FQ4URUfY9i.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-detalle-Casa-Principal-Habitacion-doble-abajo-17-de-20_FQ4URUfY9i.jpg?">
-									</a>
-                </div>
+							
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-cocina-Casa-Principal-Salon-cocina-41-de-81_dyBbBqGWL.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-cocina-Casa-Principal-Salon-cocina-41-de-81_dyBbBqGWL.jpg?">
+								</a>
+							</div>
 
-								
-                <div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-37-de-43_juRcPga721.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-37-de-43_juRcPga721.jpg?">
-									</a>
-                </div>
+							
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-detalle-Casa-Principal-Habitacion-doble-abajo-17-de-20_FQ4URUfY9i.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-detalle-Casa-Principal-Habitacion-doble-abajo-17-de-20_FQ4URUfY9i.jpg?">
+								</a>
+							</div>
 
-								<div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-salon-comedor-21-de-23_7p1QWAPWe.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-salon-comedor-21-de-23_7p1QWAPWe.jpg?">
-									</a>
-                </div>
+							
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-37-de-43_juRcPga721.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-37-de-43_juRcPga721.jpg?">
+								</a>
+							</div>
 
-								<div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-35-de-43_UF9DJaD10R.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-35-de-43_UF9DJaD10R.jpg?">
-									</a>
-                </div>
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-salon-comedor-21-de-23_7p1QWAPWe.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-salon-comedor-21-de-23_7p1QWAPWe.jpg?">
+								</a>
+							</div>
 
-								<div class="swiper-slide">
-                  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-23-de-43_oEAEBl-VZ.jpg?" data-lightbox="photos2"> 
-										<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-23-de-43_oEAEBl-VZ.jpg?">
-									</a>
-                </div>
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-35-de-43_UF9DJaD10R.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-35-de-43_UF9DJaD10R.jpg?">
+								</a>
+							</div>
 
-					
-              </div>
-
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-
+							<div class="swiper-slide">
+								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-23-de-43_oEAEBl-VZ.jpg?" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-23-de-43_oEAEBl-VZ.jpg?">
+								</a>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+          
             <div thumbsSlider="" class="swiper mySwiper">
+
               <div class="swiper-wrapper" style="margin-top: 5px;">
 
                 <div class="swiper-slide">
@@ -415,13 +416,12 @@
 								<div class="swiper-slide">
                   <img src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-23-de-43_oEAEBl-VZ.jpg?">
                 </div>
-
               </div>
             </div>
         </div>
 
 			<div class="col-lg-6 text-center houses1b-animate">
-				<h1 class="section-title">Imagínese</h1>
+				<h1 class="section-title text-center text-lg-start">Imagínese</h1>
 				<p class="section-desc">
           Perenne en el tiempo, esta casa, construida en 1648, fue la residencia de los propietarios de la finca durante 
 					muchas generaciones y conserva todo el sabor del pasado. Su entrada , sus habitaciones inmensas,  sus muros de piedra vista, 
@@ -453,14 +453,14 @@
 
 
 <!-- Seperator  -->
-<div class="container-fluid mySeperator2"></div>
+<div class="mySeperator2"></div>
 <!-- Seperator END  -->
 
 
 
 <!-- SECTION 4 - Content Title (Todo Lo Que Necesitas) -->
 <section id="houseid_2">
-	<div class="container pt-4 pb-4">
+	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 order-lg-last houses2a-animate">
 				<div style="--swiper-navigation-color: #887129; --swiper-pagination-color: #fff" class="swiper mySwiper4">
@@ -613,7 +613,7 @@
 			</div>
 
 			<div class="col-lg-6 text-center houses2b-animate">
-				<h2 class="section-title">Lo Esencial y Mucho Más</h2>
+				<h2 class="section-title text-center text-lg-start">Lo Esencial y Mucho Más</h2>
 				<p class="section-desc">
 					La casa dispone de todas las comodidades: cocina con isla central, totalmente equipada, 
 					placa de inducción, lavavajillas, lavadora-secadora, nevera americana con congelador, 
@@ -630,15 +630,15 @@
 
 
 <!-- Seperator  -->
-<div class="container-fluid mySeperator2"></div>
+<div class="mySeperator2"></div>
 <!-- Seperator END  -->
 
 
 <!-- SECTION 6 - Content Title (Instalaciones) -->
 <section id="houseid_3">
-	<div class="container pt-4 pb-4">
+	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 houses3a-animate">
+			<div class="col-lg-6 order-1 houses3a-animate">
 				<div style="--swiper-navigation-color: #887129; --swiper-pagination-color: #fff" class="swiper mySwiper6">
 					<div class="swiper-wrapper" style="margin-top: 5px;">
 
@@ -774,8 +774,8 @@
 				  </div>
 			</div>
 
-			<div class="col-lg-6 text-center houses3b-animate">
-				<h2 class="section-title">Instalaciones</h2>
+			<div class="col-lg-6 order-2 text-center houses3b-animate">
+				<h2 class="section-title text-center text-lg-start">Instalaciones</h2>
 				<p class="section-desc">Disfrute de las espectaculares vistas desde la piscina infinita climatizada que da al mar o, si eso le parece demasiado agotador, 
 					relájese y desconecte en la zona de spa con jacuzzi y sauna.</p>
 				<a href="./servicios.html"><button type="button" class="btn-more mb-md-4">Ver Más</button></a>
@@ -788,16 +788,16 @@
 
 
 <!-- Seperator  -->
-<div class="container-fluid mySeperator2"></div>
+<div class="mySeperator2"></div>
 <!-- Seperator END  -->
 
 <!-- Section 7  -->
-<section id="promocioneslasCasas">
+<section id="houseid_4">
 	<div class="container-fluid">
 			<div class="container">
 					<div class="row">
-							<div class="promociones4a-animate col-lg-6">
-									<h2 class="section-title">Alquila Las 4 Casas Rurales</h2>
+							<div class="promociones4a-animate col-lg-6 order-2 order-lg-1 text-center">
+									<h2 class="section-title text-center text-lg-start">Alquila Las 4 Casas Rurales</h2>
 									<p class="section-desc">Si te interesa alquilar toda la finca completa con el acceso al Spa, 
 											la barbacoa y la sala de reuniones, contacta con nosotros y te ayudaremos a 
 											encontrar fechas y te enviaremos nuestras ofertas.
@@ -806,7 +806,7 @@
                     <button type="button" class="btn-contact button-contacto2 mt-4">Contacto</button>
                   </a>
 							</div>
-							<div class="promociones4b-animate col-lg-6">
+							<div class="promociones4b-animate col-lg-6 order-1 order-lg-2">
 									<img src="https://ik.imagekit.io/l3yst4k9g/Promociones/Section_4/Exteriores__53_de_53__rNAtizZlS.jpg?" 
 									alt="Las Casas del Camino Real (Siglo XVII) mostradas a través de un espejo retrovisor.">
 							</div>
@@ -818,12 +818,12 @@
 
 
 <!-- Seperator  -->
-<div class="container-fluid mySeperator"></div>
+<div class="mySeperator2"></div>
 <!-- Seperator END  -->
 
 
 <!-- Section 8  -->
-<div class="extra-info pt-4 pb-4">
+<div class="extra-info">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 houses5a-animate">
@@ -841,9 +841,9 @@
 			</div>
 
 			<div class="col-lg-6 houses5b-animate">
-				<h2>Su peculiaridad</h2>
-				<ul>
-					<li>Vistas A La Cumbre y Al Mar.</li>
+				<h2 class="section-title text-center text-lg-start">Su peculiaridad</h2>
+				<ul class="section-desc text-center text-lg-start">
+					<lii>Vistas A La Cumbre y Al Mar.</li>
 					<li>Balcón Canario.</li>
 					<li>Amplitud en todas las estancias.</li>
 					<li>Bodega con ventana-mirador.</li>
@@ -856,11 +856,8 @@
 <!-- Section 8 END -->
 
 
-
-
-
 <!-- Seperator  -->
-<div class="container-fluid mySeperator"></div>
+<div class="mySeperator2"></div>
 <!-- Seperator END  -->
 
 
@@ -876,8 +873,6 @@
   </div>
 </section>
 <!-- SECTION 9 END -->
-
-
 
 
 <!-- Footer -->
@@ -1148,10 +1143,6 @@
             <p class="icon-desc">Televisión Satélite</p>
           </div>
 
-          <div class="col">
-            <img class="icon-images" src="./img/cd.png" alt="CD's">
-            <p class="icon-desc">CD's</p>
-          </div>
 
           <div class="col">
             <img class="icon-images" src="./img/boardgames.png" alt="Juegos de Mesa">
@@ -1215,33 +1206,34 @@
 <script>
 	$(document).ready(function(){
    $(".owl-carousel").owlCarousel({
-	 margin:10,
-	 responsive:{
-	   0:{
-		 items:2,
-		 loop: true,
-		 autoplay: true,
-		 autoplayTimeout: 2000,
-		 autoplayHoverPause: true,
-	   },
-	   600:{
-		 items:3,
-		 loop: true,
-		 autoplay: true,
-		 autoplayTimeout: 2000,
-		 autoplayHoverPause: true,
-	   },
-	   1000:{
-		 items:6,
-		 loop: true,
-		 autoplay: true,
-		 autoplayTimeout: 2500,
-		 autoplayHoverPause: true,
-	   }
-	 }
-   }
-   );
- });
+		dots: false,
+		margin:10,
+		responsive:{
+			0:{
+			items:2,
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 2000,
+			autoplayHoverPause: true,
+			},
+			600:{
+			items:3,
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 2000,
+			autoplayHoverPause: true,
+			},
+			1000:{
+			items:6,
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 2500,
+			autoplayHoverPause: true,
+			}
+		}
+		}
+		);
+	});
 </script>
 <!-- Owl Carousel for Icons END  -->
 

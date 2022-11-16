@@ -8,17 +8,57 @@
 
 */
 
-
-/* Backgrounds  */
-.flowerbackground {
-  background: url(./img/5404176.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+/* Swiper CSS  */
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.5;
 }
 
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.mySwiper3 .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.mySwiper3 .swiper-slide-thumb-active {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.mySwiper5 .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.mySwiper5 .swiper-slide-thumb-active {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+
+/* Swiper CSS  */
+
+.divider {
+  width: 4rem;
+  margin: auto;
+  color: #887129;
+  border: 2px solid #887129;
+  opacity: 0.8;
+  border-radius: 99px;
+}
+
+/* Backgrounds  */
 .birds-background {
   background-image: url(./img/birdofparadise.jpeg);
-
+  background-size: cover;
+  background-position: center;
 }
 /* Backgrounds  */
 
@@ -173,7 +213,6 @@ html,body
     height: 80px;
     background-color: #d3b486;
   }
-  
 }
 
 .mySeperator2 {
@@ -280,6 +319,7 @@ html,body
 .carousel-control-prev /*, .carousel-indicators */ {
   filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
 }
+
 /* Carousel Options END  */
 
 /* Typography  */
@@ -317,6 +357,7 @@ html,body
   color: #262626;
   margin-bottom: 50px;
   text-align: justify;
+  margin-top: 24px;
 }
 
 .section-desc2 {
@@ -605,17 +646,36 @@ html,body
   border: 2px solid #887129;
   border-radius: 100px;
   color: white;
-  height: 40px;
+  height: 45px;
   padding: 10px 30px;
   text-decoration: none;
   text-align: center;
   width: calc(100vw - 10%);
   margin: auto;
   line-height: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-bookmobileindex{
+  background-color: #887129;
+  border: 2px solid #887129;
+  border-radius: 100px;
+  color: white;
+  height: 45px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-align: center;
+  width: calc(100vw - 30%);
+  margin-left: 25%;
+  line-height: 0;
+  margin-bottom: 20px;
 }
 
 .btn-bookmobile:hover{
+  background: #725c1a;
+}
+
+.btn-bookmobileindex:hover{
   background: #725c1a;
 }
 
@@ -1911,17 +1971,58 @@ html,body
 }
 
 
-#houseid_1 {
-  background-image: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?);
-  background-repeat: no-repeat;
-  background-position: 35%;
+@media only screen and (max-width: 900px) {
+  #houseid_1{
+    padding-bottom: 40px !important;
+  }
+
+  #houseid_2 {
+    background-image: none !important;
+    padding-bottom: 40px !important;
+  }
+
+  #houseid_3 {
+    padding-block: 40px !important;
+  }
+
+  #houseid_4 {
+    padding-block: 40px !important;
+    background-image: none !important;
+  }
+
+  .extra-info {
+    padding-block: 40px !important;
+  }
 }
 
-#houseid_3 {
-  background-image: url(https://ik.imagekit.io/l3yst4k9g/5404176_6rWmqPXuo.jpg?);
-  background-repeat: no-repeat;
-  background-position: center;
+#houseid_1 {
+  padding-bottom: 80px !important;
 }
+
+#houseid_2 {
+  padding-block: 80px;
+  background-image: url(https://ik.imagekit.io/l3yst4k9g/birdofparadise_ZBzu_7SN8.jpeg?);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+#houseid_3{
+  padding-block: 80px;
+}
+
+#houseid_4 {
+  padding-block: 80px;
+  background-image: url(https://ik.imagekit.io/l3yst4k9g/birdofparadise_ZBzu_7SN8.jpeg?);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.extra-info {
+  padding-block: 80px;
+}
+
 
 .fa-solid{
   font-size: 4vh;
@@ -2010,8 +2111,16 @@ html,body
     display: grid;
     grid-template-columns: auto auto;
   }
-}
 
+  .extra-info li { 
+    font-size: 16px !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    line-height: 25px;
+    color: #262626;
+  }
+}
 
 .extra-info li { 
   font-size: 18px;
@@ -2020,8 +2129,21 @@ html,body
   letter-spacing: 0.36px;
   line-height: 25px;
   color: #262626;
-  text-align: justify;
-  
+}
+
+.extra-info ul {
+  list-style: none; /* Remove default bullets */
+}
+
+
+.extra-info ul li::before {
+  content: "\2022";
+  color: #887129;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1em;
+  font-size: 24px !important;
 }
 
 /* Modal 1 Description */
@@ -2320,11 +2442,15 @@ form button {
   }
   
   #serviceSpa {
-    padding-top: 24px !important;
+    padding-top: 0px !important;
   }
   
   #serviceBarb {
-    padding-top: 24px !important;
+    padding-top: 0px !important;
+  }
+
+  #serviceExtra{
+    padding-top: 0px !important;
   }
 }
 
@@ -2347,7 +2473,6 @@ form button {
 /* Section 8 */
 #serviceExtra{
   padding-top: 60px;
-
 }
 /* Section 8 END  */
 
@@ -2623,7 +2748,6 @@ form button {
  }
  .ag-timeline-card_meta {
    margin: 10px 0 0;
- 
    font-family: 'ESL Legend', sans-serif;
    font-weight: bold;
    font-size: 28px;

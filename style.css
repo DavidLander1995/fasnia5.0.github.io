@@ -2958,16 +2958,31 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 
 /* Conditions */
-.startpage {
-  margin-top: 10%;
+/* Cancellation Policy  */
+.cancellationbanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(https://ik.imagekit.io/l3yst4k9g/Conditions/conditionsbackground_iCD-I5z92.jpeg?) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+} 
+
+.cancellationbanner-image h1{
+  font-size: 6vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
 }
 
-.condicionestitle h1 {
-  font-size: 60px;
-  font-weight: 600;
-  padding-bottom: 50px;
-}
+/* Condiciones de uso  */
 
-.conditionsmain ul li {
-  color: black;
-}
+/* Politica de Privacidad  */
+/* Credits  */
+

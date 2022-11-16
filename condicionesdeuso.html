@@ -27,7 +27,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/8ab0a9b2b9.js" crossorigin="anonymous"></script>
 	<!-- Webglot Translation  -->
-	<script type="text/javascript"src="https://cdn.weglot.com/weglot.min.js"></script>
+	<script src="https://cdn.weglot.com/weglot.min.js"></script>
 	<script>
 			Weglot.initialize({
 					api_key: 'wg_3ba3a5117900802e6c8ab11f6c7e3b1a2',
@@ -53,6 +53,7 @@
 			});
 	</script>
 	<!-- Webglot Translation  -->
+
     
 </head>
 <body>
@@ -63,7 +64,7 @@
 <nav class="navbar navbar-default fixed-top">
 	<div class="container-fluid">
 		<!-- Logo Main Navbar -->
-	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 1.5rem;"></a>
+	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 0.8rem;"></a>
 
 	  <!-- 3 Links -->
 	  <div class="d-none d-lg-block d-xl-block link-container">
@@ -73,9 +74,13 @@
 	  </div>
 
 	  <!-- Toggler Button for Offcanvas Menu -->
-	  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menú de Navegación">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
+		<div class="parent">
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menú de Navegación">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+			<div id="translate-container" class="translate-container2"></div>
+		</div>
+
 	  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 		<div class="offcanvas-header">
 			<!-- Logo Offcanvas -->
@@ -86,49 +91,64 @@
 		<!-- Offcanvas Links -->
 		<div class="offcanvas-body">
 		  <ul class="navbar-nav justify-content-start">
-			<li class="nav-item">
-			  <a class="nav-link hover-underline-animation" aria-current="page" href="./index.html">Inicio</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link hover-underline-animation" href="./lascasas.html">Las Casas</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./elsueno.html">El Sueño</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link hover-underline-animation" href="./larestauracion.html">La Restauración</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./galeriadefotos.html">Galería de Fotos</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./servicios.html">Servicios</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./promociones.html">Promociones</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./ubicacion.html">Ubicación</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link hover-underline-animation" href="./contacto.html">Contacto</a>
-			</li>
-			<li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" aria-current="page" href="./index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./lascasas.html">Las Casas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./elsueno.html">El Sueño</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./larestauracion.html">La Restauración</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./galeriadefotos.html">Galería de Fotos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./servicios.html">Servicios</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./promociones.html">Promociones</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./ubicacion.html">Ubicación</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./contacto.html">Contacto</a>
+				</li>
+				<li>
 				<!-- Offcanvas Reserve Button -->
-				<button type="button" class="btn-book" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
-			</li>
+					<button type="button" class="btn-book button-reservenavbar" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
+				</li>
 		  </ul>
 		</div>
-	  </div>
 	</div>
-  </nav>
+</nav>
 <!-- Navigation Section END -->
 
 
-
-<!-- Section 1  -->
-<div class="container startpage"></div>
-<!-- Section 1 END  -->
+<!-- Banner Image -->
+<section>
+	<div class="cancellationbanner-containerlg darken-overlay">
+			<div class="cancellationbanner-image d-flex justify-content-center">
+			<!-- Main Image Top Title -->
+			<h1>Condiciones de Uso</h1>
+	<a href="#pageintro">
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<lottie-player src="https://lottie.host/e33c1fc9-7185-45f8-bf0e-e6beb9bbf5ae/o4UONkAPsX.json" 
+		background="transparent" 
+		speed="1" 
+		style="width: 75px; height: 160%;" 
+		loop 
+		autoplay>
+			</lottie-player>
+	</a>
+			</div>
+	</div>
+	<section>
+<!-- Banner Image END -->
 
 
 <!-- Navigton Breadcrumbs -->
@@ -140,19 +160,26 @@
 </nav>
 <!-- Navigton Breadcrumbs END -->
 
+<!-- Section 1  -->
+<section id="pageintro">
+	<div class="pageintro">
+		<h3 class="title">Las Casas Del Camino Real</h3>
+		<h2 class="under-title">Condiciones de Uso</h2>
+		<p class="under-title-desc">El usuario al utilizar la web acepta las presentes condiciones generales y se compromete a utilizar la 
+			página web, los servicios y los contenidos alojados de conformidad con las mismas. El usuario acepta que el uso de la web, 
+			de los servicios y los contenidos lo realiza bajo su única y exclusiva responsabilidad.</p>
+	</div>
+</section>
+<!-- Section 1 End  -->
+
+<hr class="divider">
+
 
 <!-- Section 2  -->
-<div class="container condicionestitle">
-    <h1>Condiciones de uso</h1>
-</div>
 <div class="container">
-    <div class="row align-item-center text-justify">
-        <p>
-            El usuario al utilizar la web acepta las presentes condiciones generales y se compromete a utilizar la 
-            página web, los servicios y los contenidos alojados de conformidad con las mismas. El usuario acepta que el uso de la web, 
-            de los servicios y los contenidos lo realiza bajo su única y exclusiva responsabilidad.
-        </p>
-        <h2>Información sobre titularidad</h2>
+    <div class="row">
+			<div class="col-gl-12">
+				<h2 class="section-title">Información sobre titularidad</h2>
         <p>
             El presente sitio web es propiedad de”Inversiones Tágara-Tenerife, S.L.”
             CIF: B-38/598389
@@ -162,12 +189,14 @@
             “Inversiones Tágara-Tenerife, S.L.” está inscrita en el Registro Mercantil de Santa Cruz de Tenerife, en el Tomo 2.040, 
             Folio 144, Hoja TF-23.399, inscripción 1ª.
         </p>
-        <h2>Modificación de las presentes condiciones</h2>
+
+				<h2 class="section-title">Modificación de las presentes condiciones</h2>
         <p>
             “Inversiones Tágara-Tenerife, S.L.” se reserva el derecho a modificar estas condiciones generales de uso en cualquier momento y sin previo aviso, por lo que el  usuario se obliga a revisar las presentes Condiciones Generales cada vez que acceda al sitio web. Igualmente se reserva el derecho a denegar o retirar el acceso a la Página y/o a los servicios, en cualquier momento y sin necesidad de preaviso a los usuarios que 
             incumplan estas Condiciones Generales o las Particulares que les sean de aplicación.
         </p>
-        <h2>Objeto del sitio web</h2>
+   
+        <h2 class="section-title">Objeto del sitio web</h2>
         <p>
             El presente sitio web facilita a los usuarios el acceso y utilización de diversos servicios y contenidos puestos a disposición de 
             los usuarios por “Inversiones Tágara-Tenerife, S.L.”. La utilización de los Servicios y de los Contenidos del sitio web es bajo la 
@@ -177,7 +206,8 @@
             no puede garantizar la plena continuidad, disponibilidad y utilidad del sitio web, de sus Servicios y Contenidos. Por ello, no responde por 
             los posibles daños y perjuicios de cualquier naturaleza que se pudieran derivar para los usuarios.
         </p>
-        <h2>Propiedad Intelectual</h2>
+
+				<h2 class="section-title">Propiedad Intelectual</h2>
         <p>
             Todos los derechos de propiedad intelectual que aparecen en este sitio web, así como de sus contenidos (textos, logos, imágenes, sonidos, audio, video, 
             software y cualesquiera otros) son propiedad exclusiva de “Inversiones Tágara-Tenerife, S.L.” o su uso ha sido autorizado por sus autores y titulares. El 
@@ -185,32 +215,37 @@
             siempre y cuando sea, única y exclusivamente, para su uso personal y privado, quedando, por tanto, terminantemente prohibida su utilización con fines 
             comerciales, su distribución, así como su modificación, alteración o descompilación.
         </p>
-        <h2>Restricción de utilización de los contenidos e información suministrada</h2>
+
+				<h2 class="section-title">Restricción de utilización de los contenidos e información suministrada</h2>
         <p>
             Los usuarios se obligan a usar los Contenidos de forma diligente, correcta y lícita y, en particular, se comprometen a abstenerse de reproducir o copiar, 
             transformar o modificar los Contenidos, a menos que se cuente con la autorización del titular de los correspondientes derechos o ello resulte legalmente 
             permitido.
         </p>
-        <h2>Enlaces</h2>
+
+				<h2 class="section-title">Enlaces</h2>
         <p>
             Dado que “Inversiones Tágara-Tenerife, S.L.” no tiene ningún tipo de control sobre los mismos, no podemos asumir ninguna responsabilidad sobre los 
             enlaces hacia otros sitios o páginas web que, en su caso, pudieran incluirse en el mismo, por lo que el usuario accede bajo su exclusiva responsabilidad al 
             contenido y en las condiciones de uso que se indiquen en los mismos.
         </p>
-        <h2>Duración y Terminación</h2>
+
+				<h2 class="section-title">Duración y Terminación</h2>
         <p>
             La prestación de los servicios del presente sitio web tiene, en principio, una duración indefinida. “Inversiones Tágara-Tenerife, S.L.”, no obstante, 
             está autorizada para dar por terminada o suspender la prestación de los servicios de este sitio web en cualquier momento, sin perjuicio de lo que 
             se hubiere dispuesto al respecto en las correspondientes Condiciones Particulares. Cuando ello sea razonablemente posible, “Inversiones Tágara-Tenerife, 
             S.L.” advertirá previamente la terminación o suspensión de la prestación de los servicios del presente sitio web.
-        </p>
-        <h2>Aceptación de las presentes Condiciones Generales</h2>
+				</p>
+
+        <h2 class="section-title">Aceptación de las presentes Condiciones Generales</h2>
         <p>
             La aceptación de las presentes Condiciones Generales por parte de los usuarios es condición previa indispensable y obligatoria para, en su caso,
             poderse beneficiar de los Servicios en la misma contenidos. Los usuarios declaran, bajo su responsabilidad, haber leído las presentes Condiciones 
             Generales de Acceso y Uso de la página web íntegramente, y confirman su aceptación plena y voluntaria de las mismas.
         </p>
-        <h2>Ley aplicable y Jurisdicción</h2>
+  
+        <h2 class="section-title">Ley aplicable y Jurisdicción</h2>
         <p>
             Las presentes Condiciones de Uso se rigen por la normativa española. El Usuario y la entidad “Inversiones Tágara-Tenerife, S.L.”, con renuncia a su 
             propio fuero, se someten a los juzgados y tribunales de la ciudad de Santa Cruz de Tenerife (España) para cualquier controversia que pudiera derivarse 
@@ -218,6 +253,7 @@
             “Inversiones Tágara-Tenerife, S.L.” y el Usuario se someten igualmente, con renuncia expresa a cualquier otro fuero, a los Juzgados y Tribunales de la 
             ciudad de Santa Cruz de Tenerife (España).
         </p>
+			</div>
     </div>
 </div>
 <!-- Section 2 END  -->

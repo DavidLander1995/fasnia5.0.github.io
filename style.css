@@ -160,13 +160,24 @@ html,body
 }
 
 .mySeperator{
-  margin-top: 50px;
-  height: 100px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  height: 80px;
   background-color: #d3b486;
 }
 
+@media (max-width: 575.98px) {
+  .mySeperator{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 80px;
+    background-color: #d3b486;
+  }
+  
+}
+
 .mySeperator2 {
-  height: 100px;
+  height: 80px;
   background-color: #d3b486;
 }
 
@@ -2299,25 +2310,44 @@ form button {
   object-fit: contain;
 }
 /* Section 1 END  */
+@media only screen and (max-width: 430px) {
+  #serviceSlider {
+    padding-top: 24px !important;
+  }
+  
+  #serviceInfinity{
+    padding-top: 24px !important;
+  }
+  
+  #serviceSpa {
+    padding-top: 24px !important;
+  }
+  
+  #serviceBarb {
+    padding-top: 24px !important;
+  }
+}
 
 #serviceSlider {
-  padding-block: 80px;
+  padding-top: 120px;
 }
 
 #serviceInfinity{
-  padding-block: 80px;
+  padding-top: 120px;
 }
 
 #serviceSpa {
-  padding-block: 80px;
+  padding-top: 0px;
 }
 
-
-
+#serviceBarb {
+  padding-top: 0px;
+}
 
 /* Section 8 */
 #serviceExtra{
   padding-top: 60px;
+
 }
 /* Section 8 END  */
 
@@ -2325,8 +2355,22 @@ form button {
 /* Section 10  */
 #serviceextraCards{
   padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(./img/birdofparadise.jpeg);
+  background-size: contain;
 }
 
+@media only screen and (max-width: 430px) {
+  #serviceextraCards{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(./img/birdofparadise.jpeg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+}
 /* La Casa Cabrera  */
 
 

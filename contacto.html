@@ -46,6 +46,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<!-- Google recaptcha API library -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<!-- Webglot Translation  -->
 	<script type="text/javascript"src="https://cdn.weglot.com/weglot.min.js"></script>
 	<script>
@@ -73,6 +75,8 @@
 			});
 	</script>
 	<!-- Webglot Translation  -->
+
+	
 	
 
 	
@@ -249,23 +253,23 @@
 <!-- Section 2 END  -->
 
 <!-- Section 3  -->
+
 <div class="container pb-5">
 	<div class="row justify-content-center">
 		<div class="col-lg-6 text-center">
-			<form action="https://formsubmit.co/cc5b6f9bd21b33e6ca29d7ed2f000275" method="POST">
-				<input type="text" name="Name" placeholder="Nombre Completo" required>
-				<input type="email" name="Email" placeholder="El Correo Electrónico" required>
-				<textarea name="Message" placeholder="Comentarios" required></textarea>
-				<button type="submit">Enviar</button>
+			<form class="contact-form" action="./contactform.php" method="post">
+				<input type="text" name="name" placeholder="Full Name">
+				<input type="text" name="mail" placeholder="Email">
+				<input type="text" name="subject" placeholder="Subject">
+				<textarea name="message" placeholder="Message" id="" cols="30" rows="10"></textarea>
+				<button type="submit" name="submit">Send Email</button>
 			</form>
 		</div>
 	</div>
-
 </div>
 <!-- Section 3 END  -->
 
 </div>
-
 
 
 <!-- Footer -->

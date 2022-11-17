@@ -8,6 +8,14 @@
 
 */
 
+.swiper-button-next {
+  color: #000 !important;
+}
+
+.swiper-button-prev {
+  color: #000 !important;
+}
+
 /* Swiper CSS  */
 .mySwiper .swiper-slide {
   width: 25%;
@@ -1608,6 +1616,10 @@ html,body
 .hr {
   padding: 0;
   margin-top: 0;
+}
+
+footer a {
+  color: transparent;
 }
 
 .footer-text{

@@ -318,7 +318,7 @@
   <div class="container-fluid">
     <div class="promociones6-animate gallery">
   
-      <div class="gallery-images">
+      <div class="gallery-images gallery1animate">
         <a href="https://ik.imagekit.io/l3yst4k9g/Ubicacion/Section_5/Exteriores__52_de_53__4VaS3KjPs.jpg?" 
 					data-lightbox="mygalleryubicacion5" data-title="La vista a la entrada de Las Casas del Camino Real.">
 					<img src="https://ik.imagekit.io/l3yst4k9g/Ubicacion/Section_5/Exteriores__52_de_53__4VaS3KjPs.jpg?tr=w-2000,c-at_max"
@@ -330,7 +330,7 @@
         </a>
       </div>
   
-      <div class="gallery-images">
+      <div class="gallery-images gallery2animate">
         <a href="https://ik.imagekit.io/l3yst4k9g/Ubicacion/Section_5/vista-general-Casa-Principal-Salon-cocina-7-de-81_9mDn67rVZ.jpg?" 
 					data-lightbox="mygalleryubicacion5" data-title="Dentro de La Casa Principal.">
 					<img src="https://ik.imagekit.io/l3yst4k9g/Ubicacion/Section_5/vista-general-Casa-Principal-Salon-cocina-7-de-81_9mDn67rVZ.jpg?tr=w-800,c-at_max" 
@@ -342,7 +342,7 @@
         </a>
       </div>
   
-      <div class="gallery-images">
+      <div class="gallery-images gallery3animate">
         <a href="https://ik.imagekit.io/l3yst4k9g/Ubicacion/Section_5/jacuzzi_989tzJ2AHA.jpg?"
 					data-lightbox="mygalleryubicacion5" data-title="La piscina infinita climatizada.">
 					<img src="https://ik.imagekit.io/l3yst4k9g/Ubicacion/Section_5/jacuzzi_989tzJ2AHA.jpg?tr=w-800,c-at_max"
@@ -354,7 +354,7 @@
         </a>
       </div>
   
-      <div class="gallery-images">
+      <div class="gallery-images gallery4animate">
         <a href="https://ik.imagekit.io/l3yst4k9g/Ubicacion/Section_5/Exteriores__7_de_53__gXBOJ1mZvl.jpg?" 
 					data-lightbox="mygalleryubicacion5" data-title="Una de las zonas del patio de Las Casas del Camino Real.">
 					<img src="https://ik.imagekit.io/l3yst4k9g/Ubicacion/Section_5/Exteriores__7_de_53__gXBOJ1mZvl.jpg?tr=w-800,c-at_max"
@@ -373,14 +373,12 @@
 
 
 
-
-
   <!-- Footer -->
-<hr class="hr" style="color: #887129; ">
-<footer
-		  class="text-center text-lg-start"
-		  style="background-color: white"
-		  >
+	<hr class="hr" style="color: #887129; ">
+	<footer
+				class="text-center text-lg-start"
+				style="background-color: white"
+				>
 	<!-- Grid container -->
 	<div class="container p-4 pb-0">
 	  <!-- Section: Links -->
@@ -484,7 +482,7 @@
 	<!-- Grid container -->
 
 	<!-- Copyright -->
-	<div class="container">
+	<div class="container pb-5 pb-lg-0">
 		<div class="row text-center">
 			<div class="col-lg-4 copyright">
 				© 2022 Copyright: Las Casas Del Camino Real
@@ -505,15 +503,134 @@
 	</div>
 	<!-- Copyright -->
   </footer>
-<!-- Footer END -->
+	<!-- Footer END -->
 
 
 
   <!-- Scripts -->
+	<!-- Animation  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-  <script src="./navbar.js"></script>
   <!-- Scripts END -->
+
+	<!-- Navbar Script  -->
+	<script>
+		$(window).scroll(function(){
+		$('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
+		});
+	</script>
+	<!-- Navbar Script END  -->
+
+	<!-- Animations -->
+	<script>
+		// Wait until DOM is ready
+		$(window).on("load", function(){
+			gsap.registerPlugin(ScrollTrigger)
+
+
+        // GSAP custom code goes here
+        ScrollTrigger.matchMedia({
+  
+          // desktop
+          "(min-width: 795px)": function() {
+            // setup animations and ScrollTriggers for screens over 795px wide (desktop) here...
+            // ScrollTriggers will be reverted/killed when the media query doesn't match anymore
+
+            // Gallery
+            // Image Far Left 
+            gsap.to(".gallery1animate", {
+              duration: 0, 
+              opacity: 0,
+              x: -200,
+            });
+
+            gsap.to(".gallery1animate", {
+              duration: 1,  
+              opacity: 1,
+              x: 0,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: ".gallery", 
+                markers: false,
+                start: "top 30%",
+                end: "center 30%",
+              }, 
+            });
+
+             // Image Middle Top
+             gsap.to(".gallery2animate", {
+              duration: 0, 
+              opacity: 0,
+              y: -200,
+            });
+
+            gsap.to(".gallery2animate", {
+              duration: 1,  
+              opacity: 1,
+              delay: 0.5,
+              y: 0,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: ".gallery", 
+                markers: false,
+                start: "top 30%",
+                end: "center 30%",
+              }, 
+            });
+
+            // Image Far Right
+            gsap.to(".gallery3animate", {
+              duration: 0, 
+              opacity: 0,
+              x: 200,
+            });
+
+            gsap.to(".gallery3animate", {
+              duration: 1,  
+              opacity: 1,
+              delay: 0.75,
+              x: 0,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: ".gallery", 
+                markers: false,
+                start: "top 30%",
+                end: "center 30%",
+              }, 
+            });
+
+            // Middle Bottom
+            gsap.to(".gallery4animate", {
+              duration: 0, 
+              opacity: 0,
+              y: 200,
+            });
+
+            gsap.to(".gallery4animate", {
+              duration: 1,  
+              opacity: 1,
+              delay: 1,
+              y: 0,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: ".gallery", 
+                markers: false,
+                start: "top 30%",
+                end: "center 30%",
+              }, 
+            });
+
+            
+          }
+        });
+
+        // All 
+
+      });
+	</script>
+		<!-- Animations END -->
 
 
 </div>

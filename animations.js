@@ -1,5 +1,4 @@
-
-// wait until DOM is ready
+// Wait until DOM is ready
 $(window).on("load", function(){
   gsap.registerPlugin(ScrollTrigger)
 
@@ -183,7 +182,6 @@ $(window).on("load", function(){
             });
 
             // Gallery
-
             // Image Far Left 
             gsap.to(".gallery1animate", {
               duration: 0, 

@@ -198,7 +198,7 @@
         <div class="lascasasbanner-containerlg darken-overlay">
             <div class="lascasasbanner-image d-flex justify-content-center">
             <!-- Main Image Top Title -->
-            <h1>4 Casas, 4 Estilos.</h1>
+            <h1 class="mainpage-title">4 Casas, 4 Estilos.</h1>
             <a href="#introlascasas">
               <!-- <img class="scroller" src="./img/scroll.gif" alt="Un icono de desplazamiento animado, que indica que hay que desplazarse hacia abajo."> -->
               <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -250,7 +250,7 @@
             <div class="row justify-content-md-center">
                 <div class="col-lg-3 col-md-6 d-flex align-self-stretch">
                     <div class="card1-animation card" >
-                      <div id="carouselhouse1" class="carousel slide" data-ride="carousel" data-interval="false">
+                      <div id="carouselhouse1" class="carousel slide" data-ride="carousel" data-interval="false" data-bs-touch="true">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img class="card-img-top img-fluid" 
@@ -762,11 +762,22 @@
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
   <!-- Scripts END -->
 
+  <script>
+    $(".carousel").swipe({
+    excludedElements: "input, select, textarea, .noSwipe",
+    swipeLeft: function() {
+    $(this).carousel('next');
+    },
+    swipeRight: function() {
+    $(this).carousel('prev');
+    },
+    allowPageScroll: 'vertical'
+    });
+  </script>
 
-  
-  
   <!-- Buttons  -->
   <script>
 
@@ -779,7 +790,6 @@
 		document.location.href = "reservationgeneralEN.html"
 	}
   })
-
 
   // La Casa de Los Corrales
   document.querySelector('.button-loscorrales').addEventListener('click', () => {
@@ -795,7 +805,6 @@
 	}
   })
 
-
   // La Casa de La Cabrera 
   document.querySelector('.button-lacabrera').addEventListener('click', () => {
     document.location.href = "./casalacabrera.html"
@@ -810,7 +819,6 @@
 	}
   })
 
-
   // La Casa del Alpendre
   document.querySelector('.button-alpendre').addEventListener('click', () => {
     document.location.href = "./casaelalpendre.html"
@@ -824,7 +832,6 @@
 		document.location.href = "casadelalpendrebookingEN.html"
 	}
   })
-
 
   // La Casa Principal 
   document.querySelector('.button-casaprincipal').addEventListener('click', () => {

@@ -139,7 +139,7 @@
 		<div class="parent">
 			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Menú de Navegación">
 				<span class="navbar-toggler-icon"></span>
-				</button>
+			</button>
 			<div id="translate-container" class="translate-container2"></div>
 		</div>
 	  
@@ -198,7 +198,7 @@
 		<div class="serviciosbanner-containerlg darken-overlay">
 			<div class="serviciosbanner-image d-flex justify-content-center">
 			<!-- Main Image Top Title -->
-			<h1>La Fusión Entre El Confort y La Tradición.</h1>
+			<h1 class="mainpage-title">La Fusión Entre El Confort y La Tradición.</h1>
 			<a href="#introservice">
 				<!-- <img class="scroller" src="./img/scroll.gif" alt="Un icono de desplazamiento animado, que indica que hay que desplazarse hacia abajo."> -->
 				<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -621,7 +621,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-	<script src="./animations_servicios.js"></script>
+	<script src="./servicios.js"></script>
 	<!-- Slick Carousel  -->
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<!-- Scripts END -->
@@ -656,41 +656,6 @@
 	</script>
 	<!-- Slick Carousel for Experiences END  -->
 	
-
-	<!-- Buttons  -->
-	<script>
-		document.querySelector('.button-reservemobile').addEventListener('click', () => {
-		if (Weglot.getCurrentLang() == "es") {
-			document.location.href = "reservationgeneralES.html"
-		}
-		else {
-			document.location.href = "reservationgeneralEN.html"
-		}
-		})
-
-		document.querySelector('.button-contacto1').addEventListener('click', () => {
-		document.location.href = "./contacto.html"
-		})
-
-		document.querySelector('.button-contacto2').addEventListener('click', () => {
-		document.location.href = "./contacto.html"
-		})
-
-		document.querySelector('.button-contacto3').addEventListener('click', () => {
-		document.location.href = "./contacto.html"
-		})
-	</script>
-	<!-- Buttons END  -->
-
-	<!-- Navbar  -->
-	<script>
-		$(window).scroll(function(){
-			$('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
-		});
-	</script>
-	<!-- Navbar End  -->
-
-
 
 
 </div>

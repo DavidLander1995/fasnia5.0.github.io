@@ -8,13 +8,7 @@
 
 */
 
-.swiper-button-next {
-  color: #000 !important;
-}
 
-.swiper-button-prev {
-  color: #000 !important;
-}
 
 /* Swiper CSS  */
 .mySwiper .swiper-slide {
@@ -50,7 +44,13 @@
   transition: 1s ease;
 }
 
+.swiper-button-next {
+  color: #000 !important;
+}
 
+.swiper-button-prev {
+  color: #000 !important;
+}
 /* Swiper CSS  */
 
 .divider {
@@ -332,8 +332,17 @@ html,body
 
 /* Typography  */
 /* Global Sizes */
-
-
+.mainpage-title {
+  font-size: 6.5vh;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 800;
+  letter-spacing: 2.7px;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  align-items: center;
+}
 
 /* Large Screens  */
 .section-title {
@@ -458,6 +467,19 @@ html,body
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+  .mainpage-title {
+    font-size: 5vh !important;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 800;
+    letter-spacing: 2.7px;
+    color: white;
+    position: absolute;
+    bottom: 50%;
+    text-align: center;
+    align-items: center;
+  }
+
   .section-title {
     font-size: 24px;
     font-family: 'Libre Baskerville', serif;
@@ -1722,18 +1744,6 @@ footer a {
   height: 80vh;
   overflow: hidden;
 } 
-
-.galeriabanner-image h1{
-  font-size: 6vh;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 800;
-  letter-spacing: 2.7px;
-  color: white;
-  position: absolute;
-  bottom: 50%;
-  text-align: center;
-  align-items: center;
-}
 /* Galeria de Fotos END */
 
 
@@ -1749,17 +1759,7 @@ footer a {
   overflow: hidden;
 } 
 
-.lascasasbanner-image h1{
-  font-size: 6vh;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 800;
-  letter-spacing: 2.7px;
-  color: white;
-  position: absolute;
-  bottom: 50%;
-  text-align: center;
-  align-items: center;
-}
+
 
 /* Section 2 */
 .card-body{
@@ -2250,18 +2250,6 @@ li{
   overflow: hidden;
 } 
 
-.ubicacionbanner-image h1{
-  font-size: 6vh;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 800;
-  letter-spacing: 2.7px;
-  color: white;
-  position: absolute;
-  bottom: 50%;
-  text-align: center;
-  align-items: center;
-}
-
 #aroundFasnia h2{
   padding-top: 20px;
   font-size: 22px;
@@ -2304,17 +2292,7 @@ li{
   overflow: hidden;
 } 
 
-.contactobanner-image h1{
-  font-size: 6vh;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 800;
-  letter-spacing: 2.7px;
-  color: white;
-  position: absolute;
-  bottom: 50%;
-  text-align: center;
-  align-items: center;
-}
+
 
 .container-form {
   display: flex;
@@ -2380,19 +2358,6 @@ form button {
   height: 80vh;
   overflow: hidden;
 } 
-
-.serviciosbanner-image h1{
-  font-size: 5vh;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 800;
-  letter-spacing: 2.7px;
-  color: white;
-  position: absolute;
-  bottom: 50%;
-  text-align: center;
-  align-items: center;
-}
-
 /* Section 1 */
 .mySwiper10 .swiper {
   width: 100%;
@@ -2504,18 +2469,6 @@ form button {
   overflow: hidden;
 } 
 
-.elsuenobanner-image h1{
-  font-size: 5vh;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 800;
-  letter-spacing: 2.7px;
-  color: white;
-  position: absolute;
-  bottom: 50%;
-  text-align: center;
-  align-items: center;
-}
-
 .mySwiper11 img{
   object-fit: cover;
 }
@@ -2587,19 +2540,6 @@ form button {
   overflow: hidden;
 } 
 
-.promocionesbanner-image h1{
-  font-size: 5vh;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 800;
-  letter-spacing: 2.7px;
-  color: white;
-  position: absolute;
-  bottom: 50%;
-  text-align: center;
-  align-items: center;
-}
-
-
 /* Restauracion Page */
 /* Timeline */
 #timeline{
@@ -2615,18 +2555,6 @@ form button {
   height: 80vh;
   overflow: hidden;
 } 
-
-.restauracionbanner-image h1{
-  font-size: 5vh;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 800;
-  letter-spacing: 2.7px;
-  color: white;
-  position: absolute;
-  bottom: 50%;
-  text-align: center;
-  align-items: center;
-}
 
 @font-face {
   font-family: 'ESL Legend';
@@ -2980,19 +2908,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
   height: 80vh;
   overflow: hidden;
 } 
-
-.cancellationbanner-image h1{
-  font-size: 6vh;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 800;
-  letter-spacing: 2.7px;
-  color: white;
-  position: absolute;
-  bottom: 50%;
-  text-align: center;
-  align-items: center;
-}
-
 /* Condiciones de uso  */
 
 /* Politica de Privacidad  */

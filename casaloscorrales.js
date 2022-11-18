@@ -1,3 +1,9 @@
+// Navbar Change Color 
+$(window).scroll(function(){
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
+});
+
+
 // Wait until DOM is ready
 $(window).on("load", function(){
   gsap.registerPlugin(ScrollTrigger)
@@ -319,40 +325,40 @@ $(window).on("load", function(){
 // Offcanvas Nav Bar Reserve Button
 document.querySelector('.button-reservenavbar').addEventListener('click', () => {
 if (Weglot.getCurrentLang() == "es") {
-  document.location.href = "reservationgeneralES.html"
+  document.location.href = "casaloscorralesbookingES.html"
 }
 else {
-  document.location.href = "reservationgeneralEN.html"
+  document.location.href = "casaloscorralesbookingEN.html"
 }
 })
 
 // First Section 
 document.querySelector('.btn-book1').addEventListener('click', () => {
 if (Weglot.getCurrentLang() == "es") {
-  document.location.href = "reservationgeneralES.html"
+  document.location.href = "casaloscorralesbookingES.html"
 }
 else {
-  document.location.href = "reservationgeneralEN.html"
+  document.location.href = "casaloscorralesbookingEN.html"
 }
 })
 
 // Second Section
 document.querySelector('.btn-book2').addEventListener('click', () => {
 if (Weglot.getCurrentLang() == "es") {
-  document.location.href = "reservationgeneralES.html"
+  document.location.href = "casaloscorralesbookingES.html"
 }
 else {
-  document.location.href = "reservationgeneralEN.html"
+  document.location.href = "casaloscorralesbookingEN.html"
 }
 })
 
 // Third Section
 document.querySelector('.btn-book3').addEventListener('click', () => {
 if (Weglot.getCurrentLang() == "es") {
-  document.location.href = "reservationgeneralES.html"
+  document.location.href = "casaloscorralesbookingES.html"
 }
 else {
-  document.location.href = "reservationgeneralEN.html"
+  document.location.href = "casaloscorralesbookingEN.html"
 }
 })
 
@@ -360,7 +366,3 @@ document.querySelector('.btn-goservices').addEventListener('click', () => {
   document.location.href = "servicios.html"
 })
 
-// Fourth Section 
-document.querySelector('.btn-gocontact').addEventListener('click', () => {
-  document.location.href = "contacto.html"
-})

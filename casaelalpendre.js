@@ -1,3 +1,9 @@
+// Navbar Change Color 
+$(window).scroll(function(){
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
+});
+
+
 // Wait until DOM is ready
 $(window).on("load", function(){
   gsap.registerPlugin(ScrollTrigger)

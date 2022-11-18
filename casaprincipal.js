@@ -31,6 +31,69 @@ $(window).on("load", function(){
               }, 
             });
              // Icons
+             
+            //  3 Photo Section
+            // Left Image 
+            gsap.to(".animateimage1", {
+              duration: 0,  
+              x: -100,
+              opacity: 0,
+            });
+
+            gsap.to(".animateimage1", {
+              duration: 1,  
+              x: 0, 
+              opacity: 1,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: ".gallery2", 
+                markers: false,
+                start: "top 50%",
+                end: "center 30%",
+              }, 
+            });
+
+            // Top Right Image 
+            gsap.to(".animateimage2", {
+              duration: 0,  
+              y: -100,
+              opacity: 0,
+            });
+
+            gsap.to(".animateimage2", {
+              duration: 1,  
+              y: 0, 
+              opacity: 1,
+              delay: 0.5,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: ".gallery2", 
+                markers: false,
+                start: "top 50%",
+                end: "center 30%",
+              }, 
+            });
+
+            // Bottom Right Image 
+            gsap.to(".animateimage3", {
+              duration: 0,  
+              y: 100,
+              opacity: 0,
+            });
+
+            gsap.to(".animateimage3", {
+              duration: 1,  
+              y: 0, 
+              opacity: 1,
+              delay: 1,
+              ease: "ease",
+              scrollTrigger : { 
+                trigger: ".gallery2", 
+                markers: false,
+                start: "top 50%",
+                end: "center 30%",
+              }, 
+            });
 
             
  
@@ -226,6 +289,31 @@ $(window).on("load", function(){
           }, 
         });
 
+        // Prev 
+        gsap.to(".arrow-prev-animate3", {
+          duration: 0,  
+          x: 10,
+          scale: 5,
+          rotation: -360,
+          opacity: 0,
+        });
+
+        gsap.to(".arrow-prev-animate3", {
+          duration: 1,  
+          x: 0,
+          rotation: 0,
+          opacity: 1,
+          scale: 1,
+          delay: 1,
+          ease: "ease",
+          scrollTrigger : { 
+            trigger: ".mySwiper5", 
+            markers: false,
+            start: "top 80%",
+            end: "center 30%",
+          }, 
+        });
+
         //  3 Photo Section
         // Left Image 
         gsap.to(".animateimage1", {
@@ -250,13 +338,13 @@ $(window).on("load", function(){
         // Top Right Image 
         gsap.to(".animateimage2", {
           duration: 0,  
-          y: -100,
+          x: 100,
           opacity: 0,
         });
 
         gsap.to(".animateimage2", {
           duration: 1,  
-          y: 0, 
+          x: 0, 
           opacity: 1,
           delay: 0.5,
           ease: "ease",
@@ -271,13 +359,13 @@ $(window).on("load", function(){
         // Bottom Right Image 
         gsap.to(".animateimage3", {
           duration: 0,  
-          y: 100,
+          x: 100,
           opacity: 0,
         });
 
         gsap.to(".animateimage3", {
           duration: 1,  
-          y: 0, 
+          x: 0, 
           opacity: 1,
           delay: 1,
           ease: "ease",
@@ -285,31 +373,6 @@ $(window).on("load", function(){
             trigger: ".gallery2", 
             markers: false,
             start: "top 50%",
-            end: "center 30%",
-          }, 
-        });
-
-        // Prev 
-        gsap.to(".arrow-prev-animate3", {
-          duration: 0,  
-          x: 10,
-          scale: 5,
-          rotation: -360,
-          opacity: 0,
-        });
-
-        gsap.to(".arrow-prev-animate3", {
-          duration: 1,  
-          x: 0,
-          rotation: 0,
-          opacity: 1,
-          scale: 1,
-          delay: 1,
-          ease: "ease",
-          scrollTrigger : { 
-            trigger: ".mySwiper5", 
-            markers: false,
-            start: "top 80%",
             end: "center 30%",
           }, 
         });

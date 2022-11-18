@@ -2913,3 +2913,25 @@ Extra (xl) large devices (large desktops, 1200px and up)
 /* Politica de Privacidad  */
 /* Credits  */
 
+
+
+/* Experiencias  */
+.expbanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(https://ik.imagekit.io/l3yst4k9g/Conditions/conditionsbackground_iCD-I5z92.jpeg?) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.expgastrobanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/almogrote.jpeg) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+}

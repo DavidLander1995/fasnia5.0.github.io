@@ -188,6 +188,9 @@
 					<a class="nav-link hover-underline-animation" href="./servicios.html">Servicios</a>
 				</li>
 				<li class="nav-item">
+					<a class="nav-link hover-underline-animation" href="./experiencias.html">Experiencias</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link hover-underline-animation" href="./promociones.html">Promociones</a>
 				</li>
 				<li class="nav-item">
@@ -731,7 +734,7 @@
 			<div class="col container-block block-height banneranimate3" style="background-image: url(https://ik.imagekit.io/l3yst4k9g/Index/3_Banner_Section/teide_RxNsHnUlq.jpg?); position: relative;">
 				<div class="block-content text-center">
 					<h2>Experiencias</h2>
-					<button class="btn-more2 mt-3">Leer Más</button>
+					<button class="btn-more2 button-goexperience mt-3">Leer Más</button>
 				</div>
 			</div>
 
@@ -766,11 +769,11 @@
 				<div class="col container-block block-height" style="background-image: url(https://ik.imagekit.io/l3yst4k9g/Index/3_Banner_Section/teide_RxNsHnUlq.jpg?); position: relative; height: 25rem;">
 					<div class="block-content text-center">
 						<h2>Experiencias</h2>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button onclick="goexp()" class="btn-more2  mt-3">Leer Más</button>
 					</div>
 				</div>
 			</div>
-
+	
 		</div>
 	</div>
 	<!-- XS & SM Sceeen Sizes END -->
@@ -1919,9 +1922,9 @@ document.querySelector('.button-gosueno').addEventListener('click', () => {
 document.location.href = "elsueno.html"
 })
 
-// document.querySelector('.button-goexperience').addEventListener('click', () => {
-// document.location.href = "casadelalpendrebookingEN.html"
-// })
+document.querySelector('.button-goexperience').addEventListener('click', () => {
+document.location.href = "experiencias.html"
+})
 
 document.querySelector('.button-gorestoremobile').addEventListener('click', () => {
 document.location.href = "larestauracion.html"
@@ -1931,9 +1934,9 @@ document.querySelector('.button-gosuenomobile').addEventListener('click', () => 
 document.location.href = "elsueno.html"
 })
 
-// document.querySelector('.button-goexperience').addEventListener('click', () => {
-// document.location.href = "casadelalpendrebookingEN.html"
-// })
+function goexp() {
+	window.location.href = "experiencias.html"
+}
 
 
 // The Facilities

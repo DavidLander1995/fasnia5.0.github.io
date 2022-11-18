@@ -317,6 +317,69 @@ $(window).on("load", function(){
             end: "center 30%",
           }, 
         });
+
+        //  3 Photo Section
+        // Left Image 
+        gsap.to(".animateimage1", {
+          duration: 0,  
+          x: -100,
+          opacity: 0,
+        });
+
+        gsap.to(".animateimage1", {
+          duration: 1,  
+          x: 0, 
+          opacity: 1,
+          ease: "ease",
+          scrollTrigger : { 
+            trigger: ".gallery2", 
+            markers: false,
+            start: "top 50%",
+            end: "center 30%",
+          }, 
+        });
+
+        // Top Right Image 
+        gsap.to(".animateimage2", {
+          duration: 0,  
+          x: 100,
+          opacity: 0,
+        });
+
+        gsap.to(".animateimage2", {
+          duration: 1,  
+          x: 0, 
+          opacity: 1,
+          delay: 0.5,
+          ease: "ease",
+          scrollTrigger : { 
+            trigger: ".gallery2", 
+            markers: false,
+            start: "top 50%",
+            end: "center 30%",
+          }, 
+        });
+
+        // Bottom Right Image 
+        gsap.to(".animateimage3", {
+          duration: 0,  
+          x: 100,
+          opacity: 0,
+        });
+
+        gsap.to(".animateimage3", {
+          duration: 1,  
+          x: 0, 
+          opacity: 1,
+          delay: 1,
+          ease: "ease",
+          scrollTrigger : { 
+            trigger: ".gallery2", 
+            markers: false,
+            start: "top 50%",
+            end: "center 30%",
+          }, 
+        });
       });
 
 

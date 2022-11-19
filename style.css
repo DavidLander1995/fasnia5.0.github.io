@@ -2920,7 +2920,18 @@ Extra (xl) large devices (large desktops, 1200px and up)
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: url(https://ik.imagekit.io/l3yst4k9g/Conditions/conditionsbackground_iCD-I5z92.jpeg?) no-repeat center;
+  background: url(https://lascasasdelcaminoreal.b-cdn.net/experiences/expbanneropti.jpeg) no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  overflow: hidden;
+}
+
+
+.expsenderbanner-containerlg{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(https://ucarecdn.com/1ea52309-f183-4fbd-8be4-c9eeaae18bc7/-/preview/-/quality/smart/-/format/auto/) no-repeat center;
   background-size: cover;
   height: 80vh;
   overflow: hidden;

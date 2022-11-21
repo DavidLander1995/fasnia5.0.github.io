@@ -1394,8 +1394,10 @@ html,body
 /* Section Video  */
 #section_video {
   padding-top: 20px;
-  background-image: url(./img/birdofparadise.jpeg);
+  background-image: url(https://ik.imagekit.io/l3yst4k9g/birdsofparadiesopti2_rP0qo-PB_.jpeg?);
   background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #section_video video{
@@ -1408,7 +1410,7 @@ html,body
 #housereviews {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url(./img/birdofparadise.jpeg);
+  background-image: url(https://ik.imagekit.io/l3yst4k9g/birdsofparadiesopti2_rP0qo-PB_.jpeg?);
   background-position-y: 1px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1418,7 +1420,7 @@ html,body
   #housereviews {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-image: url(./img/birdofparadise.jpeg);
+    background-image: url(https://ik.imagekit.io/l3yst4k9g/birdsofparadiesopti2_rP0qo-PB_.jpeg?);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

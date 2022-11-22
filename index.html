@@ -38,9 +38,9 @@
 
 
 	<!-- Load CSS Async -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link href="./bootstrap.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" onload="this.onload=null;this.rel='stylesheet'">
+		<link rel="stylesheet" href="./bootstrap.css" onload="this.onload=null;this.rel='stylesheet'">
 	</noscript>
 	<link href="style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
@@ -69,15 +69,19 @@
 	<!-- Slight Importance to Load JS (Async) -->
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" async></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+	
 	<!-- Not Important to Load JS (Defer)  -->
 	<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js" defer></script>
 	<script src="https://kit.fontawesome.com/8ab0a9b2b9.js" crossorigin="anonymous" defer></script>
 	
 
-	<!-- Header Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<!-- Hero Image Header Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">	
+
 	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -85,6 +89,7 @@
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<!-- Add the slick-theme.css if you want default styling -->
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
 	<!-- Webglot Translation  -->
 	<script src="https://cdn.weglot.com/weglot.min.js"></script>
 	<script>
@@ -111,7 +116,7 @@
 			]
 			});
 	</script>
-	<!-- Webglot Translation  -->
+	<!-- Webglot Translation END  -->
 
 	<!-- Script required before Cookie Pop Up Banner  -->
 	<script>
@@ -122,7 +127,16 @@
 			document.documentElement.setAttribute("lang", "en")
 		}
 	</script>
-	<!-- Script required before Cookie Pop Up Banner  -->
+	<!-- Script required before Cookie Pop Up Banner END  -->
+
+	<!-- Navabar  -->
+	<script>
+		$(window).scroll(function(){
+		$('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
+		});
+	</script>
+	<!-- Navabar END  -->
+
 
 </head>
 <body>
@@ -367,7 +381,7 @@
 				<div class="row text-center justify-content-center">
 					<div class="col-lg-10" style="position: relative;">
 						<a href="./galeriadefotos.html">
-							<img src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/swimming_pool3.webp?auto_optimize=medium" alt="La vista de la piscina infinita." style="width: 100vw;">
+							<img loading="lazy" src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/swimming_pool3.webp?auto_optimize=medium" alt="La vista de la piscina infinita." style="width: 100vw;">
 							<div class="gallerybutton-container">Ver Galería</div>
 						</a>
 					</div>
@@ -378,7 +392,7 @@
 				<div class="row text-center justify-content-center">
 					<div class="col-lg-10" style="position: relative;">
 						<a href="./galeriadefotos.html">
-							<img src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/swimming_pool4.webp?auto_optimize=medium" alt="La fachada y el patio del edificio con rasgos típicos canarios." style="width: 100vw;">
+							<img loading="lazy" src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/swimming_pool4.webp?auto_optimize=medium" alt="La fachada y el patio del edificio con rasgos típicos canarios." style="width: 100vw;">
 							<div class="gallerybutton-container">Ver Galería</div>
 						</a>
 					</div>
@@ -389,7 +403,7 @@
 				<div class="row text-center justify-content-center">
 					<div class="col-lg-10" style="position: relative;">
 						<a href="./galeriadefotos.html">
-							<img src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/swimming_pool5.webp?auto_optimize=medium" alt="La fachada y el patio del edificio con rasgos típicos canarios." style="width: 100vw;">
+							<img loading="lazy" src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/swimming_pool5.webp?auto_optimize=medium" alt="La fachada y el patio del edificio con rasgos típicos canarios." style="width: 100vw;">
 							<div class="gallerybutton-container">Ver Galería</div>
 						</a>
 					</div>
@@ -400,7 +414,7 @@
 				<div class="row text-center justify-content-center">
 					<div class="col-lg-10" style="position: relative;">
 						<a href="./galeriadefotos.html">
-							<img src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/swimming_pool6.jpg?auto_optimize=medium" alt="La hermosa fachada y el patio de la casa principal." style="width: 100vw;">
+							<img loading="lazy" src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/swimming_pool6.jpg?auto_optimize=medium" alt="La hermosa fachada y el patio de la casa principal." style="width: 100vw;">
 							<div class="gallerybutton-container">Ver Galería</div>
 						</a>
 					</div>
@@ -411,7 +425,7 @@
 				<div class="row text-center justify-content-center">
 					<div class="col-lg-10" style="position: relative;">
 						<a href="./galeriadefotos.html">
-							<img src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/house1.webp?auto_optimize=medium" alt="Las casas captadas desde un espejo retrovisor." style="width: 100vw;">
+							<img loading="lazy" src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/house1.webp?auto_optimize=medium" alt="Las casas captadas desde un espejo retrovisor." style="width: 100vw;">
 							<div class="gallerybutton-container">Ver Galería</div>
 						</a>
 					</div>
@@ -422,7 +436,7 @@
 				<div class="row text-center justify-content-center">
 					<div class="col-lg-10" style="position: relative;">
 						<a href="./galeriadefotos.html">
-							<img src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/jacuzzi1.jpeg?auto_optimize=medium" alt="Las hermosas zonas de patio alrededor de Las Casas del Camino Real." style="width: 100vw;">
+							<img loading="lazy" src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/jacuzzi1.jpeg?auto_optimize=medium" alt="Las hermosas zonas de patio alrededor de Las Casas del Camino Real." style="width: 100vw;">
 							<div class="gallerybutton-container">Ver Galería</div>
 							</a>
 					</div>
@@ -1311,7 +1325,7 @@
 			<div class="container-fluid">
 				<div class="row py-5 justify-content-center">
 					<div class="col-12 col-lg-5 animatevideo1">
-						<video src="./img/herovideo.mp4" controls muted poster="https://ik.imagekit.io/l3yst4k9g/Index/Video_Poster/videposter_RvI9XcvO9.webp?"></video>
+						<video src="./img/herovideo.mp4" controls muted preload="none" poster="https://ik.imagekit.io/l3yst4k9g/Index/Video_Poster/videposter_RvI9XcvO9.webp?"></video>
 					</div>
 				</div>
 			</div>
@@ -1578,13 +1592,6 @@
 <!-- Slick Carousel  -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <!-- Scripts END -->
-
-<!-- Navbar  -->
-<script>
-	$(window).scroll(function(){
-	$('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
-	});
-</script>
 
 
 <!-- Owl Carousel for Icons  -->

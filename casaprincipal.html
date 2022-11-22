@@ -36,7 +36,74 @@
 	<!-- Critical CSS  -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 	<style>
-		.principalbanner-containerlg{
+	/* Preloader  */
+	.pre-loader {
+		align-items: center;
+		background: rgb(255, 255, 255);
+		display: flex;
+		height: 100vh;
+		justify-content: center;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 9999;
+		opacity: 1;
+		transition: 1s ease;
+	}
+
+	.preloader_logo {
+		align-items: center;
+		position: absolute;
+		top: 40%;
+		opacity: 0.8;
+	}
+
+	.preloader_logo img {
+		width: 16rem;
+		height: auto;
+	}
+
+	.loading {
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		margin-top: 8rem;
+		opacity: 0.8;
+	}
+
+	.loading .line-box {
+		padding: 0px;
+		width: 18rem;
+		height: 0.4rem;
+		border: 2px solid #887129;
+		border-radius: 10px;
+		opacity: 0.8;
+	}
+
+	.loading .line-box .line {
+		padding: 0px;
+		width: 18rem;
+		height: 0.2rem;
+		border-radius: 10px;
+		border: 2px solid #887129;
+		background: #887129;
+		animation: loading 2s forwards infinite cubic-bezier(0,0,0,0);
+	}
+
+	@keyframes loading{
+		0%{
+			width: 0%;
+		}
+		100% {
+			width: 100%;
+		}
+	}
+	/* Preloader END  */
+
+	.principalbanner-containerlg{
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -44,7 +111,7 @@
 		background-size: cover;
 		height: 80vh;
 		overflow: hidden;
-	} 
+	}
 	</style>
 	<!-- Critical CSS  -->
 	

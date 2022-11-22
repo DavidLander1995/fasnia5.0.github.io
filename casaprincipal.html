@@ -1,29 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
+	<!-- Primary Meta Tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>La Casa Principal</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+	<title>La Casa Principal | Web Official | Sur de Tenerife</title>
+	<meta name="title" content="La Casa Principal | Web Official | Sur de Tenerife">
+	<meta name="description" content="Disfruta de las encantadoras características tradicionales desde el momento en que pones un pie dentro.">
+	<meta name="keywords" content="Tenerife, Hotel, Fasnia, Casas Rurales">
+	<meta name="author" content="David Lander">
+	<meta name="robots" content="index, follow">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+	<link rel="manifest" href="./img/site.webmanifest">
+	<meta name="theme-color" content="#FFFFFF">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://davidlander1995.github.io/fasnia3.0.github.io/index.html">
+	<meta property="og:title" content="Las Casas Del Camino Real | Web Official | Sur de Tenerife">
+	<meta property="og:description" content="Disfruta de las encantadoras características tradicionales desde el momento en que pones un pie dentro.">
+	<meta property="og:image" content="https://ik.imagekit.io/l3yst4k9g/Index/hero_images/hero_s1FIleTVf.jpeg?">
+
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-M4LZJ84');</script>
+	<!-- End Google Tag Manager END -->
+
+	<!-- Critical CSS  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<style>
+		.principalbanner-containerlg{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		background: url(https://lascasasdelcaminoreal.b-cdn.net/houses/principal/banner/bannerimageprincipal.jpg?quality=100) no-repeat;
+		background-size: cover;
+		height: 80vh;
+		overflow: hidden;
+	} 
+	</style>
+	<!-- Critical CSS  -->
+	
+
+	<!-- Load CSS Async -->
+	<link href="./bootstrap.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="./bootstrap.css" onload="this.onload=null;this.rel='stylesheet'">
+	</noscript>
+	<link href="style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="./style.css">
+	</noscript>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</noscript>
+	<!-- Swiper  -->
+	<link href="https://cdn.jsdelivr.net/npm/swiper@8.4.5/swiper.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.4.5/swiper.min.css">
+	</noscript>
+	<!-- Lightbox  -->
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+	</noscript>
+	<!-- Font Awesome  -->
+	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</noscript>
+
+	<!-- Slight Importance to Load JS (Async) -->
 	<!-- JavaScript Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-	<!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-	<link href="style.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-	<script src="https://kit.fontawesome.com/8ab0a9b2b9.js" crossorigin="anonymous"></script>
-	<!-- Animation Package -->
-	<!-- Header Font -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" async></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+	
+	<!-- Not Important to Load JS (Defer)  -->
+	<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js" defer></script>
+	<script src="https://kit.fontawesome.com/8ab0a9b2b9.js" crossorigin="anonymous" defer></script>
+	
+
+	<!-- Hero Image Header Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">	
+
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
 	<!-- Webglot Translation  -->
 	<script src="https://cdn.weglot.com/weglot.min.js"></script>
 	<script>
@@ -50,7 +123,7 @@
 			]
 			});
 	</script>
-	<!-- Webglot Translation  -->
+	<!-- Webglot Translation END  -->
 
 
 </head>
@@ -64,7 +137,7 @@
 		</div>
 	</div>
 	<div class="preloader_logo">
-		<img src="./img/logo.png" alt="El logotipo de Las Casas del Camino Real - Precargador">
+		<img src="./img/logosvg.svg" alt="El logotipo de Las Casas del Camino Real - Precargador">
 	</div>
 </div>
 <!-- Preloader END  -->
@@ -84,7 +157,7 @@
 <nav class="navbar navbar-default fixed-top">
 	<div class="container-fluid">
 		<!-- Logo Main Navbar -->
-	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 0.8rem;"></a>
+	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logosvg.svg" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 0.8rem;"></a>
 
 	  <!-- 3 Links -->
 	  <div class="d-none d-lg-block d-xl-block link-container">
@@ -104,7 +177,7 @@
 	  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 		<div class="offcanvas-header">
 			<!-- Logo Offcanvas -->
-			<a href="./index.html"><img class="offcanvas-logo" id="offcanvasNavbarLabel" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo"></a>
+			<a href="./index.html"><img class="offcanvas-logo" id="offcanvasNavbarLabel" src="./img/logosvg.svg" alt="Las Casas Del Camino Real Main Logo"></a>
 			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 
@@ -207,51 +280,51 @@
 	<div class="container-fluid animateicons1">
 		<div class="owl-carousel">
 			<div>
-				<img class="home-icons" src="./img/people.png" alt="Wifi Icon">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/people.png?width=64" alt="Wifi Icon">
 				<p class="homeicon-text text-center">10<br>PERSONAS</p>
 			</div>
 			<div>
-				<img class="home-icons" src="./img/bed.png" alt="Wifi Icon">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/bed.png?width=64" alt="Wifi Icon">
 				<p class="homeicon-text text-center">2<br>DORMITORIOS</p>
 			</div>
 			<div>
-				<img class="home-icons" src="./img/bedroomicon.png" alt="Wifi Icon">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/bedroomicon.png?width=64" alt="Wifi Icon">
 				<p class="homeicon-text text-center">2<br>DORMITORIOS TRIPLES</p>
 			</div>
 			<div>
-				<img class="home-icons" src="./img/bathroom.png" alt="Wifi Icon">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/bathroom.png?width=64" alt="Wifi Icon">
 				<p class="homeicon-text text-center">3<br>BAÑOS</p>
 			</div>
 			<div>
-				<img class="home-icons" src="./img/area.png" alt="Wifi Icon">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/area.png?width=64" alt="Wifi Icon">
 				<p class="homeicon-text text-center">300㎡<br>ÚTILES</p>
 			</div>
 			<div>
-				<img class="home-icons" src="./img/patio.png" alt="Wifi Icon">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/patio.png?width=64" alt="Wifi Icon">
 				<p class="homeicon-text text-center">111㎡<br>PATIO</p>
 			</div>
 			<div>
-				<img class="home-icons" src="./img/wifi.png" alt="Wifi Icon">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/wifi.png?width=64" alt="Wifi Icon">
 				<p class="homeicon-text text-center">Wifi<br>GRATUITO</p>
 			</div>
 			<div>
-				<img class="home-icons" src="./img/discount.png" alt="Exclusive Discounts Icon">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/discount.png?width=64" alt="Exclusive Discounts Icon">
 				<p class="homeicon-text text-center">Descuentos<br>EXCLUSIVOS</p>
 			</div>
 			<div>
-				<img class="home-icons" src="./img/rustic.png" alt="Rural House Icon">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/rustic.png?width=64" alt="Rural House Icon">
 				<p class="homeicon-text text-center">Siglo<br>XVII</p>
 			</div>
 			<div>
-				<img class="home-icons" src="./img/parking.png" alt="Free Parking Icon">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/parking.png?width=64" alt="Free Parking Icon">
 				<p class="homeicon-text text-center">Parking<br>GRATUITO</p>
 			</div>
 			<div>
-				<img class="home-icons" src="./img/swimming.png" alt="Infinity Pool Image">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/swimming.png?width=64" alt="Infinity Pool Image">
 				<p class="homeicon-text text-center">Disfruta de Nuestra<br>PISCINA INFINITA</p>
 			</div>
 			<div>
-				<img class="home-icons" src="./img/jacuzziicon.png" alt="Jacuzzi Image">
+				<img class="home-icons" src="https://lascasasdelcaminoreal.b-cdn.net/houses/icons/jacuzziicon.png?width=64" alt="Jacuzzi Image">
 				<p class="homeicon-text text-center">Relájate en<br>EL JACUZZI</p>
 			</div>
 		</div>
@@ -272,88 +345,83 @@
 						<div class="swiper-wrapper">
 
 							<div class="swiper-slide active">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/vista-general-Casa-Principal-Salon-cocina-7-de-81_2TFC8GNAC.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/vista-general-Casa-Principal-Salon-cocina-7-de-81_2TFC8GNAC.jpg?">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/1.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/1.jpg">
 								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/salon-detalle-Casa-principal-salon-comedor-3-de-23_VVkPfkC5L.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-detalle-Casa-principal-salon-comedor-3-de-23_VVkPfkC5L.jpg?">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/2.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/2.jpg">
 								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/salon-Casa-principal-salon-comedor-10-de-23_fdXiFxNbh.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-Casa-principal-salon-comedor-10-de-23_fdXiFxNbh.jpg?">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/3.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/3.jpg">
 								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/vistageneral-Casa-Principal-Salon-cocina-8-de-81_bK0EPWuPq.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/vistageneral-Casa-Principal-Salon-cocina-8-de-81_bK0EPWuPq.jpg?">
-								</a>
-							</div>
-
-							
-							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/salon-cocina-Casa-Principal-Salon-cocina-2-de-81_F8xx8XUPD.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-cocina-Casa-Principal-Salon-cocina-2-de-81_F8xx8XUPD.jpg?">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/4.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/4.jpg">
 								</a>
 							</div>
 
 							
 							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/vistas-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-15-de-43_jM0rvZnhFs.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/vistas-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-15-de-43_jM0rvZnhFs.jpg?">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/5.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/5.jpg">
 								</a>
 							</div>
 
 							
 							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio2-Casa-Principal-Habitacion-doble-abajo-3-de-20_zxkI7YGiwT.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio2-Casa-Principal-Habitacion-doble-abajo-3-de-20_zxkI7YGiwT.jpg?">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/6.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/6.jpg">
 								</a>
 							</div>
 
 							
 							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-cocina-Casa-Principal-Salon-cocina-41-de-81_dyBbBqGWL.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-cocina-Casa-Principal-Salon-cocina-41-de-81_dyBbBqGWL.jpg?">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/7.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/7.jpg">
 								</a>
 							</div>
 
 							
 							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-detalle-Casa-Principal-Habitacion-doble-abajo-17-de-20_FQ4URUfY9i.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-detalle-Casa-Principal-Habitacion-doble-abajo-17-de-20_FQ4URUfY9i.jpg?">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/8.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/8.jpg">
 								</a>
 							</div>
 
 							
 							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-37-de-43_juRcPga721.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-37-de-43_juRcPga721.jpg?">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/9.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/9.jpg">
+								</a>
+							</div>
+
+							
+							<div class="swiper-slide">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/10.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/10.jpg">
 								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-salon-comedor-21-de-23_7p1QWAPWe.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-salon-comedor-21-de-23_7p1QWAPWe.jpg?">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/11.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/11.jpg">
 								</a>
 							</div>
 
 							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-35-de-43_UF9DJaD10R.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-35-de-43_UF9DJaD10R.jpg?">
+								<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/12.jpg" data-lightbox="photos2"> 
+									<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/12.jpg">
 								</a>
 							</div>
 
-							<div class="swiper-slide">
-								<a href="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-23-de-43_oEAEBl-VZ.jpg?" data-lightbox="photos2"> 
-									<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-23-de-43_oEAEBl-VZ.jpg?">
-								</a>
-							</div>
 						</div>
 						<div class="swiper-button-next arrow-next-animate1"></div>
 						<div class="swiper-button-prev arrow-prev-animate1"></div>
@@ -365,56 +433,53 @@
               <div class="swiper-wrapper" style="margin-top: 5px;">
 
                 <div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/vista-general-Casa-Principal-Salon-cocina-7-de-81_2TFC8GNAC.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/1.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-detalle-Casa-principal-salon-comedor-3-de-23_VVkPfkC5L.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/2.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-Casa-principal-salon-comedor-10-de-23_fdXiFxNbh.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/3.jpg">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/vistageneral-Casa-Principal-Salon-cocina-8-de-81_bK0EPWuPq.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/4.jpg">
                 </div>
 
 								<div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/salon-cocina-Casa-Principal-Salon-cocina-2-de-81_F8xx8XUPD.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/5.jpg">
                 </div>
 
 								<div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/vistas-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-15-de-43_jM0rvZnhFs.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/6.jpg">
                 </div>
 
 								<div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio2-Casa-Principal-Habitacion-doble-abajo-3-de-20_zxkI7YGiwT.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/7.jpg">
                 </div>
 
 								<div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-cocina-Casa-Principal-Salon-cocina-41-de-81_dyBbBqGWL.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/8.jpg">
                 </div>
 
 								<div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-detalle-Casa-Principal-Habitacion-doble-abajo-17-de-20_FQ4URUfY9i.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/9.jpg">
                 </div>
 
 								<div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-37-de-43_juRcPga721.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/10.jpg">
                 </div>
 
 								<div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-salon-comedor-21-de-23_7p1QWAPWe.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/11.jpg">
                 </div>
 
 								<div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-35-de-43_UF9DJaD10R.jpg?">
+                  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/12.jpg">
                 </div>
 
-								<div class="swiper-slide">
-                  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/dormitorio-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-23-de-43_oEAEBl-VZ.jpg?">
-                </div>
               </div>
             </div>
         </div>
@@ -468,78 +533,78 @@
 					<div class="swiper-wrapper">
 
 					  <div class="swiper-slide active">
-						<a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-70-de-81_Wtska7orUk.jpg?" data-lightbox="photos3"> 
-                			<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-70-de-81_Wtska7orUk.jpg?"
+						<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/13.jpg" data-lightbox="photos3"> 
+                			<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/13.jpg"
                 			alt="">
               			</a>
 					  </div>
 
 					  <div class="swiper-slide">
-						<a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-salon-comedor-17-de-23_zcKtH-MyhL.jpg?" data-lightbox="photos3"> 
-                			<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-salon-comedor-17-de-23_zcKtH-MyhL.jpg?"
+						<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/14.jpg" data-lightbox="photos3"> 
+                			<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/14.jpg"
                 			alt="">
               			</a>
 					  </div>
 
 					  <div class="swiper-slide">
-						<a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-9-de-81_tp5w7sM3G.jpg?" data-lightbox="photos3"> 
-                			<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-9-de-81_tp5w7sM3G.jpg?"
+						<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/15.jpg" data-lightbox="photos3"> 
+                			<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/15.jpg"
                 			alt="">
               			</a>
 					  </div>
 
 					  <div class="swiper-slide">
-						<a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-56-de-81_wO4kVSo6NL.jpg?" data-lightbox="photos3"> 
-                			<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-56-de-81_wO4kVSo6NL.jpg?"
+						<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/16.jpg" data-lightbox="photos3"> 
+                			<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/16.jpg"
                 			alt="">
               			</a>
 					  </div>
 
             		<div class="swiper-slide">
-						<a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Habitacion-doble-abajo-15-de-20_0jPHHTOZv.jpg?" data-lightbox="photos3"> 
-                			<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Habitacion-doble-abajo-15-de-20_0jPHHTOZv.jpg?"
+						<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/17.jpg" data-lightbox="photos3"> 
+                			<img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/17.jpg"
                 			alt="">
               			</a>
 					  </div>
 
             		<div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-10-de-81_H7-uPM8gY.jpg?" data-lightbox="photos3"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-10-de-81_H7-uPM8gY.jpg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/18.jpg" data-lightbox="photos3"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/18.jpg"
                 alt="">
               </a>
 					  </div>
 
             <div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-24-de-81_J6kMqsax1.jpg?" data-lightbox="photos3"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-24-de-81_J6kMqsax1.jpg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/19.jpg" data-lightbox="photos3"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/19.jpg"
                 alt="">
               </a>
 					  </div>
 
 						<div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-ban%CC%83o-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-10-de-43_ag-U-Cj8l.jpg?" data-lightbox="photos3"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-ban%CC%83o-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-10-de-43_ag-U-Cj8l.jpg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/20.jpg" data-lightbox="photos3"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/20.jpg"
                 alt="">
               </a>
 					  </div>
 
 						<div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-ban%CC%83o-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-8-de-43_e3TPOZMnk.jpg?" data-lightbox="photos3"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-ban%CC%83o-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-8-de-43_e3TPOZMnk.jpg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/21.jpg" data-lightbox="photos3"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/21.jpg"
                 alt="">
               </a>
 					  </div>
 
 						<div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-42-de-43_Y0Zt58TkT.jpg?" data-lightbox="photos3"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-42-de-43_Y0Zt58TkT.jpg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/22.jpg" data-lightbox="photos3"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/22.jpg"
                 alt="">
               </a>
 					  </div>
 
 						<div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Principal/comedor-Casa-principal-salon-comedor-23-de-23_PrDapRwMy.jpg?" data-lightbox="photos3"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Principal/comedor-Casa-principal-salon-comedor-23-de-23_PrDapRwMy.jpg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/23.jpg" data-lightbox="photos3"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/23.jpg"
                 alt="">
               </a>
 					  </div>
@@ -553,57 +618,57 @@
 					<div class="swiper-wrapper" style="margin-top: 5px;">
 
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-70-de-81_Wtska7orUk.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/13.jpg"
               alt="">
 					  </div>
 
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-salon-comedor-17-de-23_zcKtH-MyhL.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/14.jpg"
               alt="">
 					  </div>
 
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-9-de-81_tp5w7sM3G.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/15.jpg"
               alt="">
 					  </div>
 
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-56-de-81_wO4kVSo6NL.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/16.jpg"
               alt="">
 					  </div>
 
             <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Habitacion-doble-abajo-15-de-20_0jPHHTOZv.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/17.jpg"
               alt="">
 					  </div>
 
             <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-10-de-81_H7-uPM8gY.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/18.jpg"
               alt="">
 					  </div>
 
             <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-Principal-Salon-cocina-24-de-81_J6kMqsax1.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/19.jpg"
               alt="">
 					  </div>
 
 						<div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-ban%CC%83o-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-10-de-43_ag-U-Cj8l.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/20.jpg"
               alt="">
 					  </div>
 
 						<div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-ban%CC%83o-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-8-de-43_e3TPOZMnk.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/21.jpg"
               alt="">
 					  </div>
 
 						<div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/detalle-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-42-de-43_Y0Zt58TkT.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/22.jpg"
               alt="">
 					  </div>
 
 						<div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Principal/comedor-Casa-principal-salon-comedor-23-de-23_PrDapRwMy.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_1/23.jpg"
               alt="">
 					  </div>
 
@@ -646,71 +711,57 @@
 					<div class="swiper-wrapper" style="margin-top: 5px;">
 
 					  <div class="swiper-slide active">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/53_hlF-5DlNmr.jpg?" data-lightbox="photos4"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/53_hlF-5DlNmr.jpg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/1.webp" data-lightbox="photos4"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/1.webp"
                 alt="">
               </a>
 					  </div>
 
 					  <div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations2_wbf_dbuQV.webp?" data-lightbox="photos4"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations2_wbf_dbuQV.webp?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/2.jpeg" data-lightbox="photos4"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/2.jpeg"
                 alt="">
               </a>
 					  </div>
 
 					  <div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations7_OVpaO8r0pZ.jpeg?" data-lightbox="photos4"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations7_OVpaO8r0pZ.jpeg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/3.webp" data-lightbox="photos4"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/3.webp"
                 alt="">
               </a>
 					  </div>
 
 					  <div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/52__1__pJwU1LXNEt.jpg?" data-lightbox="photos4"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/52__1__pJwU1LXNEt.jpg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/4.webp" data-lightbox="photos4"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/4.webp"
                 alt="">
               </a>
 					  </div>
 
 					  <div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations6_DgMJoTiPLx.jpeg?" data-lightbox="photos4"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations6_DgMJoTiPLx.jpeg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/5.jpg" data-lightbox="photos4"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/5.jpg"
                 alt="">
               </a>
 					  </div>
 
 					  <div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations4_hL5m5Y9cH.jpeg?" data-lightbox="photos4"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations4_hL5m5Y9cH.jpeg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/6.jpeg" data-lightbox="photos4"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/6.jpeg"
                 alt="">
               </a>
 					  </div>
 
 					  <div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations8_36UF5-q9hc.jpeg?" data-lightbox="photos4"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations8_36UF5-q9hc.jpeg?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/7.jpeg" data-lightbox="photos4"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/7.jpeg"
                 alt="">
               </a>
 					  </div>
 
 					  <div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations10_0iol6QwCuV.jpeg?" data-lightbox="photos4"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations10_0iol6QwCuV.jpeg?"
-                alt="">
-              </a>
-					  </div>
-
-					  <div class="swiper-slide">
-						<a href="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations9_QtW2hDb_l.jpeg?" data-lightbox="photos4"> 
-                			<img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations9_QtW2hDb_l.jpeg?"
-                			alt="">
-              			</a>
-					  </div>
-
-					  <div class="swiper-slide">
-						  <a href="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations1_rVNdREGiZ.webp?" data-lightbox="photos4"> 
-                <img class="img-fluid" src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations1_rVNdREGiZ.webp?"
+						  <a href="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/8.jpeg" data-lightbox="photos4"> 
+                <img class="img-fluid" src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/8.jpeg"
                 alt="">
               </a>
 					  </div>
@@ -725,53 +776,44 @@
 					<div class="swiper-wrapper" style="margin-top: 5px;">
 
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/53_hlF-5DlNmr.jpg?">
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/1.webp">
 					  </div>
 
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations2_wbf_dbuQV.webp?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/2.jpeg"
 						  alt="">
 					  </div>
 
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations7_OVpaO8r0pZ.jpeg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/3.webp"
               alt="">
 					  </div>
             
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/52__1__pJwU1LXNEt.jpg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/4.webp"
               alt="">
 					  </div>
 
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations6_DgMJoTiPLx.jpeg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/5.jpg"
               alt="">
 					  </div>
 
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations4_hL5m5Y9cH.jpeg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/6.jpeg"
               alt="">
 					  </div>
 
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations8_36UF5-q9hc.jpeg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/7.jpeg"
               alt="">
 					  </div>
 
 					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations10_0iol6QwCuV.jpeg?"
+						  <img src="https://lascasasdelcaminoreal.b-cdn.net/houses/installaciones/8.jpeg"
               alt="">
 					  </div>
 
-					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations9_QtW2hDb_l.jpeg?"
-              alt="">
-					  </div>
-
-					  <div class="swiper-slide">
-						  <img src="https://ik.imagekit.io/l3yst4k9g/Servicios/Section_2/installations1_rVNdREGiZ.webp?"
-              alt="">
-					  </div>
 					
 					</div>
 				  </div>
@@ -808,7 +850,7 @@
                   <button type="button" class="btn-contact btn-gocontact mt-4">Contacto</button>
 							</div>
 							<div class="promociones4b-animate col-lg-6 order-1 order-lg-2">
-									<img src="https://ik.imagekit.io/l3yst4k9g/Promociones/Section_4/Exteriores__53_de_53__rNAtizZlS.jpg?" 
+									<img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/houseid_4/windmirrorview.jpg" 
 									alt="Las Casas del Camino Real (Siglo XVII) mostradas a través de un espejo retrovisor.">
 							</div>
 					</div>
@@ -830,13 +872,13 @@
 			<div class="col-lg-6 houses5a-animate">
 				<div class="gallery2">
 					<div class="gallery-images animateimage1">
-						<img src="https://ik.imagekit.io/l3yst4k9g/El_Sueno/Section_2/Exteriores__47_de_53__YWyr28vBin.jpg?" alt="">
+						<img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/extra-info/1.jpg?width=300" alt="">
 					</div>
 					<div class="gallery-images animateimage2">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Principal/Casa-principal-Exteriores-24-de-53-1_yyC02ygVc.jpg?" alt="">
+						<img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/extra-info/2.jpg?width=300" alt="">
 					</div>
 					<div class="gallery-images animateimage3">
-						<img src="https://ik.imagekit.io/l3yst4k9g/Principal/ban%CC%83o-Casa-principal-Habitacion-doble-planta-arriba-con-ban%CC%83o-4-de-43_Fbj0_gIqdN.jpg?" alt="">
+						<img src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/extra-info/3.jpg?width=300" alt="">
 					</div>
 				</div>	
 			</div>
@@ -878,7 +920,7 @@
 
 <!-- Footer -->
 <hr class="hr" style="color: #887129; ">
-<footer
+	<footer
 		  class="text-center text-lg-start"
 		  style="background-color: white"
 		  >
@@ -893,7 +935,7 @@
 			<h6 class="text-uppercase mb-4 footer-header" style="color: #887129;">
 			  Las Casas Del Camino Real
 			</h6>
-	  <a href="./index.html"><img class="footer-logo" src="./img/logo.png" alt="El logotipo de Las Casas del Camino Real." style="padding-left: 1rem; padding-top: 1rem; padding-bottom: 1rem;"></a>
+	  <a href="./index.html"><img class="footer-logo" src="./img/logosvg.svg" alt="El logotipo de Las Casas del Camino Real." style="padding-left: 1rem; padding-top: 1rem; padding-bottom: 1rem;"></a>
 		  </div>
 		  <!-- Grid column -->
 
@@ -1057,12 +1099,12 @@
 						</ul>
 					</div>
 
-					<div class="col d-none d-lg-block modalCol">
-						<a href="./img/patioprivado.jpg" data-lightbox="photos2"> 
-              <img class="modalImages mb-5" src="https://ik.imagekit.io/l3yst4k9g/Principal/wingmirror_e8foqLNFK.jpg?">
+					<div class="col-6 d-none d-lg-block modalCol">
+						<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modal/1.jpg" data-lightbox="photos2"> 
+              <img loading="lazy" class="modalImages mb-1" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modal/1.jpg">
             </a>
-						<a href="./img/cabrerabedroom.jpg" data-lightbox="photos2"> 
-              <img class="modalImages" src="https://ik.imagekit.io/l3yst4k9g/Principal/toilet_ThBXFVSj3.jpg?">
+						<a href="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modal/2.jpg" data-lightbox="photos2"> 
+              <img loading="lazy" class="modalImages mb-5" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modal/2.jpg">
             </a>
 					</div>
 				</div>
@@ -1095,78 +1137,77 @@
 				<div class="row row-cols-sm-5 row-cols-md-4">
 
           <div class="col">
-              <img class="icon-images" src="./img/microwave.png" alt="Microondas">
-              <p class="icon-desc">Microondas</p>
+						<img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/microwave.png??width=64" alt="Microondas">
+						<p class="icon-desc">Microondas</p>
           </div>
           
           <div class="col">
-            <img class="icon-images" src="./img/kettle.png" alt="Hervidor de Agua">
+            <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/kettle.png?width=64" alt="Hervidor de Agua">
             <p class="icon-desc">Hervidor de Agua</p>
           </div>
 
           <div class="col">
-            <img class="icon-images"src="./img/coffeemaker.png" alt="Cafetera">
+            <img loading="lazy" class="icon-images"src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/coffeemaker.png?width=64" alt="Cafetera">
               <p class="icon-desc">Cafetera</p>
           </div>
 				
           <div class="col">
-              <img class="icon-images" src="./img/fridge.png" alt="Nevera">
+              <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/fridge.png?width=64" alt="Nevera">
               <p class="icon-desc">Nevera Americana</p>
           </div>
 
           <div class="col">
-            <img class="icon-images" src="./img/freezer.png" alt="Congelador">
+            <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/freezer.png?width=64" alt="Congelador">
             <p class="icon-desc">Congelador</p>
           </div>
 
           <div class="col">
-            <img class="icon-images"src="./img/toaster.png" alt="Tostadora">
+            <img loading="lazy" class="icon-images"src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/toaster.png?width=64" alt="Tostadora">
               <p class="icon-desc">Tostadora</p>
           </div>
       
           <div class="col ">
-            <img class="icon-images" src="./img/hob.png" alt="Placa de Vitrocerámica">
+            <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/hob.png?width=64" alt="Placa de Vitrocerámica">
             <p class="icon-desc">Placa de Vitrocerámica</p>
           </div>
 
           <div class="col">
-            <img class="icon-images" src="./img/sattv.png" alt="Antena Parabólica">
+            <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/sattv.png?width=64" alt="Antena Parabólica">
             <p class="icon-desc">Antena Parabólica</p>
           </div>
 
           <div class="col">
-            <img class="icon-images" src="./img/juicer.png" alt="Exprimidor">
+            <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/juicer.png?width=64" alt="Exprimidor">
               <p class="icon-desc">Exprimidor</p>
           </div>
 
           <div class="col">
-            <img class="icon-images" src="./img/television.png" alt="Televisión Satélite">
+            <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/television.png?width=64" alt="Televisión Satélite">
             <p class="icon-desc">Televisión Satélite</p>
           </div>
 
-
           <div class="col">
-            <img class="icon-images" src="./img/boardgames.png" alt="Juegos de Mesa">
+            <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/boardgames.png?width=64" alt="Juegos de Mesa">
             <p class="icon-desc">Juegos de Mesa</p>
           </div>
 
           <div class="col">
-            <img class="icon-images" src="./img/dishwasher.png" alt="Lavavajillas">
+            <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/dishwasher.png?width=64" alt="Lavavajillas">
             <p class="icon-desc">Lavavajillas</p>
           </div>
 
           <div class="col">
-            <img class="icon-images" src="./img/washingmachine.png" alt="Lavadora">
+            <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/washingmachine.png?width=64" alt="Lavadora">
             <p class="icon-desc">Lavadora</p>
           </div>
 
           <div class="col">
-            <img class="icon-images" src="./img/dryer.png" alt="Television">
+            <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/dryer.png?width=64" alt="Television">
             <p class="icon-desc">Secadora</p>
           </div>
 
           <div class="col">
-            <img class="icon-images" src="./img/kitchen.png" alt="Television">
+            <img loading="lazy" class="icon-images" src="https://lascasasdelcaminoreal.b-cdn.net/houses/principal/modaicons/kitchen.png?width=64" alt="Television">
             <p class="icon-desc">Cocina con Isla Central</p>
           </div>
 
@@ -1194,15 +1235,22 @@
 <!-- Animation  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 <script src="./swipers.js"></script>
-<script src="./navbar.js"></script>
 <script src="./casaprincipal.js"></script>
 <!-- Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Scripts END -->
+
+
+<!-- Navbar  -->
+<script>
+	$(window).scroll(function(){
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
+	});	
+</script>
+<!-- Navbar  -->
 
 
 <!-- Owl Carousel for Icons  -->
@@ -1230,7 +1278,7 @@
 			items:6,
 			loop: true,
 			autoplay: true,
-			autoplayTimeout: 2500,
+			autoplayTimeout: 3500,
 			autoplayHoverPause: true,
 			delay: 3,
 			}

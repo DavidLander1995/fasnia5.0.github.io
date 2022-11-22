@@ -84,7 +84,6 @@
 
 	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<!-- Add the slick-theme.css if you want default styling -->
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 	<!-- Add the slick-theme.css if you want default styling -->
@@ -170,7 +169,7 @@
 <!-- Preloader END  -->
 
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
-<button class="btn-bookmobile button-reservemobile fixed-bottom d-lg-none d-xl-none animatemobilebook">Reserva</button>
+<button onclick="gobook()" class="btn-bookmobile fixed-bottom d-lg-none d-xl-none animatemobilebook">Reserva</button>
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
 
 <!-- Navigation Section -->
@@ -237,7 +236,7 @@
 				</li>
 				<li>
 				<!-- Offcanvas Reserve Button -->
-					<button type="button" class="btn-book button-reservenavbar" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
+					<button onclick="gobook()" type="button" class="btn-book" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
 				</li>
 		  </ul>
 		</div>
@@ -258,7 +257,7 @@
 				</div>
 			</div>
 			<div class="swiper-reserve-button">
-				<button class="btn-book button-heroreserve1 d-none d-lg-inline animateherobutton1">Reserva</button>
+				<button onclick="gobook()" class="btn-book d-none d-lg-inline animateherobutton1">Reserva</button>
 			</div>
 		</div>
 
@@ -270,7 +269,7 @@
 				</div>
 			</div>
 			<div class="swiper-reserve-button">
-				<button class="btn-book button-heroreserve2 d-none d-lg-inline">Reserva</button>
+				<button onclick="gobook()" class="btn-book d-none d-lg-inline">Reserva</button>
 			</div>
 		</div>
 
@@ -282,7 +281,7 @@
 				</div>
 			</div>
 			<div class="swiper-reserve-button">
-				<button class="btn-book button-heroreserve3 d-none d-lg-inline">Reserva</button>
+				<button onclick="gobook()" class="btn-book d-none d-lg-inline">Reserva</button>
 			</div>
 		</div>
 
@@ -1760,53 +1759,16 @@ $(window).on("load", function(){
 <!-- Buttons  -->
 <script>
 
-// Hero Reserve Button
-document.querySelector('.button-heroreserve1').addEventListener('click', () => {
-if (Weglot.getCurrentLang() == "es") {
-	document.location.href = "reservationgeneralES.html"
-}
-else {
-	document.location.href = "reservationgeneralEN.html"
-}
-})
 
-document.querySelector('.button-heroreserve2').addEventListener('click', () => {
+// Booking General
+function gobook() {
 if (Weglot.getCurrentLang() == "es") {
 	document.location.href = "reservationgeneralES.html"
 }
 else {
 	document.location.href = "reservationgeneralEN.html"
 }
-})
-
-document.querySelector('.button-heroreserve3').addEventListener('click', () => {
-if (Weglot.getCurrentLang() == "es") {
-	document.location.href = "reservationgeneralES.html"
 }
-else {
-	document.location.href = "reservationgeneralEN.html"
-}
-})
-
-// Navbar Reserve Button
-document.querySelector('.button-reservenavbar').addEventListener('click', () => {
-if (Weglot.getCurrentLang() == "es") {
-	document.location.href = "reservationgeneralES.html"
-}
-else {
-	document.location.href = "reservationgeneralEN.html"
-}
-})
-
-// Mobile Reserve Button Fixed
-document.querySelector('.button-reservemobile').addEventListener('click', () => {
-if (Weglot.getCurrentLang() == "es") {
-	document.location.href = "reservationgeneralES.html"
-}
-else {
-	document.location.href = "reservationgeneralEN.html"
-}
-})
 
 // The Houses Section
 // La Casa Principal

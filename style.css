@@ -1563,7 +1563,8 @@ html,body
 /* 3. Navbar  */
 /* Large Screen 3 Links Top of Screen */
 .link-container{
-  translate: -20%;
+  margin-left: 0;
+  margin-right: 5%;
   opacity: 100%;
 }
 

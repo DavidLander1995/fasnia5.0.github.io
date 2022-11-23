@@ -8,6 +8,57 @@
 
 */
 
+.container-socials {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: grid !important;
+}
+
+.container-socials .herosocial-icons {
+  width: 3rem;
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+  padding-top: 1.5rem;
+}
+
+.herosocial-icons:hover{
+  transform: scale(1.2);
+}
+
+.herosocial-icons a:hover{
+  color: transparent;
+}
+
+
+.container-socialsmobile {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  z-index: 999;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container-socialsmobile .herosocial-iconsmobile {
+  width: 2.8rem;
+  filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
+  margin-left: 0.6rem;
+}
+
+.container-socialsmobile a{
+  color: transparent;
+}
+
+
+.container-discount {
+  background-color: #c3c3bb3b;
+  clip-path: ellipse(100% 55% at 48% 44%);
+
+}
+
+
 
 
 /* Swiper CSS  */
@@ -1643,6 +1694,10 @@ html,body
 }
 
 footer a {
+  color: transparent;
+}
+
+footer a:hover {
   color: transparent;
 }
 

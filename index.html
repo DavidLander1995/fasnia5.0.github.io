@@ -104,6 +104,9 @@
 	</style>
 	<!-- Critical CSS  -->
 
+	<!-- Critical JS  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- Critical JS  -->
 
 	<!-- Load CSS Async -->
 	<link href="./bootstrap.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -138,7 +141,7 @@
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" async></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js" integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+	
 	
 	<!-- Not Important to Load JS (Defer)  -->
 	<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js" defer></script>
@@ -312,9 +315,8 @@
 </nav>
 <!-- Navigation Section END -->
 
-
 <!-- Banner Image -->
-<div class="swiper mySwiperhero">
+<div class="swiper mySwiperhero" style="position: relative;">
 	<div class="swiper-wrapper">
 
 		<div class="swiper-slide">
@@ -354,16 +356,57 @@
 		</div>
 
 	</div>
-
 	<!-- <div class="swiper-button-next" style="color: #887129;"></div>
 	<div class="swiper-button-prev" style="color: #887129;"></div> -->
-
 </div>
+
+<!-- Hero Image Social Icons (LG & LG Screens) -->
+<div class="container-socials">
+	<a href="https://www.instagram.com/lascasasdelcaminoreal/">
+		<img class="herosocial-icons d-none d-lg-block d-xl-block" src="./img/instagram.png" alt="Logotipo de Instagram">
+	</a>
+	<a href="https://www.facebook.com/lascasasdelcaminoreal/">
+		<img class="herosocial-icons d-none d-lg-block d-xl-block" src="./img/facebook.png" alt="Logotipo de Facebook">
+	</a>
+	<a href="https://api.whatsapp.com/send?phone=34607559525">
+		<img class="herosocial-icons d-none d-lg-block d-xl-block" src="./img/whatsapp-icon.png" alt="Logotipo de Whatsapp">
+	</a>
+</div>
+<!-- Hero Image Social Icons (LG & LG Screens) -->
+
+<!-- Hero Image Social Icons (SM & MD Screens) -->
+<div class="container-socialsmobile">
+	<a href="https://www.instagram.com/lascasasdelcaminoreal/">
+		<img class="herosocial-iconsmobile d-inline d-md-inline d-lg-none d-xl-none" src="./img/instagram.png" alt="Logotipo de Instagram">
+	</a>
+	<a href="https://www.facebook.com/lascasasdelcaminoreal/">
+		<img class="herosocial-iconsmobile d-inline d-md-inline d-lg-none d-xl-none" src="./img/facebook.png" alt="Logotipo de Facebook">
+	</a>
+	<a href="https://api.whatsapp.com/send?phone=34607559525">
+		<img class="herosocial-iconsmobile d-inline d-md-inline d-lg-none d-xl-none" src="./img/whatsapp-icon.png" alt="Logotipo de Whatsapp">
+	</a>
+</div>
+<!-- Hero Image Social Icons (SM & MD Screens) -->
+
+<!-- Banner for Discount  -->
+<div class="container-fluid container-discount">
+	<div class="container text-center">
+		<div class="row text-center">
+			<div class="col-lg-12">
+				<h2 class="section-title text-center">5% Descuento</h2>
+				<p class="section-desc text-center">Código Promocional: LASCASASDELCAMINOREAL</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Banner for Discount  -->
+
+
+
 <!-- Banner Image END -->
 
 
 <div class="bodycontent">
-
 
 	<!-- Page Introduction -->
 	<div class="container text-center index-start">
@@ -416,7 +459,6 @@
 		</div>
 	</div>
 	<!-- Icon Section END -->
-
 
 	<!-- Gallery Section 1  -->
 	<div class="container-fluid my-lg-5">
@@ -514,7 +556,6 @@
 	</div>
 	<!-- Gallery Section 1 END  -->
 
-
 	<!-- Section - Weather  -->
 	<div id="section_weather">
 		<div class="container-fluid">
@@ -525,7 +566,6 @@
 		</div>
 	</div>
 	<!-- Section END  -->
-
 
 	<!-- The Houses Section  -->
 	<div class="container text-center">
@@ -822,7 +862,6 @@
 
 
 	<!-- The Facilities -->
-
 	<!-- Introduction -->
 	<section id="section_facilities">
 		<div class="container">
@@ -877,8 +916,6 @@
 		</div>
 	</div>
 	<!-- Icon Section -->
-
-
 	<div class="container pt-lg-5">
 		<div class="slider5">
 
@@ -1103,8 +1140,6 @@
 	<!-- Facilities Carousel END  -->
 	<!-- The Facilities END -->
 
-
-
 	<!-- Experiences Carousel Desktop ONLY  -->
 	<!-- Title Introduction -->
 	<div class="container-fluid experience-intro experienceanimatetitle" style="margin-top: 80px;">
@@ -1115,7 +1150,6 @@
 		</div>
 	</div>
 	<!-- Title Introduction -->
-
 	<div class="container-fluid d-none d-lg-none d-xl-block my-5">
 		<div class="slider2 experienceanimate1">
 
@@ -1128,7 +1162,7 @@
 						<h2 class="section-title">Gastronomía</h2>
 						<h3 class="section-title">Gastronomía</h3>
 						<p class="section-desc">Experimente la excepcional gastronomía de Tenerife, popular por sus excepcionales vinos, quesos y platos de marisco. La comida más típica de Canarias son las "Papas arrugadas con mojo" y está considerada una de las maravillas gastronómicas de España.</p>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button onclick="gogastronomia()" class="btn-more2 mt-3">Leer Más</button>
 					</div>
 					<!-- Gastronomía END -->
 
@@ -1137,7 +1171,7 @@
 						<h2 class="section-title">Senderismo</h2>
 						<h3 class="section-title">Senderismo</h3>
 						<p class="section-desc">El senderismo en Tenerife está considerado como uno de los mejores destinos de senderismo de Europa, conocido por sus hermosos paisajes volcánicos y sus verdes montañas que se despliegan en el mar.</p>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button onclick="gosenderismo()" class="btn-more2 mt-3">Leer Más</button>
 					</div>
 					<!-- Senderismo END -->
 
@@ -1146,7 +1180,7 @@
 						<h2 class="section-title">Visita</h2>
 						<h3 class="section-title">Visita</h3>
 						<p class="section-desc">Descubra Tenerife y sus increíbles paisajes, como la visita al parque nacional del Teide, los acantilados de los gigantes o la diversión en familia en el Siam Park.</p>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button onclick="govisitas()" class="btn-more2 mt-3">Leer Más</button>
 					</div>
 					<!-- Visita END  -->
 				</div>
@@ -1163,7 +1197,7 @@
 						<h2 class="section-title">Senderismo</h2>
 						<h3 class="section-title">Senderismo</h3>
 						<p class="section-desc">El senderismo en Tenerife está considerado como uno de los mejores destinos de senderismo de Europa, conocido por sus hermosos paisajes volcánicos y sus verdes montañas que se despliegan en el mar.</p>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button onclick="gosenderismo()" class="btn-more2 mt-3">Leer Más</button>
 					</div>
 					<!-- Senderismo END -->
 
@@ -1172,7 +1206,7 @@
 						<h2 class="section-title">Visita</h2>
 						<h3 class="section-title">Visita</h3>
 						<p class="section-desc">Descubra Tenerife y sus increíbles paisajes, como la visita al parque nacional del Teide, los acantilados de los gigantes o la diversión en familia en el Siam Park.</p>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button onclick="govisitas()" class="btn-more2 mt-3">Leer Más</button>
 					</div>
 					<!-- Visita END  -->
 
@@ -1181,7 +1215,7 @@
 						<h2 class="section-title">Gastronomía</h2>
 						<h3 class="section-title">Gastronomía</h3>
 						<p class="section-desc">Experimente la excepcional gastronomía de Tenerife, popular por sus excepcionales vinos, quesos y platos de marisco. La comida más típica de Canarias son las "Papas arrugadas con mojo" y está considerada una de las maravillas gastronómicas de España.</p>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button onclick="gogastronomia()" class="btn-more2 mt-3">Leer Más</button>
 					</div>
 					<!-- Gastronomía END -->
 				</div>
@@ -1198,7 +1232,7 @@
 						<h2 class="section-title">Visita</h2>
 						<h3 class="section-title">Visita</h3>
 						<p class="section-desc">Descubra Tenerife y sus increíbles paisajes, como la visita al parque nacional del Teide, los acantilados de los gigantes o la diversión en familia en el Siam Park.</p>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button onclick="govisitas()" class="btn-more2 mt-3">Leer Más</button>
 					</div>
 					<!-- Visita END  -->
 
@@ -1207,7 +1241,7 @@
 						<h2 class="section-title">Gastronomía</h2>
 						<h3 class="section-title">Gastronomía</h3>
 						<p class="section-desc">Experimente la excepcional gastronomía de Tenerife, popular por sus excepcionales vinos, quesos y platos de marisco. La comida más típica de Canarias son las "Papas arrugadas con mojo" y está considerada una de las maravillas gastronómicas de España.</p>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button onclick="gogastronomia()" class="btn-more2 mt-3">Leer Más</button>
 					</div>
 					<!-- Gastronomía END -->
 
@@ -1216,7 +1250,7 @@
 						<h2 class="section-title">Senderismo</h2>
 						<h3 class="section-title">Senderismo</h3>
 						<p class="section-desc">El senderismo en Tenerife está considerado como uno de los mejores destinos de senderismo de Europa, conocido por sus hermosos paisajes volcánicos y sus verdes montañas que se despliegan en el mar.</p>
-						<button class="btn-more2 mt-3">Leer Más</button>
+						<button onclick="gosenderismo()" class="btn-more2 mt-3">Leer Más</button>
 					</div>
 					<!-- Senderismo END -->
 				</div>
@@ -1225,7 +1259,6 @@
 		</div>
 	</div>
 	<!-- Experiences Carousel END  -->
-
 
 	<!-- 3 Experienes Mobile Version  -->
 	<div class="container-fluid d-xl-none">
@@ -1239,7 +1272,7 @@
 				<div class="container text-center">
 					<p class="section-desc mt-4">Experimente la excepcional gastronomía de Tenerife, popular por sus excepcionales vinos, quesos y platos de marisco. La comida más típica de Canarias son 
 						las "Papas arrugadas con mojo" y está considerada una de las maravillas gastronómicas de España.</p>
-					<button class="btn-more mb-5">Leer Más</button>
+					<button onclick="gogastronomia()" class="btn-more mb-5">Leer Más</button>
 				</div>
 			</div>
 			<!-- Slide 1 END  -->
@@ -1251,7 +1284,7 @@
 				</div>
 				<div class="container text-center">
 					<p class="section-desc mt-4">El senderismo en Tenerife está considerado como uno de los mejores destinos de senderismo de Europa, conocido por sus hermosos paisajes volcánicos y sus verdes montañas que se despliegan en el mar.</p>
-					<button class="btn-more mb-5">Leer Más</button>
+					<button onclick="gosenderismo()" class="btn-more mb-5">Leer Más</button>
 				</div>
 			</div>
 			<!-- Slide 2 END  -->
@@ -1263,7 +1296,7 @@
 				</div>
 				<div class="container text-center">
 					<p class="section-desc mt-4">Descubra Tenerife y sus increíbles paisajes, como la visita al parque nacional del Teide, los acantilados de los gigantes o la diversión en familia en el Siam Park.</p>
-					<button class="btn-more mb-5">Leer Más</button>
+					<button onclick="govisitas()" class="btn-more mb-5">Leer Más</button>
 				</div>
 			</div>
 			<!-- Slide 3 END  -->
@@ -1315,10 +1348,8 @@
 			</div>
 		</div>
 		</div>
-		</section>
+	</section>
 		<!-- Section Find Us END  -->
-
-
 
 	<!-- Section Gallery -->
 	<div class="container-fluid">
@@ -1507,12 +1538,9 @@
 	</div>
 	
 
-
-
-
 <!-- Footer -->
 <hr class="hr" style="color: #887129; ">
-<footer
+	<footer
 		  class="text-center text-lg-start"
 		  style="background-color: white"
 		  >
@@ -1915,6 +1943,20 @@ document.location.href = "servicios.html"
 document.querySelector('.button-gogallery').addEventListener('click', () => {
 document.location.href = "galeriadefotos.html"
 })
+
+// Experiencias 
+function gosenderismo() {
+	window.location.href = "experiencias-senderismo.html"
+}
+
+function gogastronomia() {
+	window.location.href = "experiencias-gastronomia.html"
+}
+
+function govisitas() {
+	window.location.href = "experiencias-visitas.html"
+}
+
 
 // Reviews
 document.querySelector('.button-googlereviews').addEventListener('click', () => {

@@ -116,7 +116,7 @@
 
 
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
-<button class="btn-bookmobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
+<button onclick="gobook()" class="btn-bookmobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
 <!-- Navigation Section -->
 <!-- 3 Links Displayed When Screen Size > Medium -->
@@ -182,7 +182,7 @@
 				</li>
 				<li>
 				<!-- Offcanvas Reserve Button -->
-					<button type="button" class="btn-book button-reservenavbar" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
+					<button onclick="gobook()" type="button" class="btn-book" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
 				</li>
 		  </ul>
 		</div>
@@ -238,7 +238,7 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-lg-6 order-1 order-lg-2">
-        <img src="./img/tenerifefood.jpeg" alt="Papas Arrugadas">
+        <img src="https://lascasasdelcaminoreal.b-cdn.net/experiences/gastronomia/papas_arrugadas-min.jpeg" alt="Papas Arrugadas">
       </div>
       <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
         <h2 class="section-title text-center text-lg-start">Papas Arrugadas</h2>
@@ -255,7 +255,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <img src="./img/gofio.jpeg" alt="Gofio">
+        <img src="https://lascasasdelcaminoreal.b-cdn.net/experiences/gastronomia/gofio-min.jpeg" alt="Gofio">
       </div>
       <div class="col-lg-6 text-center text-lg-start">
         <h2 class="section-title text-center text-lg-start">Gofio</h2>
@@ -274,7 +274,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 order-1 order-lg-2">
-        <img src="./img/almogrote.jpeg" alt="Almogrote">
+        <img src="https://lascasasdelcaminoreal.b-cdn.net/experiences/gastronomia/almogrote-min.jpeg" alt="Almogrote">
       </div>
       <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
         <h2 class="section-title text-center text-lg-start">Almogrote</h2>
@@ -298,14 +298,12 @@
     </div>
     <div class="row">
       <div class="col-lg-6">
-        <img src="./img/lapas.jpeg" alt="Lapas">
+        <img src="https://lascasasdelcaminoreal.b-cdn.net/experiences/gastronomia/tenerifefood-min.jpeg" alt="Lapas">
       </div>
       <div class="col-lg-6">
       </div>
     </div>
   </div>
-
-
 
 
   <!-- Footer -->
@@ -325,7 +323,7 @@
 			<h6 class="text-uppercase mb-4 footer-header" style="color: #887129;">
 			  Las Casas Del Camino Real
 			</h6>
-	  <a href="./index.html"><img class="footer-logo" src="./img/logo.png" alt="El logotipo de Las Casas del Camino Real." style="padding-left: 1rem; padding-top: 1rem; padding-bottom: 1rem;"></a>
+	  <a href="./index.html"><img class="footer-logo" src="./img/logosvg.svg" alt="El logotipo de Las Casas del Camino Real." style="padding-left: 1rem; padding-top: 1rem; padding-bottom: 1rem;"></a>
 		  </div>
 		  <!-- Grid column -->
 
@@ -453,6 +451,18 @@
     });
   </script>
 	<!-- Navbar END  -->
+
+	<!-- Buttons  -->
+	<script>
+		function gobook() {
+		if (Weglot.getCurrentLang() == "es") {
+			document.location.href = "reservationgeneralES.html"
+		}
+		else {
+			document.location.href = "reservationgeneralEN.html"
+		}
+		}
+	</script>
 
 
 

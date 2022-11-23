@@ -166,26 +166,135 @@ $(window).on("load", function(){
    
           }
         });
-            // Read More Button Animation
-            gsap.to(".SeeMore", {
-              duration: 0,  
-              y: -100,
-              opacity: 0,
-              scale: 2.5
-            });
-
-            gsap.to(".SeeMore", {
-              duration: 1, 
-              scale: 1,
-              y: 0, 
-              opacity: 1,
-              ease: "bounce",
-              scrollTrigger : { 
-                trigger: "#elsuenoStory", 
-                markers: false,
-                start: "top 20%",
-                end: "center 30%",
-              }, 
-            });
+            
+            
       });
+
+      // All 
+      // Arrow Animation for Slider 
+        // Next 
+        gsap.to(".arrow-next-animate1", {
+          duration: 0,  
+          x: 10,
+          scale: 5,
+          rotation: 360,
+          opacity: 0,
+        });
+
+        gsap.to(".arrow-next-animate1", {
+          duration: 1,  
+          x: 0,
+          rotation: 0,
+          opacity: 1,
+          scale: 1,
+          delay: 1,
+          ease: "ease",
+          scrollTrigger : { 
+            trigger: ".mySwiper11", 
+            markers: false,
+            start: "top 80%",
+            end: "center 30%",
+          }, 
+        });
+
+        // Prev 
+        gsap.to(".arrow-prev-animate1", {
+          duration: 0,  
+          x: 10,
+          scale: 5,
+          rotation: -360,
+          opacity: 0,
+        });
+
+        gsap.to(".arrow-prev-animate1", {
+          duration: 1,  
+          x: 0,
+          rotation: 0,
+          opacity: 1,
+          scale: 1,
+          delay: 1,
+          ease: "ease",
+          scrollTrigger : { 
+            trigger: ".mySwiper11", 
+            markers: false,
+            start: "top 80%",
+            end: "center 30%",
+          }, 
+        });
+
+
+         // Arrow Animation for Slider 
+        // Next 
+        gsap.to(".arrow-next-animate2", {
+          duration: 0,  
+          x: 10,
+          scale: 5,
+          rotation: 360,
+          opacity: 0,
+        });
+
+        gsap.to(".arrow-next-animate2", {
+          duration: 1,  
+          x: 0,
+          rotation: 0,
+          opacity: 1,
+          scale: 1,
+          delay: 1,
+          ease: "ease",
+          scrollTrigger : { 
+            trigger: ".mySwiper12", 
+            markers: false,
+            start: "top 80%",
+            end: "center 30%",
+          }, 
+        });
+
+        // Prev 
+        gsap.to(".arrow-prev-animate2", {
+          duration: 0,  
+          x: 10,
+          scale: 5,
+          rotation: -360,
+          opacity: 0,
+        });
+
+        gsap.to(".arrow-prev-animate2", {
+          duration: 1,  
+          x: 0,
+          rotation: 0,
+          opacity: 1,
+          scale: 1,
+          delay: 1,
+          ease: "ease",
+          scrollTrigger : { 
+            trigger: ".mySwiper12", 
+            markers: false,
+            start: "top 80%",
+            end: "center 30%",
+          }, 
+        });
+
+        // Read More Button Animation
+        gsap.to(".SeeMore", {
+          duration: 0,  
+          y: -100,
+          opacity: 0,
+          scale: 2.5
+        });
+
+        gsap.to(".SeeMore", {
+          duration: 1, 
+          scale: 1,
+          delay: 2,
+          y: 0, 
+          opacity: 1,
+          ease: "bounce",
+          scrollTrigger : { 
+            trigger: "#elsuenoStory", 
+            markers: false,
+            start: "top 20%",
+            end: "center 30%",
+          }, 
+        });
+
         

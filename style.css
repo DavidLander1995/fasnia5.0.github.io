@@ -163,27 +163,27 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  margin-top: 8rem;
-  opacity: 0.8;
+  margin-top: 12rem;
+  opacity: 1;
 }
 
 .loading .line-box {
   padding: 0px;
-  width: 18rem;
+  width: 16rem;
   height: 0.4rem;
   border: 2px solid #887129;
   border-radius: 10px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .loading .line-box .line {
   padding: 0px;
-  width: 18rem;
+  width: 16rem;
   height: 0.2rem;
   border-radius: 10px;
   border: 2px solid #887129;
   background: #887129;
-  animation: loading 2s forwards infinite cubic-bezier(0,0,0,0);
+  animation: loading 3s forwards infinite cubic-bezier(0,0,0,0);
 }
 
 @keyframes loading{
@@ -2999,7 +2999,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: url(./img/almogrote.jpeg) no-repeat center;
+  background: url(https://lascasasdelcaminoreal.b-cdn.net/experiences/gastronomia/banner-min.jpeg) no-repeat center;
   background-size: cover;
   height: 80vh;
   overflow: hidden;

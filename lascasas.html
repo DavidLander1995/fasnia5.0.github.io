@@ -96,7 +96,7 @@
 		</div>
 	</div>
 	<div class="preloader_logo">
-		<img src="./img/logo.png" alt="El logotipo de Las Casas del Camino Real - Precargador">
+		<img src="./img/logosvg.svg" alt="El logotipo de Las Casas del Camino Real - Precargador">
 	</div>
 </div>
 <!-- Preloader END  -->
@@ -112,9 +112,8 @@
 <!-- Preloader END  -->
 
 
-
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
-<button class="btn-bookmobile button-reservemobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
+<button onclick="gobook()" class="btn-bookmobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
 
 <!-- Navigation Section -->
@@ -122,7 +121,7 @@
 <nav class="navbar navbar-default fixed-top">
 	<div class="container-fluid">
 		<!-- Logo Main Navbar -->
-	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 0.8rem;"></a>
+	  <a href="./index.html"><img class="navbar_logo navbar-brand" src="./img/logosvg.svg" alt="Las Casas Del Camino Real Main Logo" style="margin-left: 0.8rem;"></a>
 
 	  <!-- 3 Links -->
 	  <div class="d-none d-lg-block d-xl-block link-container">
@@ -142,7 +141,7 @@
 	  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 		<div class="offcanvas-header">
 			<!-- Logo Offcanvas -->
-			<a href="./index.html"><img class="offcanvas-logo" id="offcanvasNavbarLabel" src="./img/logo.png" alt="Las Casas Del Camino Real Main Logo"></a>
+			<a href="./index.html"><img class="offcanvas-logo" id="offcanvasNavbarLabel" src="./img/logosvg.svg" alt="Las Casas Del Camino Real Main Logo"></a>
 			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 
@@ -181,7 +180,7 @@
 				</li>
 				<li>
 				<!-- Offcanvas Reserve Button -->
-					<button type="button" class="btn-book button-reservenavbar" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
+					<button onclick="gobook()" type="button" class="btn-book" style="margin-left: 5.5rem; margin-top: 1rem;">Reserva</button>
 				</li>
 		  </ul>
 		</div>
@@ -239,7 +238,6 @@
             <p class="under-title-desc">Las 4 casas tienen amplias zonas interiores, patios y comparten zonas comunes como la piscina, una acogedora 
                 zona de relajación con increíbles vistas y la barbacoa.
             </p>
-          
       </div>
     </section>
     <!-- Section 1 END -->
@@ -617,15 +615,14 @@
                     </div>
                 </div>
             </div>
-      </div>
-  </section>
+    </section>
     <!-- Section 4 END  -->
 
     
 
 
 
-    <!-- Footer -->
+  <!-- Footer -->
   <hr class="hr my-5" style="color: #887129; ">
   <footer
 		  class="text-center text-lg-start"
@@ -642,7 +639,7 @@
 			<h6 class="text-uppercase mb-4 footer-header" style="color: #887129;">
 			  Las Casas Del Camino Real
 			</h6>
-	  <a href="./index.html"><img class="footer-logo" src="./img/logo.png" alt="El logotipo de Las Casas del Camino Real." style="padding-left: 1rem; padding-top: 1rem; padding-bottom: 1rem;"></a>
+	  <a href="./index.html"><img class="footer-logo" src="./img/logosvg.svg" alt="El logotipo de Las Casas del Camino Real." style="padding-left: 1rem; padding-top: 1rem; padding-bottom: 1rem;"></a>
 		  </div>
 		  <!-- Grid column -->
 
@@ -734,7 +731,7 @@
 	<!-- Grid container -->
 
 	<!-- Copyright -->
-	<div class="container">
+	<div class="container pb-5 pb-lg-0">
 		<div class="row text-center">
 			<div class="col-lg-4 copyright">
 				© 2022 Copyright: Las Casas Del Camino Real
@@ -755,9 +752,7 @@
 	</div>
 	<!-- Copyright -->
   </footer>
-<!-- Footer END -->
-
-
+  <!-- Footer END -->
 
 
   <!-- Scripts -->
@@ -766,6 +761,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
   <!-- Scripts END -->
 
+  <!-- Allow Swipe on Mobile  -->
   <script>
     $(".carousel").swipe({
     excludedElements: "input, select, textarea, .noSwipe",
@@ -778,19 +774,20 @@
     allowPageScroll: 'vertical'
     });
   </script>
+  <!-- Allow Swipe on Mobile  -->
 
   <!-- Buttons  -->
   <script>
 
-  // Reserve Mobile
-  document.querySelector('.button-reservemobile').addEventListener('click', () => {
-    if (Weglot.getCurrentLang() == "es") {
-		document.location.href = "reservationgeneralES.html"
-	}
-	else {
-		document.location.href = "reservationgeneralEN.html"
-	}
-  })
+  // Reserve
+  function gobook() {
+		if (Weglot.getCurrentLang() == "es") {
+			document.location.href = "reservationgeneralES.html"
+		}
+		else {
+			document.location.href = "reservationgeneralEN.html"
+		}
+		}
 
   // La Casa de Los Corrales
   document.querySelector('.button-loscorrales').addEventListener('click', () => {

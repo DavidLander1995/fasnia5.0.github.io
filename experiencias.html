@@ -116,7 +116,7 @@
 
 
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
-<button class="btn-bookmobile button-reservemobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
+<button onclick="gobook()" class="btn-bookmobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
 
 <!-- Navigation Section -->
@@ -245,7 +245,7 @@
         <h2 class="section-title text-center text-lg-start">Senderismo</h2>
         <p class="section-desc">El buen clima durante todo el año y el variado paisaje entre las costas hacen que Tenerife sea uno de los destinos más populares para las aventuras de senderismo.</p>
         <p class="section-desc">Haz clic a continuación para encontrar nuestras recomendaciones.</p>
-        <button class="btn-more">Leer Más</button>
+        <button onclick="gosenderismo()" class="btn-more">Leer Más</button>
       </div>
     </div>
   </div>
@@ -263,7 +263,7 @@
         <h2 class="section-title text-center text-lg-start">Gastronomía</h2>
         <p class="section-desc">Un viaje a Tenerife no estaría completo sin probar algunos de los platos canarios más típicos e igualmente deliciosos.</p>
         <p class="section-desc">Haz clic a continuación para encontrar nuestras recomendaciones.</p>
-        <button class="btn-more">Leer Más</button>
+        <button onclick="gogastronomia()" class="btn-more">Leer Más</button>
       </div>
     </div>
   </div>
@@ -280,7 +280,7 @@
       <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
         <h2 class="section-title text-center text-lg-start">Visita</h2>
         <p class="section-desc">Tenerife cuenta con un gran número de ciudades, pueblos y edificios fascinantes y hermosos. Una excursión a Garachico, Icod de Los Vinos y Taganana es imprescindible si el tiempo lo permite.</p>
-        <button class="btn-more">Leer Más</button>
+        <button onclick="govisitas()" class="btn-more">Leer Más</button>
       </div>
     </div>
   </div>
@@ -298,7 +298,7 @@
         <h2 class="section-title text-center text-lg-start">Diversión</h2>
         <p class="section-desc">Si buscas un día de diversión en familia, Tenerife tiene mucho que ofrecer, ya que alberga el parque acuático número uno del mundo (Siam Park) ocho veces consecutivas y 
           el mejor zoológico moderno (Loro Parque) del mundo.</p>
-        <button class="btn-more">Leer Más</button>
+        <button onclick="godiversion()" class="btn-more">Leer Más</button>
       </div>
     </div>
   </div>
@@ -449,6 +449,37 @@
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
     });
   </script>
+	<!-- Navbar END  -->
+
+	<!-- Buttons  -->
+	<script>
+
+		function gobook() {
+		if (Weglot.getCurrentLang() == "es") {
+			document.location.href = "reservationgeneralES.html"
+		}
+		else {
+			document.location.href = "reservationgeneralEN.html"
+		}
+		}
+
+		function gosenderismo() {
+		window.location.href = "experiencias-senderismo.html"
+		}
+
+		function gogastronomia() {
+			window.location.href = "experiencias-gastronomia.html"
+		}
+
+		function govisitas() {
+			window.location.href = "experiencias-visitas.html"
+		}
+
+		function godiversion() {
+			window.location.href = "experiencias-diversion.html"
+		}
+	</script>
+	<!-- Buttons END  -->
 
 
 </div>

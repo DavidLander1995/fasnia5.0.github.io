@@ -8,6 +8,13 @@
 
 */
 
+@supports(padding:max(0px)) {
+  body, header, footer {
+      padding-left: min(0vmin, env(safe-area-inset-left));
+      padding-right: min(0vmin, env(safe-area-inset-right));
+  }
+}
+
 .container-socials {
   position: absolute;
   right: 1%;
@@ -42,9 +49,10 @@
 }
 
 .container-socialsmobile .herosocial-iconsmobile {
-  width: 2.8rem;
+  width: 1.8rem;
   filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
-  margin-left: 0.6rem;
+  margin-top: 2rem;
+  margin: 0.7rem;
 }
 
 .container-socialsmobile a{

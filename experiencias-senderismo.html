@@ -116,7 +116,7 @@
 
 
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
-<button class="btn-bookmobile button-reservemobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
+<button onclick="gobook()" class="btn-bookmobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
 
 <!-- Navigation Section -->
@@ -219,7 +219,7 @@
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 		<li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
-		<li class="breadcrumb-item"><a href="./experiences.html">Experiencias</a></li>
+		<li class="breadcrumb-item"><a href="./experiencias.html">Experiencias</a></li>
     <li class="breadcrumb-item active" aria-current="page">Senderismo</li>
 		</ol>
 	</nav>
@@ -242,12 +242,10 @@
         <img data-blink-src="https://ik.imagekit.io/l3yst4k9g/Experiences/AdobeStock_241324493_zd7ChwRjj.jpeg?" alt="Senderismo en La Masca, Tenerife.">
       </div>
       <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
-        <h2 class="section-title text-center text-lg-start">La Masca</h2>
-        <p class="section-desc">Desde Santiago del Teide, un emocionante paseo por la Cumbre de Bolico (la divisoria meteorológica entre el norte y el sur) 
-          te lleva al caserío de Masca, con maravillosas vistas del valle de Masca y de la isla de La Gomera.
-        </p>
-        <p class="section-desc text-center text-lg-start">Duración: 4hrs <br><br>Dificultad: Fácil</p>
-        <button class="btn-more btn-moremasca">Ver Más</button>
+        <h2 class="section-title text-center text-lg-start">La Masca - Mirador de la Cruz de Hilda</h2>
+        <p class="section-desc">El mirador de la Cruz de Hilda se encuentra en el municipio de Buenavista del Norte. 
+        <p class="section-desc text-center text-lg-start">Duración: 4 horas 12 minutos <br><br>Dificultad Técnica : Moderado</p>
+        <button onclick="golamasca()" class="btn-more">Ver Más</button>
       </div>
     </div>
   </div>
@@ -263,10 +261,9 @@
       </div>
       <div class="col-lg-6 text-center text-lg-start">
         <h2 class="section-title text-center text-lg-start">Roque de Taborno</h2>
-        <p class="section-desc">El Roque de Taborno, conocido como el "Cervino de Tenerife", es una roca con forma de pulgar que se eleva 706 metros sobre el nivel del mar en la costa norte de la península de Anaga.
-        </p>
-        <p class="section-desc text-center text-lg-start">Duración: 1.5hrs <br><br>Dificultad: Moderada</p>
-        <button class="btn-more btn-moreroquedetaborno">Leer Más</button>
+        <p class="section-desc">Esta caminata discurre dentro del Parque Rural de Anaga, realizando una circular por el Valle de Taborno o de Las Carboneras y rodeando el interfluvio que separa la cuenca de Taborno de La Cuenca de Los Batanes.
+        <p class="section-desc text-center text-lg-start">Duración: 5 horas 18 minutos <br><br>Dificultad Técnica: Moderado</p>
+        <button onclick="goroquedetaborno()" class="btn-more">Leer Más</button>
       </div>
     </div>
   </div>
@@ -281,11 +278,11 @@
         <img data-blink-src="./img/experiencias/senderismo/roquesdegarcia.jpeg" alt="Roque de García - Tenerife">
       </div>
       <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
-        <h2 class="section-title text-center text-lg-start">Roques de García</h2>
-        <p class="section-desc">El Pico del Teide es la montaña más alta de España, pero si miras más allá del volcán encontrarás varias rutas de senderismo 
-          que atraviesan la Caldera de las Cañadas. Durante esta caminata el Teide está a la vista y las formaciones rocosas son espectaculares. </p>
-        <p class="section-desc text-center text-lg-start">Duración: 1.5hrs <br><br>Dificultad: Fácil</p>
-        <button class="btn-more btn-moreroquesdegarcia">Leer Más</button>
+        <h2 class="section-title text-center text-lg-start">Pico del Teide por El Pico Viejo desde los Roques de García</h2>
+        <p class="section-desc">Partiendo desde el Parador de Turismo Las Cañadas del Teide, junto a los Roques de García, aprovechando la magnífica red de senderos teidense, la ruta consiste en ascender primeramente 
+					al cráter del Pico Viejo (3.134 m.) </p>
+        <p class="section-desc text-center text-lg-start">Duración: 6 horas 36 minutos <br><br>Dificultad Técnica: Moderado</p>
+        <button onclick="goroquesdegarcia()" class="btn-more">Leer Más</button>
       </div>
     </div>
   </div>
@@ -436,6 +433,7 @@
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 80);
     });
   </script>
+	<!-- Navbar END  -->
 
 	<!-- Uploadcare Adaptive Delivery  -->
 	<script>
@@ -454,22 +452,35 @@
 		});
 	})
 	</script>
+	<!-- Uploadcare Adaptive Delivery END  -->
 
 
 <!-- Buttons  -->
 <script>
-document.querySelector('.btn-moremasca').addEventListener('click', () => {
-document.location.href = ""
-})
 
-document.querySelector('.btn-moreroquedetaborno').addEventListener('click', () => {
-document.location.href = ""
-})
+	function gobook() {
+	if (Weglot.getCurrentLang() == "es") {
+		document.location.href = "reservationgeneralES.html"
+	}
+	else {
+		document.location.href = "reservationgeneralEN.html"
+	}
+	}
 
-document.querySelector('.btn-moreroquesdegarcia').addEventListener('click', () => {
-document.location.href = ""
-})
+	function golamasca() {
+		window.open("https://www.wikiloc.com/rutas-senderismo/tenerife-masca-mirador-de-la-cruz-de-hilda-erjos-17817531","_blank");
+	}
+
+	function goroquedetaborno() {
+		window.open("https://www.wikiloc.com/rutas-senderismo/anaga-circular-cuenca-de-taborno-y-rodeo-al-tenejias-15756115","_blank");
+	}
+
+	function goroquesdegarcia() {
+		window.open("https://www.wikiloc.com/rutas-senderismo/pico-del-teide-por-el-pico-viejo-desde-los-roques-de-garcia-tenerife-19861987","_blank");
+	}
+
 </script>
+<!-- Buttons END  -->
 
 
 

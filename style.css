@@ -51,7 +51,6 @@
 .container-socialsmobile .herosocial-iconsmobile {
   width: 2.5rem;
   filter: invert(39%) sepia(95%) saturate(325%) hue-rotate(8deg) brightness(93%) contrast(86%);
-  margin: 0.7rem;
 }
 
 .container-socialsmobile a{

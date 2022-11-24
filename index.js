@@ -11,6 +11,66 @@ $(window).on("load", function(){
           "(min-width: 795px)": function() {
             // setup animations and ScrollTriggers for screens over 795px wide (desktop) here...
             // ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
+
+            // Social Media Icons Dekstop
+            gsap.to(".animatesocial1", {
+              duration: 0,  
+              x: 100,
+              opacity: 1,
+            });
+
+            gsap.to(".animatesocial1", {
+              duration: 2,  
+              x: 0, 
+              opacity: 1,
+              ease: "expo",
+              scrollTrigger : { 
+                trigger: "mySwiperhero", 
+                markers: false,
+                start: "top 65%",
+                end: "center 30%",
+              }, 
+            }); 
+
+            gsap.to(".animatesocial2", {
+              duration: 0,  
+              x: 100,
+              opacity: 1,
+            });
+
+            gsap.to(".animatesocial2", {
+              duration: 2,  
+              x: 0, 
+              opacity: 1,
+              delay: 0.5,
+              ease: "expo",
+              scrollTrigger : { 
+                trigger: "mySwiperhero", 
+                markers: false,
+                start: "top 65%",
+                end: "center 30%",
+              }, 
+            });
+
+            gsap.to(".animatesocial3", {
+              duration: 0,  
+              x: 100,
+              opacity: 1,
+            });
+
+            gsap.to(".animatesocial3", {
+              duration: 2,  
+              x: 0, 
+              opacity: 1,
+              delay: 1,
+              ease: "expo",
+              scrollTrigger : { 
+                trigger: "mySwiperhero", 
+                markers: false,
+                start: "top 65%",
+                end: "center 30%",
+              }, 
+            }); 
         
 
             // Icons
@@ -312,6 +372,52 @@ $(window).on("load", function(){
 
         // All
 
+        // Reserve Mobile
+        gsap.to(".btn-bookmobile", {
+          duration: 0,  
+          y: 100,
+          scale: 0,
+          opacity: 0,
+        });
+
+        gsap.to(".btn-bookmobile", {
+          duration: 1,  
+          y: 0, 
+          scale: 1,
+          opacity: 1,
+          ease: "power2",
+          scrollTrigger : { 
+            trigger: ".navbar", 
+            markers: false,
+            start: "top 90%",
+            end: "center 30%",
+          }, 
+        });
+
+        // Social Media Icons Mobile
+        gsap.to(".herosocial-iconsmobile", {
+          duration: 0,  
+          y: 100,
+          scale: 0,
+          opacity: 0,
+        });
+
+        gsap.to(".herosocial-iconsmobile", {
+          duration: 1,  
+          y: 0, 
+          scale: 1,
+          delay: 1,
+          opacity: 1,
+          ease: "power2",
+          scrollTrigger : { 
+            trigger: ".navbar", 
+            markers: false,
+            start: "top 90%",
+            end: "center 30%",
+          }, 
+        });
+
+
         // Logo 
         gsap.to(".intro-logo", {
           duration: 0,  
@@ -377,11 +483,7 @@ $(window).on("load", function(){
           }, 
         });
         // Facilities
-
-
-   
-
-            
+     
         });
 
 

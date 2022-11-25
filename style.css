@@ -31,7 +31,7 @@
 }
 
 .herosocial-icons:hover{
-  transform: scale(1.2);
+  transform: scale(1.2) !important;
 }
 
 .herosocial-icons a:hover{
@@ -2300,7 +2300,7 @@ li{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: url(./img/52.jpg) no-repeat center;
+  background: url(https://lascasasdelcaminoreal.b-cdn.net/ubicación/ubicacionbanner-min.jpg) no-repeat center;
   background-size: cover;
   height: 80vh;
   overflow: hidden;
@@ -2590,7 +2590,7 @@ form button {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: url(./img/promociones.webp) no-repeat center;
+  background: url(https://lascasasdelcaminoreal.b-cdn.net/promociones/promocionesbanner.jpg) no-repeat center;
   background-size: cover;
   height: 80vh;
   overflow: hidden;

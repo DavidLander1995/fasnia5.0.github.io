@@ -8,6 +8,12 @@
 
 */
 
+#main {
+  padding-left: max(env(safe-area-inset-left));
+  padding-right: max(env(safe-area-inset-right));
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
 .mySwiper9  {
   min-height: 500px !important;
 }

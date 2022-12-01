@@ -8,6 +8,13 @@
 
 */
 
+@supports(padding:max(0px)) {
+  body, header, footer {
+      padding-left: min(0vmin, env(safe-area-inset-left));
+      padding-right: min(0vmin, env(safe-area-inset-right));
+  }
+}
+
 #main {
   padding-left: max(env(safe-area-inset-left));
   padding-right: max(env(safe-area-inset-right));

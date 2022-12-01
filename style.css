@@ -8,12 +8,30 @@
 
 */
 
-@supports(padding:max(0px)) {
-  body, header, footer {
-      padding-left: min(0vmin, env(safe-area-inset-left));
-      padding-right: min(0vmin, env(safe-area-inset-right));
-  }
+.mySwiper9  {
+  min-height: 500px !important;
 }
+
+.mySwiper9 a {
+  height: 350px;
+  object-fit: cover;
+  
+}
+
+/* custmm bullets style */
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: none;
+  border-radius: 100%;
+  background: rgb(180, 179, 179);
+  margin-left: 0.75rem !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #887129;
+  transform: scale(1.25);
+}
+
 
 .container-socials {
   position: absolute;
@@ -447,7 +465,7 @@ html,body
 
 /* Section Intro  */
 .title {
-  font-size: 22px;
+  font-size: 26px;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   letter-spacing: 0;
@@ -464,7 +482,7 @@ html,body
   font-weight: 700;
   letter-spacing: 0;
   line-height: 63px;
-  color: #222222;
+  color: #887129;
   padding: 3rem 0rem 0rem 0rem;
 }
 
@@ -654,6 +672,8 @@ html,body
     font-size: 16px !important;
   }
 }
+
+
 /* Typography END */
 .nav-container {
   position: fixed;

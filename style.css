@@ -8,18 +8,6 @@
 
 */
 
-@supports(padding:max(0px)) {
-  body, header, footer {
-      padding-left: min(0vmin, env(safe-area-inset-left));
-      padding-right: min(0vmin, env(safe-area-inset-right));
-  }
-}
-
-#main {
-  padding-left: max(env(safe-area-inset-left));
-  padding-right: max(env(safe-area-inset-right));
-  padding-bottom: env(safe-area-inset-bottom);
-}
 
 .mySwiper9  {
   min-height: 500px !important;
@@ -1629,7 +1617,15 @@ html,body
   padding: 0.2rem;
   margin-right: 0.6rem;
   width: 50px;
-} 
+}
+
+.navbar-toggler:focus {
+  text-decoration: none !important;
+  border: 5px solid #887129 !important;
+  box-shadow: none !important;
+}
+
+
 
 .navbar_logo{
   width: 10rem;
@@ -1855,7 +1851,6 @@ footer a:hover {
   height: 80vh;
   overflow: hidden;
 } 
-
 
 
 /* Section 2 */

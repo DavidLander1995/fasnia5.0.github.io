@@ -19,7 +19,7 @@
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://davidlander1995.github.io/fasnia3.0.github.io/index.html">
+	<meta property="og:url" content="https://davidlander1995.github.io/fasnia5.0.github.io/index.html">
 	<meta property="og:title" content="Las Casas Del Camino Real | Web Official | Sur de Tenerife">
 	<meta property="og:description" content="¿Buscas un refugio de lujo y tranquilidad en Tenerife? Las casas son del siglo XVII y han sido reformadas espectacularmente.">
 	<meta property="og:image" content="https://ik.imagekit.io/l3yst4k9g/Index/hero_images/hero_s1FIleTVf.jpeg?">
@@ -193,7 +193,7 @@
 
 	<!-- Script required before Cookie Pop Up Banner  -->
 	<script>
-		if (Weglot.getCurrentLang() == "es") {
+		if (Weglot.getCurrentLang() === "es") {
 			document.documentElement.setAttribute("lang", "es")
 		}
 		else {
@@ -209,7 +209,6 @@
 		});
 	</script>
 	<!-- Navabar END  -->
-
 
 </head>
 <body>
@@ -246,9 +245,9 @@
 <button onclick="gobook()" class="btn-bookmobile fixed-bottom d-lg-none d-xl-none">Reserva</button>
 <!-- Sticky Reserve Button for Mobile Devices ONLY  -->
 
-
 <div id="main">
-	<!-- Navigation Section -->
+
+<!-- Navigation Section -->
 <!-- 3 Links Displayed When Screen Size > Medium -->
 <nav class="navbar navbar-default fixed-top">
 	<div class="container-fluid">
@@ -352,7 +351,7 @@
 			<img class="swiper-gl-image" src="https://lascasasdelcaminoreal.b-cdn.net/index/hero3.png?quality=100?sharpen=true" alt="La vista desde la carretera al entrar en Las Casas del Camino Real.">
 			<div class="swiper-slide-content">
 				<div class="swiper-slide-title">
-					Casas Rurales Exclusivas <br><span>En El Sur<br class="d-none d-lg-block d-xl-none"> de Tenerife</span>
+					Casas Rurales Exclusivas <br><span>en el Sur<br class="d-none d-lg-block d-xl-none"> de Tenerife</span>
 				</div>
 			</div>
 			<div class="swiper-reserve-button">
@@ -405,11 +404,7 @@
 	</div>
 </div>
 <!-- Banner for Discount  -->
-
-
-
 <!-- Banner Image END -->
-
 
 <div class="bodycontent">
 
@@ -575,11 +570,10 @@
 						<a href="./galeriadefotos.html">
 							<img loading="lazy" src="https://lascasasdelcaminoreal.b-cdn.net/index/gallery1/jacuzzi1.jpeg?sharpen=true" alt="Las hermosas zonas de patio alrededor de Las Casas del Camino Real." style="width: 100vw;">
 							<div class="gallerybutton-container">Ver Galería</div>
-							</a>
+						</a>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 	<!-- Gallery Section 1 END  -->
@@ -597,9 +591,9 @@
 
 	<!-- The Houses Section  -->
 	<div class="container text-center">
-		<h2 class="title">Las Cuatro Casas</h2>
-		<p class="under-title">Encuentra La Casa Perfecta</p>
-		<p class="under-title-desc">Las 4 casas tienen amplias zonas interiores, patios y comparten zonas comunes como la piscina, una acogedora zona de relajación con increíbles vistas y la barbacoa.</p>
+		<h2 class="title">Cuatro Casas Rurales Exclusivas</h2>
+		<p class="under-title">¿Cúal es la tuya?</p>
+		<p class="under-title-desc">Las cuatro casas tienen amplias zonas interiores, patios y comparten, además, un acogedor solarium con piscina y barbacoa.</p>
 	</div>
 
 	<div class="slider4 pt-lg-5">
@@ -751,9 +745,6 @@
 							<p class="text-justify d-none d-xl-block">La entrada de la casa es a través de un pequeño y acogedor patio privado. A un lado encontramos la cocina- salón comedor,
 							donde conviven elementos del Siglo XVII con todas las comodidades de nuestra época.</p>
 							<p class="box-quote text-center">Casas con historia.</p>
-
-					
-
 								<div class="container text-center">
 									<button class="btn-more button-morecabrera">Leer Más</button>
 									<button class="btn-book button-reservecabrera d-none d-lg-inline">Reserva</button>
@@ -1710,7 +1701,7 @@
 	<div class="container pb-5 pb-lg-0">
 		<div class="row text-center">
 			<div class="col-lg-4 copyright">
-				© 2022 Copyright: Las Casas Del Camino Real
+				© 2023 Copyright: Las Casas Del Camino Real
 			</div>
 			<div class="col-lg-2 terms_conditions">
 				<a href="./condicionesdeuso.html">Condiciones de uso</a>
@@ -1719,10 +1710,10 @@
 				<a href="./politicadeprivicidad.html">Política de privacidad</a>
 			</div>
 			<div class="col-lg-2 terms_conditions">
-				<a href="./politicadecancelation.html">Política de cancelación</a>
+				<a href="./politicadecancelation.html">Política de cancelación y reglamento interno</a>
 			</div>
 			<div class="col-lg-2 terms_conditions">
-				<a href="./credits.html">Credits</a>
+				<a href="./Créditos.html">Créditos</a>
 			</div>
 		</div>
 	</div>
@@ -1819,15 +1810,13 @@ $(document).ready(function(){
 $(".owl-three").owlCarousel({
 margin: 10,
 items: 1.25,
-dots: true,
+dots: false,
 autoplay: false,
 loop: true,
 stagePadding: 10,
-
 }
 )
 });
-
 </script>
 <!-- Owl Carousel for Gallery  -->
 
